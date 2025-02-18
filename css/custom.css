@@ -1,0 +1,104 @@
+
+.md-input {
+    margin-bottom: 1px;
+  }
+
+   
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #267AB8;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #267AB8;
+}
+
+.md-typeset h1 {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+ }
+  
+ /* text input */
+.md-input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+/* Style for the dropdown select element */
+.md-select {
+    width: 50%;
+    padding: 8px 40px 8px 8px; /* Adjust padding to make space for the arrow */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+    appearance: none; /* Remove default dropdown arrow */
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZD0iTTUgN2wxMCA5IDEwLTkiLz48L3N2Zz4="); /* Inline SVG for the down arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Positioning of the arrow */
+    background-size: 10px; /* Size of the arrow */
+  }
+
+  /* Custom CSS for increasing the text input width */
+.md-text-input {
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Optional: limit the maximum width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .md-select:focus {
+    border-color: var(--md-primary-fg-color);
+    outline: none;
+  }
+  
+  .md-button--primary {
+    display: inline-block;
+    background-color: var(--md-primary-fg-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .md-button--primary:hover {
+    background-color: var(--md-primary-fg-color--hover);
+  }
+ 
+  @media (min-width: 1220px) {
+    .md-main__inner {
+      margin-top: 0;
+    }
+      .md-grid {
+    max-width: 90%;
+  }
+  
+    .md-sidebar {
+      height: auto;
+    }
+    .md-sidebar--primary {
+      border-right: 1px solid var(--md-default-fg-color--lightest);
+     /* width: 20%; */
+    }
+    .md-nav .md-nav__title {
+      display: none;
+
+    }
+    .md-nav__icon {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-top: -.1rem;
+    }
+  }
+  
+  
+
