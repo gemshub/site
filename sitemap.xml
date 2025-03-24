@@ -2,78 +2,162 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://gems.web.psi.ch/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
-         <loc>https://gems.web.psi.ch/citing_terms/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://gems.web.psi.ch/citingterms/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/consortium/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/community/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/community/cement/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/community/disposal/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/community/hydrothermal/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/community/papers/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/community/reactor/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/community/workshops/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/download/</loc>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2008/07/25/2003-to-2008/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2014/04/23/2009-to-2014/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2020/12/07/2015-to-2020/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2021/12/23/changes-2021/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2022/04/14/changes-2022/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2023/05/10/changes-2023/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2024/10/30/changes-2024/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2025/01/03/changes-2025/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsfits/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsfits/documentation/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsfits/download/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsselektor/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsselektor/download/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsselektor/documentation/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsselektor/documentation/databases/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsstandalone/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsstandalone/download/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsstandalone/documentation/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemsstandalone/documentation/solutionmodels/</loc>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2025/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2024/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2023/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2022/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2021/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2020/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2014/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2008/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
 </urlset>
