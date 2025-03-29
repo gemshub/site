@@ -5,7 +5,7 @@
 
 .md-typeset .admonition,
 .md-typeset details {
-  font-size: 18px
+  font-size: 18px;
 }
 
 .md-nav {
@@ -13,11 +13,11 @@
 }
 
 .md-tabs__link {
-  font-size: 18px;
+  font-size:.8rem;
 }
 
 .md-typeset code {
-  font-size: 18px /* Adjust as needed */
+  font-size: 18px;
 }
 
 .md-typeset table:not([class]) th {
