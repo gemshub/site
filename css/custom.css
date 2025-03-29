@@ -2,39 +2,40 @@
   font-size: 180%;
 }*/
 
-
+/*
 .md-typeset .admonition,
 .md-typeset details {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .md-nav {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .md-tabs__link {
-  font-size:.8rem;
+  font-size:.7rem;
 }
 
 .md-typeset code {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .md-typeset table:not([class]) th {
-  font-size:18px;
+  font-size:16px;
 }
 
 .md-typeset table:not([class]) td {
-  font-size:18px;
+  font-size:16px;
 }
 
 .md-typeset table:not([class]) tr {
-  font-size:18px;
+  font-size:16px;
 }
 
 .md-typeset .tabbed-labels--linked>label {
-  font-size:18px;
+  font-size:16px;
 }
+  */
 
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #267AB8;
@@ -109,7 +110,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: .8rem;
   }
   
   .md-select:focus {
