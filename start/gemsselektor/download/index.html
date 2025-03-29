@@ -43,12 +43,14 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Inconsolata"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inconsolata";--md-code-font:"Inconsolata"}</style>
       
     
     
       <link rel="stylesheet" href="../../../css/custom.css">
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -541,6 +543,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Download
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -550,6 +563,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build-from-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build from source
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -961,6 +1002,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1119,6 +1164,48 @@
   
   <span class="md-ellipsis">
     Reactor Chemistry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../community/geoml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GeoML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../community/cemgems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CemGEMS
   </span>
   
 
@@ -1506,6 +1593,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build-from-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build from source
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1523,7 +1627,58 @@
 
 
 <h1 id="gems-selektor-download"><img style="float: center; height: 6%; width: 6%;" src="../../img/gems2.png"> GEMS-Selektor: Download</h1>
-<p>Download</p>
+<p>Please verify you're human by checking the box below.</p>
+<!-- Large Checkbox -->
+<div id="checkbox-container">
+  <input type="checkbox" id="verify-checkbox">
+  <label for="verify-checkbox">I'm not a bot</label>
+</div>
+
+<!-- Fireworks Canvas -->
+<canvas id="fireworks-canvas"></canvas>
+
+<!-- Hidden Download Button -->
+<div id="download-container" style="display: none; margin-top: 20px;">
+  <a href="installpack" class="md-button md-button--primary">
+    Download page for GEM-Selektor
+  </a>
+</div>
+
+<style>
+  /* left the checkbox */
+  #checkbox-container {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+  }
+
+  /* Large checkbox */
+  #verify-checkbox {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  /* Fireworks effect */
+  #fireworks-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    display: none;
+  }
+</style>
+
+<p><a href="https://hits.sh/gemshub.github.io/site/start/gemsselektor/download/"><img alt="Hits" src="https://hits.sh/gemshub.github.io/site/start/gemsselektor/download.svg" /></a></p>
+<h2 id="build-from-source">Build from source</h2>
+<p>GEM-Selektor code can also be directly build from the source code by following the instructions in the <a href="https://bitbucket.org/gems4/gems3gui/src/trunk/">repository</a></p>
 
 
 
@@ -1601,10 +1756,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.path", "navigation.tracking", "navigation.tabs.sticky", "navigation.top", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.path", "navigation.tracking", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "content.tooltips", "toc.follow"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../../../js/verifycheckbox.js"></script>
       
     
   </body>
