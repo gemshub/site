@@ -1704,12 +1704,12 @@
 
 
 <h1 id="gems-standalone-examples"><a class="glightbox" href="../../../../img/gems1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../../../img/gems1.png"></a> GEMS Standalone: Examples</h1>
-<p>The <strong>GEMS3K I/O files</strong> used in the <code>gemcalc</code> and <code>node-gem</code> test examples were <strong>exported using GEM-Selektor v.3</strong> from the <strong>CalcDolo</strong> modeling project (included in the GEM-Selektor installer). This small, simple project demonstrates GEMS3K I/O file structures. </p>
-<h2 id="example-calcitedolomite-benchmark-xgems-in-python">Example: calcite–dolomite benchmark (xGEMS in Python)</h2>
-<p>A demo reactive transport modeling of <strong>the calcite–dolomite benchmark</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> using xGEMS can be found in the <a href="https://bitbucket.org/gems4/xgems/src/master/demos/demo_reactive_transport.py">repository</a></p>
+<p>The <strong><abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> <abbr title="Input/Output">I/O</abbr> files</strong> used in the <code>gemcalc</code> and <code>node-gem</code> test examples were <strong>exported using <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> v.3</strong> from the <strong><abbr title="Example project in GEM-Selektor to demonstrate calculating equilibria involving calcite (CaCO₃) and dolomite (CaMg(CO₃)₂) and exporting data for use in other standalone geochemical modeling codes, gem-node and gemcalc examples">CalcDolo</abbr></strong> modeling project (included in the <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> installer). This small, simple project demonstrates <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> <abbr title="Input/Output">I/O</abbr> file structures. </p>
+<h2 id="example-calcitedolomite-benchmark-xgems-in-python">Example: calcite–dolomite benchmark (<abbr title="Modern C++ and python interface to GEMS Standalone code">xGEMS</abbr> in Python)</h2>
+<p>A demo reactive transport modeling of <strong>the calcite–dolomite benchmark</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> using <abbr title="Modern C++ and python interface to GEMS Standalone code">xGEMS</abbr> can be found in the <a href="https://bitbucket.org/gems4/xgems/src/master/demos/demo_reactive_transport.py">repository</a></p>
 <p><a class="glightbox" href="../calcite-dolomite.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GEMS-CSMP" src="../calcite-dolomite.png" width="400" /></a>
 <a class="glightbox" href="../calcite-dolomite2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GEMS-OpenGeoSys" src="../calcite-dolomite2.png" width="400" /></a></p>
-<h2 id="example-reactive-transport-in-a-calcite-column-gems3k-tnode-in-c">Example: Reactive Transport in a Calcite Column (GEMS3K TNode in C++)</h2>
+<h2 id="example-reactive-transport-in-a-calcite-column-gems3k-tnode-in-c">Example: Reactive Transport in a Calcite Column (<abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> <abbr title="A class that provides access methods to chemical data">TNode</abbr> in C++)</h2>
 <p>This example models a <strong>hypothetical porous column</strong> filled with an inert material containing <strong>small amounts of reactive calcite</strong>. A <strong>Ca-poor MgCl₂ solution</strong> enters one end of the column as an infinite source, while the opposite end serves as an infinite sink. As fluid flows through the column (assuming instantaneous mineral-water reactions), two key <strong>reaction fronts</strong> develop:  </p>
 <ol>
 <li><strong>Calcite dissolves</strong>, and <strong>dolomite precipitates</strong>.  </li>
@@ -1720,9 +1720,9 @@
 <li><strong>Initial column composition</strong>: Stable calcite with trace amounts of Mg and Cl.  </li>
 <li><strong>Source composition</strong>: MgCl₂ solution.  </li>
 </ul>
-<p>Both are provided in the <strong>CalcDolo</strong> project.  </p>
+<p>Both are provided in the <strong><abbr title="Example project in GEM-Selektor to demonstrate calculating equilibria involving calcite (CaCO₃) and dolomite (CaMg(CO₃)₂) and exporting data for use in other standalone geochemical modeling codes, gem-node and gemcalc examples">CalcDolo</abbr></strong> project.  </p>
 <p><strong>Initial Column Composition</strong>  </p>
-<p>The <strong>CalcDolo:G:CalcColumn:0001:0:1:25:0</strong> <code>SysEq</code> record represents the initial column chemistry (excluding inert material).  </p>
+<p>The <strong><abbr title="Example project in GEM-Selektor to demonstrate calculating equilibria involving calcite (CaCO₃) and dolomite (CaMg(CO₃)₂) and exporting data for use in other standalone geochemical modeling codes, gem-node and gemcalc examples">CalcDolo</abbr>:G:CalcColumn:0001:0:1:25:0</strong> <code>SysEq</code> record represents the initial column chemistry (excluding inert material).  </p>
 <p><strong>Bulk Composition</strong></p>
 <div class="highlight"><pre><span></span><code>Property    Name    Quantity    Units  
 bi_         C       0.00035     M  
@@ -1737,7 +1737,7 @@ bi_         O       55.3428     M
 <p><a class="glightbox" href="../Screen-Calcite-Column-0001.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Screen-Calcite-Column-0001.png" src="../Screen-Calcite-Column-0001.png" width="400" /></a></p>
 <p>Here, <strong>partial calcite dissolution</strong> (isolated from atmospheric air) results in a <strong>slightly alkaline</strong>, low-ionic-strength solution.  </p>
 <p><strong>Source Solution Composition</strong>  </p>
-<p>The <strong>CalcDolo:G:CalcColumn:0000:0:1:25:0</strong> <code>SysEq</code> record defines the <strong>MgCl₂ source solution</strong>:  </p>
+<p>The <strong><abbr title="Example project in GEM-Selektor to demonstrate calculating equilibria involving calcite (CaCO₃) and dolomite (CaMg(CO₃)₂) and exporting data for use in other standalone geochemical modeling codes, gem-node and gemcalc examples">CalcDolo</abbr>:G:CalcColumn:0000:0:1:25:0</strong> <code>SysEq</code> record defines the <strong>MgCl₂ source solution</strong>:  </p>
 <p><strong>Bulk Composition</strong>  </p>
 <div class="highlight"><pre><span></span><code>Property    Name    Quantity    Units  
 bi_         C       0.0001001   M  
@@ -1775,6 +1775,7 @@ bi_         O       55.3421     M
 <!-- Description of examples in node, xgems repository - link to the repository 
 
 think about jupyter examples with mybinder -->
+<!-- *[GEMS]: Gibb Energy Minimization Software -->
 <div class="footnote">
 <hr />
 <ol>

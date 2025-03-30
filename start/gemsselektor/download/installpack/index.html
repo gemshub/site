@@ -1624,22 +1624,22 @@
 </div>
 <h2 id="older-versions">Older versions</h2>
 <p><a href="https://gems.web.psi.ch/GEMS3/downloads/reposit/win64/Gems3.9.6-2ed66a4.9a8c970-qt6-win64-install.exe" title="Link to download v.3.9.6 for Windows">Gems3.9.6</a> for Windows.         <a href="https://gems.web.psi.ch/GEMS3/downloads/reposit/MacOSX/Gems3.9.6-2ed66a4.9a8c970-qt5-macos-x86-64.dmg" title="Link to download v.3.9.6 for Mac">Gems3.9.6</a>  for MacOS.         <a href="https://gems.web.psi.ch/GEMS3/downloads/reposit/linux/Gems3.9.6-2ed66a4.9a8c970-qt5-linux-x86_64.AppImage" title="Link to download v.3.9.6 for linux (Ubuntu)">Gems3.9.6</a> for Linux (AppImage).          <a href="https://gems.web.psi.ch/GEMS3/downloads/reposit/linux/Gems3.9.6-2ed66a4.9a8c970-qt5-linux-x86_64.tar.gz" title="Link to download v.3.9.6 for linux (Ubuntu)">Gems3.9.6</a> for Linux (tar.gz).</p>
-<p>In the unlikely case of unresolved issues with installation or use of GEM-Selektor v.3.9.6, you still can perform a fallback download and installation of previously released (in June 2022) GEM-Selektor v.3.9.5 packages using the links below.  </p>
+<p>In the unlikely case of unresolved issues with installation or use of <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> v.3.9.6, you still can perform a fallback download and installation of previously released (in June 2022) <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> v.3.9.5 packages using the links below.  </p>
 <p><a href="https://gems.web.psi.ch/GEMS3/downloads/reposit/win64/Gems3.9.5-9f3dc56.6dae7a9-win64-qt6install.exe" title="Link to download v.3.9.2 for Windows">Gems3.9.5</a> for Windows.         <a href="https://gems.web.psi.ch/GEMS3/downloads/reposit/MacOSX/Gems3.9.5-9f3dc56.6dae7a9-qt6-macos-x86-64.dmg" title="Link to download v.3.9.2 for Mac">Gems3.9.5</a>  for MacOS.         <a href="https://gems.web.psi.ch/GEMS3/downloads/reposit/linux/Gems3.9.5-9f3dc56.6dae7a9-linux-x64-qt5.tar.gz" title="Link to download v.3.9.2 for linux (Ubuntu)">Gems3.9.5</a> for Linux.</p>
-<p>Please, do not forget to let us know about the issues encountered during the installation of GEM-Selektor v.3.9.6 on your OS by emailing to gems2.support(at)psi.ch</p>
+<p>Please, do not forget to let us know about the issues encountered during the installation of <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> v.3.9.6 on your OS by emailing to gems2.support(at)psi.ch</p>
 <!--Some information about outdated versions of GEM-Selektor can be found in [this web page](/gems3/selpack-outdated).  -->
 
 <h2 id="technical-information">Technical Information</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Mac OS X</label><label for="__tabbed_1_3">Linux</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>GEM-Selektor is built using the Qt5.x toolkit, which includes the <a href="http://www.mingw.org">MinGW</a> port of the GNU C++ compiler and linker. It is distributed as a self-extracting installer file:</p>
+<p><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> is built using the Qt5.x toolkit, which includes the <a href="http://www.mingw.org">MinGW</a> port of the GNU C++ compiler and linker. It is distributed as a self-extracting installer file:</p>
 <div class="highlight"><pre><span></span><code>Gems&lt;ver&gt;-&lt;revGUI&gt;.&lt;revG3K&gt;-win32-install.sfx.exe
 </code></pre></div>
 <p>where:
 - <code>&lt;ver&gt;</code> represents the version number (e.g., <code>3.6.0</code>),
 - <code>&lt;revGUI&gt;</code> is the revision tag for the GEMS-Vizor component,
-- <code>&lt;revG3K&gt;</code> is the revision tag for the GEMS3K core.</p>
+- <code>&lt;revG3K&gt;</code> is the revision tag for the <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> core.</p>
 <p>The installer (~25 MB) is created using <a href="http://sourceforge.net/projects/sfx-maker/">7-zip SFX Maker</a>. It contains the compressed <code>Gems3-app</code> folder and related files (<code>INSTALL.windows.txt</code>, <code>rungems3.bat</code>, <code>Readme3.txt</code>).</p>
 <p><strong>Installation Steps:</strong></p>
 <ol>
@@ -1660,7 +1660,7 @@
 </ul>
 </li>
 <li>
-<p><strong>Updating GEM-Selektor</strong>:</p>
+<p><strong>Updating <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr></strong>:</p>
 <ul>
 <li>Run the installer again and select the previous installation directory. Only <code>Gems3-app</code> files will be replaced, leaving your projects intact.</li>
 </ul>
@@ -1681,17 +1681,17 @@
 - Display: 1600 x 900 resolution or higher recommended.</p>
 <div class="admonition note">
 <p class="admonition-title">Default Installation Locations</p>
-<p>Starting from GEM-Selektor v3.8.0, Windows installers are built using the Qt Installer Framework. To avoid permission issues in Windows 10/11, the recommended installation target is the user’s home folder:<br />
+<p>Starting from <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> v3.8.0, Windows installers are built using the Qt Installer Framework. To avoid permission issues in Windows 10/11, the recommended installation target is the user’s home folder:<br />
 - <strong>Program location:</strong> <code>C:\Users\&lt;myuser&gt;\GEMS3</code><br />
 - <strong>User projects:</strong> <code>C:\Users\&lt;myuser&gt;\Library\Gems3\projects</code>  </p>
 <p>For macOS, default locations are structured similarly:<br />
 - <strong>Program location:</strong> <code>/Users/&lt;myuser&gt;/GEMS3/Gems3.app</code><br />
 - <strong>User projects:</strong> <code>/Users/&lt;myuser&gt;/Library/Gems3/projects/</code>  </p>
-<p>These locations ensure that user projects persist even after upgrading or uninstalling GEM-Selektor using <code>C:\Users\&lt;myuser&gt;\GEMS3\MaintenanceTool.exe</code>.  </p>
+<p>These locations ensure that user projects persist even after upgrading or uninstalling <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> using <code>C:\Users\&lt;myuser&gt;\GEMS3\MaintenanceTool.exe</code>.  </p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Windows Installation Issue (v3.9.6)</p>
-<p>Some users reported that GEM-Selektor v3.9.6 for Windows-x64 fails to start when installed in a user directory for the first time. As of June 26, 2023, a hot-fixed installer has replaced the previous version to resolve this issue.  </p>
+<p>Some users reported that <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> v3.9.6 for Windows-x64 fails to start when installed in a user directory for the first time. As of June 26, 2023, a hot-fixed installer has replaced the previous version to resolve this issue.  </p>
 <ul>
 <li>Users who prefer not to reinstall can follow the workaround detailed in section 1.1A of the <strong><a href="HowToInstallGEM-Selektor.pdf">Installation Instructions (PDF)</a></strong>.  </li>
 </ul>
@@ -1724,7 +1724,7 @@
 </div>
 </div>
 <div class="tabbed-block">
-<p>GEM-Selektor is built using Qt5.x, requiring the <code>clang</code> compiler and linker provided by Xcode. The software is distributed as a disk image:</p>
+<p><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> is built using Qt5.x, requiring the <code>clang</code> compiler and linker provided by Xcode. The software is distributed as a disk image:</p>
 <div class="highlight"><pre><span></span><code>Gems&lt;ver&gt;-&lt;revGUI&gt;.&lt;revG3K&gt;-OSX-x86-64.dmg
 </code></pre></div>
 <p>where <code>&lt;ver&gt;</code>, <code>&lt;revGUI&gt;</code>, and <code>&lt;revG3K&gt;</code> follow the same convention as in Windows.</p>
@@ -1746,7 +1746,7 @@
 </ul>
 </li>
 <li>
-<p><strong>Upgrading GEM-Selektor</strong>:</p>
+<p><strong>Upgrading <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr></strong>:</p>
 <ul>
 <li>Delete <code>gems3.app</code> from <code>/Applications</code> and install the new version.</li>
 <li>Your projects in <code>~/Library/Gems3/projects/</code> remain unaffected.</li>
@@ -1774,11 +1774,11 @@
 <p>For unsupported platforms (such as macOS M1/M2), it is still possible to compile the program from source:<br />
 - <strong><a href="https://bitbucket.org/gems4/gems3gui/src/trunk/" title="GEM-Selektor Source Code">Download the source code</a></strong><br />
 - Follow the build instructions on the repository page.  </p>
-<p>We would love to hear <strong>feedback from users running GEM-Selektor on Mac M1/M2</strong>—please let us know your experience!  </p>
+<p>We would love to hear <strong>feedback from users running <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> on Mac M1/M2</strong>—please let us know your experience!  </p>
 </div>
 </div>
 <div class="tabbed-block">
-<p>GEM-Selektor is built using Qt5.x and compiled with the system's GNU C++ toolchain. It is distributed as a compressed archive:</p>
+<p><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> is built using Qt5.x and compiled with the system's GNU C++ toolchain. It is distributed as a compressed archive:</p>
 <div class="highlight"><pre><span></span><code>Gems&lt;ver&gt;-&lt;revGUI&gt;.&lt;revG3K&gt;-linux-x86-&lt;bits&gt;.tgz
 </code></pre></div>
 <p>where <code>&lt;ver&gt;</code>, <code>&lt;revGUI&gt;</code>, <code>&lt;revG3K&gt;</code>, and <code>&lt;bits&gt;</code> (32 or 64) follow the same convention as in Windows and macOS.</p>
@@ -1814,7 +1814,7 @@
 </code></pre></div>
 </li>
 <li>
-<p><strong>Upgrading GEM-Selektor</strong>:</p>
+<p><strong>Upgrading <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr></strong>:</p>
 <ul>
 <li>Replace the existing <code>Gems3-app/</code> directory with the new version.</li>
 <li>Your projects remain in <code>~/Library/Gems3/projects/</code>.</li>
@@ -1864,7 +1864,7 @@ To build an extended AppImage after modifications, use the <code>appimagetool</c
 </div>
 </div>
 </div>
-<p>GEM-Selektor is a cross-platform tool that runs efficiently on various hardware configurations. Users are advised to regularly back up their modeling projects to prevent data loss.</p>
+<p><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> is a cross-platform tool that runs efficiently on various hardware configurations. Users are advised to regularly back up their modeling projects to prevent data loss.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>If GEMS3 program does not start properly:</p>
 <ul>
@@ -1887,6 +1887,8 @@ To build an extended AppImage after modifications, use the <code>appimagetool</c
 </ul>
 <p>If this does not help, <a href="/citingterms#contact-gems-development-team">please contact</a> the GEMS Development Team.</p>
 <!-- [![Hits](https://hits.sh/gemshub.github.io/site/start/gemsselektor/download.svg)](https://hits.sh/gemshub.github.io/site/start/gemsselektor/download/) -->
+
+<!-- *[GEMS]: Gibb Energy Minimization Software -->
 
 
 

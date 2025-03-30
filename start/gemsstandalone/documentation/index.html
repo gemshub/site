@@ -1695,27 +1695,27 @@
 
 <h1 id="gems-standalone-documentation"><a class="glightbox" href="../../../img/gems1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../../img/gems1.png"></a> GEMS Standalone: Documentation</h1>
 <h2 id="new-project-export-standalone-chemical-system-files">New project, export standalone chemical system files</h2>
-<p>GEMS Standalone Solver of chemical equilibria can be coupled to other simulation codes or used from Python Jupyter notebook through its C++/Python interfaces (GEMS3K node or node array, xGEMS/pyGEMS ChemicalEngine).</p>
+<p>GEMS Standalone Solver of chemical equilibria can be coupled to other simulation codes or used from Python Jupyter notebook through its C++/Python interfaces (<abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> node or node array, <abbr title="Modern C++ and python interface to GEMS Standalone code">xGEMS</abbr>/<abbr title="GEMS Standalone python interface with dicionaires">pyGEMS</abbr> ChemicalEngine).</p>
 <div class="admonition info">
 <p class="admonition-title">Export standalone chemical system</p>
-<p>To work with any GEMS Standalone code you must first use <a href="../../gemsselektor">GEM-Selektor</a> to create a modeling project, having a defined chemical system with respective models and database. Once you are satisfied with the system this can be exported into editable text files (standalone chemical system definition, containing models, parameters, thermodynamic data). These files are then used to initialize any number of GEMS instances in the coupled code ot python script.</p>
-<p>The recommended way to prepare Standalone input files consists in creating a modeling project in <a href="../../gemsselektor">GEM-Selektor</a> package, creating and calculating chemical systems (equilibria), and then exporting the GEM tasks to GEMS3K I/O files. Details about this process can be found in GEMS3K and GEM-Selektor <a href="../../gemsselektor/documentation/#important-folders">help files</a>.</p>
+<p>To work with any GEMS Standalone code you must first use <a href="../../gemsselektor"><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr></a> to create a modeling project, having a defined chemical system with respective models and database. Once you are satisfied with the system this can be exported into editable text files (standalone chemical system definition, containing models, parameters, thermodynamic data). These files are then used to initialize any number of GEMS instances in the coupled code ot python script.</p>
+<p>The recommended way to prepare Standalone input files consists in creating a modeling project in <a href="../../gemsselektor"><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr></a> package, creating and calculating chemical systems (equilibria), and then exporting the GEM tasks to <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> <abbr title="Input/Output">I/O</abbr> files. Details about this process can be found in <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> and <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> <a href="../../gemsselektor/documentation/#important-folders">help files</a>.</p>
 </div>
 <h2 id="help-files">Help Files</h2>
-<p>The documentation of standalone GEMS3K code consists of HTML files located in the "Docs/html/" folder in the <a href="https://github.com/gemshub/GEMS3K/tree/master/Docs/html">GEMS3K subversion repository</a>. </p>
+<p>The documentation of standalone <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> code consists of HTML files located in the "Docs/html/" folder in the <a href="https://github.com/gemshub/GEMS3K/tree/master/Docs/html"><abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> subversion repository</a>. </p>
 <h2 id="cpython-chemicalengine-interface">C++/Python ChemicalEngine Interface</h2>
-<p>xGEMS is built on top of GEMS3K and offers a modern C++/Python interface <a href="https://bitbucket.org/gems4/xgems/src/master/xGEMS/ChemicalEngine.hpp"><code>ChemicalEngine</code></a> with functions to control the input and output of chemical data for each engine instance. Examples both in C++ and Python can be found in the <a href="https://bitbucket.org/gems4/xgems/src/master/demos/">code repository</a>.</p>
+<p><abbr title="Modern C++ and python interface to GEMS Standalone code">xGEMS</abbr> is built on top of <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> and offers a modern C++/Python interface <a href="https://bitbucket.org/gems4/xgems/src/master/xGEMS/ChemicalEngine.hpp"><code>ChemicalEngine</code></a> with functions to control the input and output of chemical data for each engine instance. Examples both in C++ and Python can be found in the <a href="https://bitbucket.org/gems4/xgems/src/master/demos/">code repository</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Jupyter Notebook Integration</p>
-<p>xGEMS through its Python interface enables users to perform single and batch equilibrium calculations within Jupyter notebooks, providing a rich environment for geochemical modeling with advanced statistics, machine learning and plotting libraries. </p>
+<p><abbr title="Modern C++ and python interface to GEMS Standalone code">xGEMS</abbr> through its Python interface enables users to perform single and batch equilibrium calculations within Jupyter notebooks, providing a rich environment for geochemical modeling with advanced statistics, machine learning and plotting libraries. </p>
 </div>
-<p>In principle any calculation done in GEM-Selektor process module can be implemented in a Jupyter notebook. </p>
+<p>In principle any calculation done in <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> process module can be implemented in a Jupyter notebook. </p>
 <p><a class="glightbox" href="../../../img/cem_jupyter.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Jupyter" src="../../../img/cem_jupyter.png" title="&lt;b&gt;Jupyter notebook:&lt;/b&gt; Calculation of cement hydration using xGEMS" width="400" /></a>
 <a class="glightbox" href="calcite-jupyter.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Calcite Jupyter" src="calcite-jupyter.png" title="&lt;b&gt;Jupyter notebook:&lt;/b&gt; Solubility of calcite in tap water with increasing temperature" width="400" /></a></p>
-<h2 id="c-coupling-codes-with-gems3k-at-the-tnode-level">C++ Coupling Codes with GEMS3K at the TNode Level</h2>
-<p>GEMS3K supports coupling with mass transport codes at the <strong>TNode level</strong>, allowing efficient chemical equilibrium calculations for multiple nodes. The implementation examples <code>node-gem</code> and <code>gemcalc</code> are available in the <a href="https://github.com/gemshub/GEMS3K/tree/master"><strong>GEMS3K source code repository</strong></a>.  </p>
+<h2 id="c-coupling-codes-with-gems3k-at-the-tnode-level">C++ Coupling Codes with <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> at the <abbr title="A class that provides access methods to chemical data">TNode</abbr> Level</h2>
+<p><abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> supports coupling with mass transport codes at the <strong><abbr title="A class that provides access methods to chemical data">TNode</abbr> level</strong>, allowing efficient chemical equilibrium calculations for multiple nodes. The implementation examples <code>node-gem</code> and <code>gemcalc</code> are available in the <a href="https://github.com/gemshub/GEMS3K/tree/master"><strong><abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> source code repository</strong></a>.  </p>
 <h3 id="code-examples">Code Examples</h3>
-<p>These refer to GEMS3K I/O Files in 'gemcalc' and 'node-gem' <a href="../examples#example-reactive-transport-in-a-calcite-column">Examples: Reactive Transport in a Calcite Column</a> </p>
+<p>These refer to <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> <abbr title="Input/Output">I/O</abbr> Files in 'gemcalc' and 'node-gem' <a href="../examples#example-reactive-transport-in-a-calcite-column">Examples: Reactive Transport in a Calcite Column</a> </p>
 <ul>
 <li>
 <p><strong>Batch equilibrium calculations</strong>  </p>
@@ -1727,25 +1727,25 @@
 <li>
 <p><strong>Coupling with transport codes</strong>  </p>
 <ul>
-<li>See <a href="https://github.com/gemshub/GEMS3K/blob/master/node-gem/main.cpp"><strong><code>standalone/node-gem/main.cpp</code></strong></a> for an example of integrating GEMS3K with a <strong>multi-node mass transport solver</strong>.  </li>
+<li>See <a href="https://github.com/gemshub/GEMS3K/blob/master/node-gem/main.cpp"><strong><code>standalone/node-gem/main.cpp</code></strong></a> for an example of integrating <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> with a <strong>multi-node mass transport solver</strong>.  </li>
 <li>Chemical data and parameters are exchanged dynamically in memory.  </li>
 </ul>
 </li>
 </ul>
 <h3 id="performance-optimization">Performance Optimization</h3>
-<p>GEMS3K includes <strong>rescaling mechanisms</strong> that improve <strong>convergence</strong> and <strong>precision</strong> by ensuring equilibrium calculations align with node-specific mass balances.  </p>
+<p><abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> includes <strong>rescaling mechanisms</strong> that improve <strong>convergence</strong> and <strong>precision</strong> by ensuring equilibrium calculations align with node-specific mass balances.  </p>
 <ul>
 <li>
 <p><strong>Mass transport handling</strong>  </p>
 <ul>
 <li>Transport codes may exchange <strong>aqueous species amounts</strong> instead of <strong>bulk compositions (bIC)</strong>.  </li>
-<li>To simplify integration, <strong>TNode::GEM_from_MT()</strong> can automatically convert changed <strong>speciation (xDC)</strong> into a corrected <strong>bIC vector</strong> before equilibrium calculations.  </li>
+<li>To simplify integration, <strong><abbr title="A class that provides access methods to chemical data">TNode</abbr>::GEM_from_MT()</strong> can automatically convert changed <strong>speciation (xDC)</strong> into a corrected <strong>bIC vector</strong> before equilibrium calculations.  </li>
 </ul>
 </li>
 <li>
 <p><strong>Smart Initial Approximation (SIA) mode</strong></p>
 <ul>
-<li>GEMS3K can reuse previous speciation and activity coefficients for faster convergence.  </li>
+<li><abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> can reuse previous speciation and activity coefficients for faster convergence.  </li>
 <li>Two SIA modes:  <ul>
 <li><strong>Default (<code>uPrimalSol = false</code>)</strong>: Uses the previous equilibrium state as a starting point.  </li>
 <li><strong>Optimized (<code>uPrimalSol = true</code>)</strong>: Works efficiently when the transport solver directly modifies <strong>xDC</strong> while maintaining mass balance.  </li>
@@ -1755,18 +1755,18 @@
 </li>
 </ul>
 <h3 id="inputoutput-access">Input/Output Access</h3>
-<p>The <strong>TNode class</strong> provides convenient <strong>access methods</strong> for chemical data, which should be preferred over direct access to internal memory structures.</p>
+<p>The <strong><abbr title="A class that provides access methods to chemical data">TNode</abbr> class</strong> provides convenient <strong>access methods</strong> for chemical data, which should be preferred over direct access to internal memory structures.</p>
 <ul>
 <li>Example of function <strong>Ph_Volume(), Ph_Mass(), Ph_BC(), Ph_SatInd()</strong> → Retrieve phase properties for both <strong>multi- and single-component</strong> phases.  </li>
 </ul>
-<p>For detailed implementation guidance, refer to the <strong>GEMS3K source code</strong> and documentation in the repository.  </p>
+<p>For detailed implementation guidance, refer to the <strong><abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> source code</strong> and documentation in the repository.  </p>
 <h3 id="data-exchange-in-computer-memory">Data Exchange in Computer Memory</h3>
-<p>When coupling GEMS3K with an existing <strong>reactive mass transport code</strong>, data exchange typically occurs via an <strong>intermediate memory structure</strong>. This allows the transport code to manage chemical information (e.g., <strong>speciation, bulk composition</strong>) while interfacing with GEMS3K through a <strong>data bridge (DATABR structure)</strong>.  </p>
+<p>When coupling <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> with an existing <strong>reactive mass transport code</strong>, data exchange typically occurs via an <strong>intermediate memory structure</strong>. This allows the transport code to manage chemical information (e.g., <strong>speciation, bulk composition</strong>) while interfacing with <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> through a <strong>data bridge (DATABR structure)</strong>.  </p>
 <h3 id="example-implementation">Example Implementation</h3>
 <p>The example is provided in:</p>
 <ul>
 <li><strong><a href="https://github.com/gemshub/GEMS3K/blob/master/node-gem/main.h"><code>standalone/node-gem/main.h</code></a></strong> – Defines the <code>TMyTransport</code> class, which holds chemical data for multiple nodes.  </li>
-<li><strong><a href="https://github.com/gemshub/GEMS3K/blob/master/node-gem/main.cpp"><code>standalone/node-gem/main.cpp</code></a></strong> – Implements <code>TMyTransport</code> methods and demonstrates the sequence of <code>TNode</code> function calls for coupling mass transport with GEMS3K.  </li>
+<li><strong><a href="https://github.com/gemshub/GEMS3K/blob/master/node-gem/main.cpp"><code>standalone/node-gem/main.cpp</code></a></strong> – Implements <code>TMyTransport</code> methods and demonstrates the sequence of <code><abbr title="A class that provides access methods to chemical data">TNode</abbr></code> function calls for coupling mass transport with <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr>.  </li>
 </ul>
 <p>This example follows the <strong>operator splitting approach</strong>, ensuring modular coupling between mass transport and chemical equilibrium calculations. While it does not include a full transport solver, the <code>TMyTransport::OneTimeStepRun()</code> function provides a basic framework that can be extended as needed.  </p>
 <h3 id="code-snippet-simplified-example-of-tmytransport-class-definition">Code Snippet: Simplified example of <code>TMyTransport</code> Class Definition</h3>
@@ -1784,6 +1784,8 @@
 <!-- Description of examples in node, xgems repository - link to the repository 
 
 think about jupyter examples with mybinder -->
+
+<!-- *[GEMS]: Gibb Energy Minimization Software -->
 
 
 

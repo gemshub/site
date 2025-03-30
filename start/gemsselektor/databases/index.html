@@ -1759,35 +1759,35 @@
 <h2 id="gems-default-thermodynamic-database-tdb">GEMS Default Thermodynamic Database (TDB)</h2>
 <p>The GEMS default Thermodynamic Database (TDB) is included with the GEMS installation for broader applicability.</p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> The TDB includes the PSI-Nagra chemical thermodynamic database, converted into GEMS DComp/ReacDC formats.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> It also includes the SUPCRT92 (Slop98.dat) dataset, imported into GEMS DComp format.  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> The TDB includes the PSI-Nagra chemical thermodynamic database, converted into GEMS <abbr title="record defined by standard thermodynamic properties of substance (e.g., Gibbs energy of formation)">DComp</abbr>/<abbr title="record defined by standard thermodynamic properties of reaction (e.g., reaction constant)">ReacDC</abbr> formats.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> It also includes the SUPCRT92 (Slop98.dat) dataset, imported into GEMS <abbr title="record defined by standard thermodynamic properties of substance (e.g., Gibbs energy of formation)">DComp</abbr> format.  </li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Third-party TDBs for specific applications (e.g., cement chemistry, nuclear engineering, saline systems, ore petrology) are available.  </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> In GEM-Selektor, the thermodynamic data for DComp/ReacDC are automatically corrected for the temperature and pressure of interest.  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> In <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr>, the thermodynamic data for <abbr title="record defined by standard thermodynamic properties of substance (e.g., Gibbs energy of formation)">DComp</abbr>/<abbr title="record defined by standard thermodynamic properties of reaction (e.g., reaction constant)">ReacDC</abbr> are automatically corrected for the temperature and pressure of interest.  </li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Thermodynamic data over a wide range of T,P conditions can be exported into <a href="/../../start/gemsstandalone">GEMS Standalone</a> chemical system files and subsequently into coupled reactive transport codes.</li>
 </ul>
 <h2 id="location">Location</h2>
 <p>The database files used when creating a new modeling project are stored in the <code>gems3-app/Resources/DB.default/</code> folder, containing <code>*.pdb</code> and <code>*.ndx</code> files. Third-party databases can be copied into <code>DB.default/</code> to make them available for new projects. If new database files or projects are added to the project folder, <strong>restart GEMS</strong> for the changes to take effect.</p>
 <div class="admonition warning">
 <p class="admonition-title">Files in the default database folder (<code>/DB.default/</code>) are write-protected</p>
-<p>This measure prevents unintentional data loss or corruption and ensures backward compatibility across different modeling projects. More technical details can be found in the GEM-Selektor help pages.</p>
+<p>This measure prevents unintentional data loss or corruption and ensures backward compatibility across different modeling projects. More technical details can be found in the <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> help pages.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">GEMS supports thermodynamic data for substances and reactions</p>
-<p><strong>GEM-Selektor employs a unique "hybrid" structure for thermodynamic databases, integrating the DComp and ReacDC formats.</strong>
-- DComp format stores 'thermochemical' and/or 'equation of state' data for Dependent Components (DComp).
-- ReacDC format defines a DComp’s thermodynamic properties via reactions with other DComps with known properties.
-- Dedicated modules in GEM-Selektor provide tools for internally consistent extensions of project thermodynamic databases.</p>
+<p><strong><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> employs a unique "hybrid" structure for thermodynamic databases, integrating the <abbr title="record defined by standard thermodynamic properties of substance (e.g., Gibbs energy of formation)">DComp</abbr> and <abbr title="record defined by standard thermodynamic properties of reaction (e.g., reaction constant)">ReacDC</abbr> formats.</strong>
+- <abbr title="record defined by standard thermodynamic properties of substance (e.g., Gibbs energy of formation)">DComp</abbr> format stores 'thermochemical' and/or 'equation of state' data for Dependent Components (<abbr title="record defined by standard thermodynamic properties of substance (e.g., Gibbs energy of formation)">DComp</abbr>).
+- <abbr title="record defined by standard thermodynamic properties of reaction (e.g., reaction constant)">ReacDC</abbr> format defines a <abbr title="record defined by standard thermodynamic properties of substance (e.g., Gibbs energy of formation)">DComp</abbr>’s thermodynamic properties via reactions with other DComps with known properties.
+- Dedicated modules in <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> provide tools for internally consistent extensions of project thermodynamic databases.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Data from other sources</p>
-<p>GEM-Selektor itself is neither application- nor database-specific. However, its applicability depends on the availability of internally consistent thermodynamic data. These datasets can be compiled by external sources, converted into GEM-Selektor format, and distributed as third-party chemical thermodynamic databases.</p>
+<p><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> itself is neither application- nor database-specific. However, its applicability depends on the availability of internally consistent thermodynamic data. These datasets can be compiled by external sources, converted into <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> format, and distributed as third-party chemical thermodynamic databases.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Your own data</p>
 <p>Once a new project is created, <strong>GEMS copies data for substances, reactions, phases, etc., from the default database to the project folder</strong>, making the project database independent from the default one. This allows users to edit, extend, or modify the project database as needed. Users can also create custom databases, copy them into <code>/DB.default/</code>, and use them for new projects.</p>
 </div>
-<h2 id="databases-in-gem-selektor">Databases in GEM-Selektor</h2>
-<p>GEM-Selektor v.3 is distributed with a default chemical thermodynamic database consisting of three parts:</p>
+<h2 id="databases-in-gem-selektor">Databases in <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr></h2>
+<p><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> v.3 is distributed with a default chemical thermodynamic database consisting of three parts:</p>
 <ol>
 <li><strong>PSI-Nagra Database</strong> ("psi-nagra")</li>
 <li><strong>SUPCRT Dataset</strong> ("supcrt")</li>
@@ -1819,6 +1819,7 @@
 <li><strong>Others</strong> – users maintain databases for different applications</li>
 </ul>
 <p>Users can download these files and place them in <code>gems3-app/Resources/DB.default/</code> to make them available for new projects.</p>
+<!-- *[GEMS]: Gibb Energy Minimization Software -->
 <div class="footnote">
 <hr />
 <ol>

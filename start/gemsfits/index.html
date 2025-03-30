@@ -1682,7 +1682,7 @@
   
 
 
-<h1 id="gemsfits-parameter-optimization-and-inverse-modelling"><a class="glightbox" href="../../img/gemsfits.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gemsfits.png"></a> GEMSFITS Parameter Optimization and Inverse Modelling</h1>
+<h1 id="gemsfits-parameter-optimization-and-inverse-modelling"><a class="glightbox" href="../../img/gemsfits.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gemsfits.png"></a> <abbr title="GEMS input parameter optimization tool">GEMSFITS</abbr> Parameter Optimization and Inverse Modelling</h1>
 <p><strong>Codes and Graphical Shell for GEM Input Parameter Optimization and Inverse Modelling</strong></p>
 <ul class="task-list">
 <li class="task-list-item">
@@ -1720,10 +1720,10 @@
   <a class="glightbox" href="gemsfits_csh.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fit C-S-H" src="gemsfits_csh.png" title="GEMSFITS fit of C-S-H solid solution endmember properties and interaction parameters against solubility and means silicate chain data" width="350" /></a></li>
 </ul>
 </div>
-<h2 id="gemsfits-software-collection">GEMSFITS Software Collection</h2>
-<p>The GEMSFITS software collection consists of:</p>
+<h2 id="gemsfits-software-collection"><abbr title="GEMS input parameter optimization tool">GEMSFITS</abbr> Software Collection</h2>
+<p>The <abbr title="GEMS input parameter optimization tool">GEMSFITS</abbr> software collection consists of:</p>
 <ul>
-<li><strong>gemsfit2</strong> and <strong>gfshell2</strong> codes, both coupled with the <a href="../gemsstandalone">GEMS3K</a> solver for geochemical equilibria and the <a href="../gemsstandalone/solutionmodels">TSolMod</a> library of &gt;25 models for mixing in multi-component phases.</li>
+<li><strong>gemsfit2</strong> and <strong>gfshell2</strong> codes, both coupled with the <a href="../gemsstandalone"><abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr></a> solver for geochemical equilibria and the <a href="../gemsstandalone/solutionmodels"><abbr title="Library of Models of Mixing in Phases-Solutions">TSolMod</abbr></a> library of &gt;25 models for mixing in multi-component phases.</li>
 </ul>
 <h3 id="gemsfit2">gemsfit2</h3>
 <p>The <strong>gemsfit2</strong> code performs bound, linear, and non-linear (in-)equality constrained optimization of chemical thermodynamic model input parameters against experimental data from the NoSQL database. This guarantees that open-source, state-of-the-art technology is used for data management. It utilizes parts of its early prototype <strong>GEMSFIT</strong> (Hingerl et al., 2014).</p>
@@ -1739,7 +1739,7 @@
 <li>Creating, modifying, and saving fitting task specifications (in JSON) to project databases.</li>
 <li>Exporting tasks into <strong>gemsfit2</strong> input files, running fitting tasks, and displaying results in <strong>spreadsheet</strong> and <strong>graphical</strong> formats (<a href="http://qwt.sf.net/">Qwt</a>).</li>
 </ul>
-<p>In a single GEMSFITS project, multiple fitting tasks (variants) can be created and stored, each with its own setup, allowing the fitting of multiple parameters simultaneously with various options for data weighting, bounds, and statistical methods.</p>
+<p>In a single <abbr title="GEMS input parameter optimization tool">GEMSFITS</abbr> project, multiple fitting tasks (variants) can be created and stored, each with its own setup, allowing the fitting of multiple parameters simultaneously with various options for data weighting, bounds, and statistical methods.</p>
 <h3 id="experimental-database">Experimental Database</h3>
 <p>Due to the flexibility of the <a href="http://www.mongodb.com/nosql-explained">NoSQL database</a>, any experimental data can be stored, including properties like:</p>
 <ul>
@@ -1749,21 +1749,21 @@
 <li>Osmotic coefficients, activities/fugacities of components</li>
 <li>Integral properties of mixing</li>
 </ul>
-<h2 id="gemsfits-license">GEMSFITS License</h2>
-<p>The GEMSFITS software collection will be released under the <strong>LGPLv3</strong> (Lesser GNU General Public License), and several LGPL'd packages are used as runtime libraries.</p>
+<h2 id="gemsfits-license"><abbr title="GEMS input parameter optimization tool">GEMSFITS</abbr> License</h2>
+<p>The <abbr title="GEMS input parameter optimization tool">GEMSFITS</abbr> software collection will be released under the <strong>LGPLv3</strong> (Lesser GNU General Public License), and several LGPL'd packages are used as runtime libraries.</p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li>
 <p><strong><a href="https://www.psi.ch/de/les/people/george-dan-miron">G. Dan Miron</a></strong> (IGP, ETH Zurich, now at PSI LES): Main developer since October 2012, supported by the ETHIIRA PhD project on fitting standard-state thermodynamic properties of aqueous species against experimental solubility data at hydrothermal conditions.</p>
 </li>
 <li>
-<p><strong><a href="https://www.researchgate.net/profile/Dmitrii-Kulik">Dmitrii A. Kulik</a></strong> (retired from <a href="http://www.psi.ch/">Paul Scherrer Institut</a>): Architect of the GEMSFITS code collection; maintains coupling between gemsfit2 and the GEMS3K kernel equilibrium speciation solver; develops extensions to fit standard-state properties of solid solution end members and reciprocal energies against experimental data (SNF Sinergia C-A-S-H project).</p>
+<p><strong><a href="https://www.researchgate.net/profile/Dmitrii-Kulik">Dmitrii A. Kulik</a></strong> (retired from <a href="http://www.psi.ch/">Paul Scherrer Institut</a>): Architect of the <abbr title="GEMS input parameter optimization tool">GEMSFITS</abbr> code collection; maintains coupling between gemsfit2 and the <abbr title="GEMS Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> kernel equilibrium speciation solver; develops extensions to fit standard-state properties of solid solution end members and reciprocal energies against experimental data (SNF Sinergia C-A-S-H project).</p>
 </li>
 <li>
 <p><strong>Svitlana V. Dmytrieva</strong> (Senior Software engineer, formerly Institute of Environmental Geochemistry, Kyiv, Ukraine): Design and implementation of the <strong>gfshell2 GUI shell</strong> code, data import-export functionality, and graphical visualization.</p>
 </li>
 <li>
-<p><strong><a href="https://www.rwth-aachen.de/go/id/bdfr/gguid/PER-H6FX4VC">Thomas Wagner</a></strong> University professor Department of Earth Sciences and Geography; formerly <a href="http://www.geopetro.ethz.ch/research/orefluids">IGP</a>, ETH Zurich: Maintains coupling between gemsfit2 and the <strong>TSolMod</strong> library of mixing models for phases-solutions.</p>
+<p><strong><a href="https://www.rwth-aachen.de/go/id/bdfr/gguid/PER-H6FX4VC">Thomas Wagner</a></strong> University professor Department of Earth Sciences and Geography; formerly <a href="http://www.geopetro.ethz.ch/research/orefluids">IGP</a>, ETH Zurich: Maintains coupling between gemsfit2 and the <strong><abbr title="Library of Models of Mixing in Phases-Solutions">TSolMod</abbr></strong> library of mixing models for phases-solutions.</p>
 </li>
 <li>
 <p><strong><a href="https://www.psi.ch/en/les/people/georg-kosakowski">Georg Kosakowski</a></strong> (Paul Scherrer Institut): Supervises the selection and interaction of statistical methods and parameter fitting algorithms.</p>
@@ -1780,15 +1780,16 @@
 <h2 id="publications">Publications</h2>
 <ol>
 <li>
-<p><strong>Miron G.D., Kulik D.A., Dmytrieva S.V., Wagner T.</strong> (2015): GEMSFITS: Code package for optimization of geochemical model parameters and inverse modeling. <em>Applied Geochemistry</em> 55, 28-45. <a href="http://dx.doi.org/10.1016/j.apgeochem.2014.10.013">doi</a>.</p>
+<p><strong>Miron G.D., Kulik D.A., Dmytrieva S.V., Wagner T.</strong> (2015): <abbr title="GEMS input parameter optimization tool">GEMSFITS</abbr>: Code package for optimization of geochemical model parameters and inverse modeling. <em>Applied Geochemistry</em> 55, 28-45. <a href="http://dx.doi.org/10.1016/j.apgeochem.2014.10.013">doi</a>.</p>
 </li>
 <li>
 <p><strong>Hingerl, F.F., Kosakowski, G., Wagner, T., Kulik, D. A., Driesner, T.</strong> (2014): GEMSFIT: a generic fitting tool for geochemical activity models. <em>Computational Geosciences</em> 18, 227-242. <a href="http://dx.doi.org/10.1007/s10596-014-9405-3">doi</a>.</p>
 </li>
 </ol>
 <h2 id="licensing">Licensing</h2>
-<p>The GEMSFITS code package is open-source, distributed under the <a href="http://www.gnu.org/copyleft/lesser.html">Lesser GPL v.3 license</a>.
+<p>The <abbr title="GEMS input parameter optimization tool">GEMSFITS</abbr> code package is open-source, distributed under the <a href="http://www.gnu.org/copyleft/lesser.html">Lesser GPL v.3 license</a>.
 It is available free of charge for developers affiliated with non-profit educational and research institutions for educational and research purposes only, subject to the <a href="../citingterms">Terms and Conditions of Use</a> of GEM Software.</p>
+<!-- *[GEMS]: Gibb Energy Minimization Software -->
 
 
 
