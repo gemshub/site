@@ -22,7 +22,7 @@
     
     
       
-        <title>GEMS Standalone - Gibbs Energy Minimisation Software (GEMS)</title>
+        <title>GEMS Standalone (GEMS3K) - Gibbs Energy Minimisation Software (GEMS)</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gems-standalone" class="md-skip">
+        <a href="#gems-standalone-gems3k" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GEMS Standalone
+              GEMS Standalone (GEMS3K)
             
           </span>
         </div>
@@ -662,6 +662,8 @@
       
         
       
+        
+      
     
     
       
@@ -787,11 +789,11 @@
   
   
     <li class="md-nav__item">
-      <a href="documentation/solutionmodels/" class="md-nav__link">
+      <a href="documentation/examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Solution Models
+    Examples
   </span>
   
 
@@ -804,6 +806,27 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="solutionmodels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solution Models
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1555,27 +1578,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gems3k-c-node-interface" class="md-nav__link">
+  <a href="#gems3k-interfaces" class="md-nav__link">
     <span class="md-ellipsis">
-      GEMS3K C++ node interface
+      GEMS3K Interfaces
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GEMS3K Interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++ Interface
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#modern-xgems-c-and-python-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Modern xGEMS C++ and Python interface
+      Modern xGEMS C++ and Python Interface
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-coupled-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Coupled Codes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-of-couple-codes" class="md-nav__link">
+  <a href="#authors" class="md-nav__link">
     <span class="md-ellipsis">
-      Example of couple codes
+      Authors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licensing
     </span>
   </a>
   
@@ -1599,14 +1673,82 @@
   
 
 
-<h1 id="gems-standalone"><a class="glightbox" href="../../img/gems1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gems1.png"></a> GEMS Standalone</h1>
-<p>Introduction summary</p>
-<h2 id="gems3k-c-node-interface">GEMS3K C++ node interface</h2>
-<h2 id="modern-xgems-c-and-python-interface">Modern xGEMS C++ and Python interface</h2>
-<h2 id="example-of-couple-codes">Example of couple codes</h2>
-<p>OpenGeoSys-GEMS
-COMSOL-GEMS
-CSMP++-GEMS</p>
+<h1 id="gems-standalone-gems3k"><a class="glightbox" href="../../img/gems1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gems1.png"></a> GEMS Standalone (GEMS3K)</h1>
+<p><strong>Standalone Solver of Chemical Equilibria for Coupled Simulation Codes</strong></p>
+<p>Codes can be coupled to GEMS Standalone through its <a href="#gems3k-interfaces">C/C++</a> and <a href="#modern-xgems-c-and-python-interface">Python</a> interfaces. GEMS3K Standalone is a powerful and flexible tool for geochemical modeling, enabling high-precision equilibrium calculations in diverse applications.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Equilibrium solver capable of modeling complex (geo)chemical systems with many non-ideal solutions.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Supports variable temperature and pressure with substantial improvements in Gibbs Energy Minimization algorithms.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Fast, accurate, and ensures excellent mass balance precision.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Written in C/C++, open-source, and fully parallelizable on HPC architectures.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Python interface available via <code>xGEMS</code> (installable from <code>conda-forge</code>).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Serves as the numerical kernel of the GEM-Selektor geochemical modeling package.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> GEM-Selektor can export input files for GEMS3K with a simple mouse click.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Used in developing coupled reactive mass transport simulation codes, such as OpenGeoSys-GEM.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Integrated into parameter fitting frameworks like <a href="../gemsfits">GEMSFITS</a>.</li>
+</ul>
+<p>GEMS3K (formerly GEMIPM2K) is a standalone C/C++ code implementing the efficient numerical kernel <a href="#gems-standalone-gems3k" title="more information in doc/html/theory_gem.html help file">IPM-3</a> of the GEM-Selektor v.3 package. It enables geochemical thermodynamic modeling of local/partial equilibria in complex heterogeneous multicomponent-multiphase systems. The code includes the TSolMod library, which provides built-in phase models of non-ideal mixing for a broad range of geochemical applications (<a href="solutionmodels">more...</a>). GEMS3K employs fast and efficient linear algebra solvers from the <a href="http://math.nist.gov/tnt/download.html">JAMA C++ TNT package</a> (NIST).</p>
+<p>GEMS3K is released under the <a href="http://www.gnu.org/licenses/lgpl.html">Lesser GPL</a> v.3 license, promoting broad applications in hydro(thermal)- and waste geochemistry research. The code is provided for implementation of various reactive-mass-transport and other coupled codes, where massive, chemically plausible computations of local/partial equilibrium states are necessary, including HPC codes.  </p>
+<p>GEMS3K runs under Windows, Mac OSX and Linux desktop PCs, as well as on various parallel architectures. </p>
+<h2 id="gems3k-interfaces">GEMS3K Interfaces</h2>
+<h3 id="c-interface">C++ Interface</h3>
+<p>GEMS3K provides a flexible <code>TNode</code> C/C++ interface for data exchange in coupled simulations.</p>
+<h3 id="modern-xgems-c-and-python-interface">Modern xGEMS C++ and Python Interface</h3>
+<p>The <a href="download#xgems"><code>xGEMS</code></a> is a modern interface (<code>ChemicalEngine</code>) accessible from C/C++ amd Python. Python module enables seamless integration of GEMS3K into Python workflows, allowing researchers to leverage its capabilities in data analysis and machine learning applications.</p>
+<h2 id="examples-of-coupled-codes">Examples of Coupled Codes</h2>
+<p>GEMS3K can be integrated into high-performance computing (HPC) frameworks, enabling coupling with reactive mass transport codes such as:</p>
+<p>Input files (text format) for GEMS3K can be exported from GEM-Selektor or manually prepared using any text editor. Runtime data exchange within coupled codes can be implemented in computer memory via the <code>TNode</code> class functions.</p>
+<ul>
+<li><strong><a href="http://www.opengeosys.net">OpenGeoSys</a>-GEMS<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></strong>: Reactive transport modeling.</li>
+<li><strong><a href="https://www.comsol.com/comsol-multiphysics">COMSOL</a>-GEMS<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></strong>: Coupling with multiphysics simulations.</li>
+<li><strong><a href="https://mineralsystems.ethz.ch/software/csmp.html">CSMP++</a>-GEMS<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></strong>: Computational simulations of multiphase processes.</li>
+<li><strong><a href="https://nlopt.readthedocs.io/en/latest/">NLOpt</a>-GEMS<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></strong>: GEMSFITS parameter optimization tool.</li>
+</ul>
+<h2 id="authors">Authors</h2>
+<p>The development of GEMS3K stems from advancements in convex programming Gibbs energy minimization algorithms since 2000. It has been continuously improved with contributions from:</p>
+<ul>
+<li><strong><a href="https://www.researchgate.net/profile/Dmitrii-Kulik">Dmitrii A. Kulik</a></strong> (Paul Scherrer Institut, retired 2024) – Lead developer of GEM IPM algorithm and GEMS3K.</li>
+<li><strong><a href="mailto:svitlana.dmitrieva@psi.ch">Svitlana V. Dmytrieva</a></strong> (Institute of Environmental Geochemistry, Kyiv, Ukraine) – GEM Software engineer, C++ re-implementation of GEM-Selektor.</li>
+<li><strong><a href="http://www.helsinki.fi/geo/staff/wagner/index.html">Thomas Wagner</a></strong> (ETH Zurich, University of Helsinki) – Co-developer of GEM algorithms and TSolMod.</li>
+<li><strong><a href="http://people.web.psi.ch/kosakowski/">Georg Kosakowski</a></strong> (Paul Scherrer Institut) – Developed data exchange interfaces for coupled reactive transport simulations.</li>
+<li><strong>Ferdinand Franziskus Hingerl</strong> (PSI, now at <a href="https://pangea.stanford.edu/departments/ere/">Stanford University</a>) – Extended TSolMod with Pitzer, Extended UNIQUAC, and rEUNIQUAC models.</li>
+<li><strong><a href="http://www.igc.irk.ru/Labs/labs28-2.html">Konstantin V. Chudnenko</a></strong> (Institute of Geochemistry, Irkutsk, Russia) – Creator of SELEKTOR codes, contributor to GEM IPM algorithms.</li>
+</ul>
+<h2 id="contributors">Contributors</h2>
+<ul>
+<li><strong><a href="http://www.staff.uni-mainz.de/enzmann/">Frieder Enzmann</a></strong> (JOGU Mainz, Germany) – Improved <code>TNodeArray</code> example for GEM2MT module.</li>
+<li><strong><a href="http://people.web.psi.ch/churakov">Sergey Churakov</a></strong> (Paul Scherrer Institute) – Provided Churakov-Gottschalk EoS implementation.</li>
+</ul>
+<h2 id="publications">Publications</h2>
+<ol>
+<li><strong>Kulik D.A., et al. (2012).</strong> "GEM-Selektor geochemical modeling package: Numerical kernel GEMS3K for coupled simulation codes." <em>Computational Geosciences.</em> <a href="http://dx.doi.org/10.1007/s10596-012-9310-6">DOI</a></li>
+<li><strong>Wagner T., et al. (2012).</strong> "GEM-Selektor geochemical modeling package: TSolMod library and data interface for multicomponent phase models." <em>Canadian Mineralogist</em>, 50, 1173-1195. <a href="http://dx.doi.org/10.3749/canmin.50.5.1173">DOI</a></li>
+<li><strong>Shao H., et al. (2009).</strong> "Modeling reactive transport in non-ideal aqueous–solid solution systems." <em>Applied Geochemistry</em>, 24, 1287-1300.</li>
+<li><strong>Kulik D.A. (2006).</strong> "Dual-thermodynamic estimation of stoichiometry and stability of solid solution end-members in aqueous–solid solution systems." <em>Chemical Geology</em>, 225(2-3), 189–212.</li>
+<li><strong>Karpov I.K., et al. (2002).</strong> "Convex programming minimization of thermodynamic potentials other than Gibbs energy in geochemical modeling." <em>American Journal of Science</em>, 302, 281-311.</li>
+<li><strong>Karpov I.K., et al. (2001).</strong> "Minimization of Gibbs free energy in geochemical systems by convex programming." <em>Geochemistry International</em>, 39(11).</li>
+<li><strong>Karpov I.K., et al. (1997).</strong> "Modeling chemical mass-transfer in geochemical processes: Thermodynamic relations, equilibrium conditions, and numerical algorithms." <em>American Journal of Science</em>, 297, 767-806.</li>
+</ol>
+<h2 id="licensing">Licensing</h2>
+<p>The GEMS Sandalone package is open-source, distributed under the <a href="http://www.gnu.org/copyleft/lesser.html">Lesser GPL v.3 license</a>.
+It is available free of charge for developers affiliated with non-profit educational and research institutions for educational and research purposes only, subject to the <a href="../citingterms">Terms and Conditions of Use</a> of GEM Software.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>G. Kosakowski and N. Watanabe, “OpenGeoSys-gem: A numerical tool for calculating geochemical and porosity changes in saturated and partially saturated media,” <em>Physics and Chemistry of the Earth, Parts A/B/C</em>, vol. 70–71, pp. 138–149, 2014, doi: <a href="https://doi.org/10.1016/j.pce.2013.11.008">https://doi.org/10.1016/j.pce.2013.11.008</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>V. J. Azad, C. Li, C. Verba, J. H. Ideker, and O. B. Isgor, “A COMSOL–GEMS interface for modeling coupled reactive-transport geochemical processes,” <em>Computers &amp; Geosciences</em>, vol. 92, pp. 79–89, 2016, doi: <a href="https://doi.org/10.1016/j.cageo.2016.04.002">https://doi.org/10.1016/j.cageo.2016.04.002</a>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>A. Yapparova, G. D. Miron, D. A. Kulik, G. Kosakowski, and T. Driesner, “An advanced reactive transport simulation scheme for hydrothermal systems modelling,” <em>Geothermics</em>, vol. 78, pp. 138–153, 2019, doi: <a href="https://doi.org/10.1016/j.geothermics.2018.12.003">https://doi.org/10.1016/j.geothermics.2018.12.003</a>.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>G. D. Miron, D. A. Kulik, S. V. Dmytrieva, and T. Wagner, “GEMSFITS: Code package for optimization of geochemical model parameters and inverse modeling,” <em>Applied Geochemistry</em>, vol. 55, pp. 28–45, 2015, doi: <a href="https://doi.org/10.1016/j.apgeochem.2014.10.013">https://doi.org/10.1016/j.apgeochem.2014.10.013</a>.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -1627,7 +1769,7 @@ CSMP++-GEMS</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 30, 2025</span>
   </span>
 
     

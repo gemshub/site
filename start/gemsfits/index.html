@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://gems.web.psi.ch/start/gemsfits/">
       
       
-        <link rel="prev" href="../gemsstandalone/documentation/solutionmodels/">
+        <link rel="prev" href="../gemsstandalone/solutionmodels/">
       
       
         <link rel="next" href="download/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>GEMSFITS - Gibbs Energy Minimisation Software (GEMS)</title>
+        <title>GEMSFITS Parameter Optimization and Inverse Modelling - Gibbs Energy Minimisation Software (GEMS)</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gemsfits" class="md-skip">
+        <a href="#gemsfits-parameter-optimization-and-inverse-modelling" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GEMSFITS
+              GEMSFITS Parameter Optimization and Inverse Modelling
             
           </span>
         </div>
@@ -660,6 +660,8 @@
       
         
       
+        
+      
     
     
       
@@ -785,11 +787,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../gemsstandalone/documentation/solutionmodels/" class="md-nav__link">
+      <a href="../gemsstandalone/documentation/examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Solution Models
+    Examples
   </span>
   
 
@@ -802,6 +804,27 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gemsstandalone/solutionmodels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solution Models
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1548,6 +1571,101 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gemsfits-software-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      GEMSFITS Software Collection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GEMSFITS Software Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gemsfit2" class="md-nav__link">
+    <span class="md-ellipsis">
+      gemsfit2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfshell2" class="md-nav__link">
+    <span class="md-ellipsis">
+      gfshell2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experimental-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experimental Database
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gemsfits-license" class="md-nav__link">
+    <span class="md-ellipsis">
+      GEMSFITS License
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collaborators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collaborators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licensing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1564,8 +1682,113 @@
   
 
 
-<h1 id="gemsfits"><a class="glightbox" href="../../img/gemsfits.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gemsfits.png"></a> GEMSFITS</h1>
-<p>Introduction summary</p>
+<h1 id="gemsfits-parameter-optimization-and-inverse-modelling"><a class="glightbox" href="../../img/gemsfits.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gemsfits.png"></a> GEMSFITS Parameter Optimization and Inverse Modelling</h1>
+<p><strong>Codes and Graphical Shell for GEM Input Parameter Optimization and Inverse Modelling</strong></p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Can fit internally consistent input parameters</strong> of chemical thermodynamic models against experimental data.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Coupled with the <a href="../gemsstandalone">GEMS Standalone</a></strong> code for Gibbs Energy Minimization calculation of equilibrium states.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Uses the <a href="https://nlopt.readthedocs.io/en/latest/">NLOpt</a> nonlinear optimization library.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Allows for <strong>bound, (non-)linear (in-)equality constrained minimization</strong> of weighted squared residuals.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Written in C/C++</strong>, available with source code, and fully parallelizable on HPC architectures.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Provides <strong>tools for statistical analysis</strong> with thorough evaluation of fitted parameters' uncertainty.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Results of fitting and statistics</strong> can be visualized and saved in various graphical formats.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Can <strong>import, manage, and query</strong> extensive sets of experimental data accumulated in <a href="http://ejdb.org">NoSQL</a> database files.</p>
+</li>
+</ul>
+<div class="grid cards" style="width: 100%; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+<ul>
+<li><figure markdown="span">
+  <a class="glightbox" href="gemsfits_al.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fit bohemite solubility" src="gemsfits_al.png" title="GEMSFITS fit of Al speciation against boehmite solubility" width="350" /></a></li>
+<li><figure markdown="span">
+  <a class="glightbox" href="gemsfits_sor.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fit Eu sorption" src="gemsfits_sor.png" title="GEMSFITS fit of Eu sorption on Na-Illite against measurements with and without air" width="350" /></a></li>
+<li><figure markdown="span">
+  <a class="glightbox" href="gemsfits_csh.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fit C-S-H" src="gemsfits_csh.png" title="GEMSFITS fit of C-S-H solid solution endmember properties and interaction parameters against solubility and means silicate chain data" width="350" /></a></li>
+</ul>
+</div>
+<h2 id="gemsfits-software-collection">GEMSFITS Software Collection</h2>
+<p>The GEMSFITS software collection consists of:</p>
+<ul>
+<li><strong>gemsfit2</strong> and <strong>gfshell2</strong> codes, both coupled with the <a href="../gemsstandalone">GEMS3K</a> solver for geochemical equilibria and the <a href="../gemsstandalone/solutionmodels">TSolMod</a> library of &gt;25 models for mixing in multi-component phases.</li>
+</ul>
+<h3 id="gemsfit2">gemsfit2</h3>
+<p>The <strong>gemsfit2</strong> code performs bound, linear, and non-linear (in-)equality constrained optimization of chemical thermodynamic model input parameters against experimental data from the NoSQL database. This guarantees that open-source, state-of-the-art technology is used for data management. It utilizes parts of its early prototype <strong>GEMSFIT</strong> (Hingerl et al., 2014).</p>
+<ul>
+<li><strong>Nonlinear optimization</strong> is handled by the open-source <a href="http://ab-initio.mit.edu/wiki/index.php/NLopt">NLopt</a> library, offering several algorithms (global, local, gradient-based).</li>
+<li><strong>Statistical evaluation</strong> is done by calculating summary statistics, sensitivities, correlation coefficients, and confidence intervals using <strong>Monte Carlo simulations</strong>.</li>
+<li>Computation time is reduced via <strong>parallelization</strong> using Open Multi-Processing (OMP) for computation-intensive tasks.</li>
+</ul>
+<h3 id="gfshell2">gfshell2</h3>
+<p>The <strong>gfshell2</strong> code is a <strong>Qt-based GUI</strong> (<a href="http://qt-project.org/">Qt Project</a>) shell that simplifies creating a project for parameter fitting. It allows for:</p>
+<ul>
+<li>Importing data from CSV files and managing experimental data in <strong>JSON</strong> format.</li>
+<li>Creating, modifying, and saving fitting task specifications (in JSON) to project databases.</li>
+<li>Exporting tasks into <strong>gemsfit2</strong> input files, running fitting tasks, and displaying results in <strong>spreadsheet</strong> and <strong>graphical</strong> formats (<a href="http://qwt.sf.net/">Qwt</a>).</li>
+</ul>
+<p>In a single GEMSFITS project, multiple fitting tasks (variants) can be created and stored, each with its own setup, allowing the fitting of multiple parameters simultaneously with various options for data weighting, bounds, and statistical methods.</p>
+<h3 id="experimental-database">Experimental Database</h3>
+<p>Due to the flexibility of the <a href="http://www.mongodb.com/nosql-explained">NoSQL database</a>, any experimental data can be stored, including properties like:</p>
+<ul>
+<li>Composition of chemical systems in each sample</li>
+<li>Measured phase compositions (e.g., solubility data)</li>
+<li>System volume, temperature, and pressure</li>
+<li>Osmotic coefficients, activities/fugacities of components</li>
+<li>Integral properties of mixing</li>
+</ul>
+<h2 id="gemsfits-license">GEMSFITS License</h2>
+<p>The GEMSFITS software collection will be released under the <strong>LGPLv3</strong> (Lesser GNU General Public License), and several LGPL'd packages are used as runtime libraries.</p>
+<h2 id="authors">Authors</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.psi.ch/de/les/people/george-dan-miron">G. Dan Miron</a></strong> (IGP, ETH Zurich, now at PSI LES): Main developer since October 2012, supported by the ETHIIRA PhD project on fitting standard-state thermodynamic properties of aqueous species against experimental solubility data at hydrothermal conditions.</p>
+</li>
+<li>
+<p><strong><a href="https://www.researchgate.net/profile/Dmitrii-Kulik">Dmitrii A. Kulik</a></strong> (retired from <a href="http://www.psi.ch/">Paul Scherrer Institut</a>): Architect of the GEMSFITS code collection; maintains coupling between gemsfit2 and the GEMS3K kernel equilibrium speciation solver; develops extensions to fit standard-state properties of solid solution end members and reciprocal energies against experimental data (SNF Sinergia C-A-S-H project).</p>
+</li>
+<li>
+<p><strong>Svitlana V. Dmytrieva</strong> (Senior Software engineer, formerly Institute of Environmental Geochemistry, Kyiv, Ukraine): Design and implementation of the <strong>gfshell2 GUI shell</strong> code, data import-export functionality, and graphical visualization.</p>
+</li>
+<li>
+<p><strong><a href="https://www.rwth-aachen.de/go/id/bdfr/gguid/PER-H6FX4VC">Thomas Wagner</a></strong> University professor Department of Earth Sciences and Geography; formerly <a href="http://www.geopetro.ethz.ch/research/orefluids">IGP</a>, ETH Zurich: Maintains coupling between gemsfit2 and the <strong>TSolMod</strong> library of mixing models for phases-solutions.</p>
+</li>
+<li>
+<p><strong><a href="https://www.psi.ch/en/les/people/georg-kosakowski">Georg Kosakowski</a></strong> (Paul Scherrer Institut): Supervises the selection and interaction of statistical methods and parameter fitting algorithms.</p>
+</li>
+</ul>
+<p>The early prototype <strong>GEMSFIT</strong> was developed from 2010 to mid-2012 by:</p>
+<ul>
+<li><strong><a href="mailto:hingerl@stanford.edu">Ferdinand F. Hingerl</a></strong> (joint position at LES PSI and IGP ETHZ in association with the CCES GEOTHERM project; since August 2012 at <a href="https://pangea.stanford.edu/departments/ere/">ERE</a>, Stanford University, USA).</li>
+</ul>
+<h2 id="collaborators">Collaborators</h2>
+<ul>
+<li><strong><a href="https://www.empa.ch/web/s308/barbara-lothenbach">Barbara Lothenbach</a></strong> (<a href="http://www.empa.ch/cemdata">Empa</a>, Duebendorf, Switzerland): Optimization of thermodynamic properties for the novel solid solution models of calcium silicate hydrate (C-S-H) phases with aluminum and alkali, supported by the SNF Sinergia C-A-S-H project.</li>
+</ul>
+<h2 id="publications">Publications</h2>
+<ol>
+<li>
+<p><strong>Miron G.D., Kulik D.A., Dmytrieva S.V., Wagner T.</strong> (2015): GEMSFITS: Code package for optimization of geochemical model parameters and inverse modeling. <em>Applied Geochemistry</em> 55, 28-45. <a href="http://dx.doi.org/10.1016/j.apgeochem.2014.10.013">doi</a>.</p>
+</li>
+<li>
+<p><strong>Hingerl, F.F., Kosakowski, G., Wagner, T., Kulik, D. A., Driesner, T.</strong> (2014): GEMSFIT: a generic fitting tool for geochemical activity models. <em>Computational Geosciences</em> 18, 227-242. <a href="http://dx.doi.org/10.1007/s10596-014-9405-3">doi</a>.</p>
+</li>
+</ol>
+<h2 id="licensing">Licensing</h2>
+<p>The GEMSFITS code package is open-source, distributed under the <a href="http://www.gnu.org/copyleft/lesser.html">Lesser GPL v.3 license</a>.
+It is available free of charge for developers affiliated with non-profit educational and research institutions for educational and research purposes only, subject to the <a href="../citingterms">Terms and Conditions of Use</a> of GEM Software.</p>
 
 
 
@@ -1586,7 +1809,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 30, 2025</span>
   </span>
 
     

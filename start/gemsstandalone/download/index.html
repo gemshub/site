@@ -662,6 +662,8 @@
       
         
       
+        
+      
     
     
       
@@ -719,6 +721,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Download
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -728,6 +741,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gems3k" class="md-nav__link">
+    <span class="md-ellipsis">
+      GEMS3K
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xgems" class="md-nav__link">
+    <span class="md-ellipsis">
+      xGEMS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pygems" class="md-nav__link">
+    <span class="md-ellipsis">
+      pyGEMS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licensing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -797,11 +865,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/solutionmodels/" class="md-nav__link">
+      <a href="../documentation/examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Solution Models
+    Examples
   </span>
   
 
@@ -814,6 +882,27 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solutionmodels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solution Models
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1558,6 +1647,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gems3k" class="md-nav__link">
+    <span class="md-ellipsis">
+      GEMS3K
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xgems" class="md-nav__link">
+    <span class="md-ellipsis">
+      xGEMS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pygems" class="md-nav__link">
+    <span class="md-ellipsis">
+      pyGEMS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licensing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1574,8 +1707,34 @@
   
 
 
-<h1 id="gems-standalone-download"><a class="glightbox" href="../../img/gems1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gems1.png"></a> GEMS Standalone: Download</h1>
-<p>Download</p>
+<h1 id="gems-standalone-download"><a class="glightbox" href="../../../img/gems1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../../img/gems1.png"></a> GEMS Standalone: Download</h1>
+<h2 id="gems3k">GEMS3K</h2>
+<p>The <strong>GEMS3K</strong> source code can be downloaded from the official <a href="https://github.com/gemshub/GEMS3K">Git repository</a>. Follow the instructions in the repository to build the library from source.  </p>
+<p>Installing GEMS3K via Conda  </p>
+<p>The easiest way to install the <strong>GEMS3K C++ library</strong> on <strong>Windows, MacOS, and Linux</strong> is using <a href="https://docs.conda.io/en/latest/miniconda.html">Conda/Miniconda</a>:  </p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>conda-forge::gems3k
+</code></pre></div>
+<blockquote>
+<p>Latest version</p>
+<p><a href="https://anaconda.org/conda-forge/gems3k"><img alt="Conda-Forge" src="https://img.shields.io/conda/vn/conda-forge/gems3k?style=for-the-badge&amp;logo=conda-forge" /></a></p>
+</blockquote>
+<h2 id="xgems">xGEMS</h2>
+<p>xGEMS is a modern C++/Python interface built on top of GEMS3K.
+The source code can be downloaded from the official <a href="https://bitbucket.org/gems4/xgems">Git repository</a>. Follow the repository instructions to build it from source.</p>
+<p>Installing xGEMS via Conda</p>
+<p>To install xGEMS on Windows, MacOS, and Linux, use:</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>conda-forge::xgems
+</code></pre></div>
+<blockquote>
+<p>Latest version</p>
+<p><a href="https://anaconda.org/conda-forge/xgems"><img alt="Conda-Forge" src="https://img.shields.io/conda/vn/conda-forge/xgems?style=for-the-badge&amp;logo=conda-forge" /></a></p>
+</blockquote>
+<h2 id="pygems">pyGEMS</h2>
+<p>pyGEMS is included with xGEMS and provides a Pythonic alternative to the C++-like Python interface.
+Unlike xGEMS, which follows a C++ like convention, pyGEMS enhances usability in geochemical calculations by using Python dictionaries for input/output data.</p>
+<h2 id="licensing">Licensing</h2>
+<p>The GEMS Sandalone package is open-source, distributed under the <a href="http://www.gnu.org/copyleft/lesser.html">Lesser GPL v.3 license</a>.
+It is available free of charge for developers affiliated with non-profit educational and research institutions for educational and research purposes only, subject to the <a href="../../citingterms">Terms and Conditions of Use</a> of GEM Software.</p>
 
 
 
@@ -1596,7 +1755,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 30, 2025</span>
   </span>
 
     
