@@ -59,7 +59,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -484,6 +493,8 @@
       
         
       
+        
+      
     
     
       
@@ -559,8 +570,6 @@
           
         
       
-        
-      
     
     
       
@@ -586,11 +595,6 @@
 
             </a>
             
-              
-              <label class="md-nav__link " for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
           </div>
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
@@ -602,6 +606,14 @@
             
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
               
                 
   
@@ -609,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gemsselektor/documentation/databases/" class="md-nav__link">
+      <a href="../../gemsselektor/databases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -618,14 +630,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1570,7 +1574,7 @@
   
 
 
-<h1 id="gemsfits-documentation"><img style="float: center; height: 6%; width: 6%;" src="../../img/gemsfits.png"> GEMSFITS: Documentation</h1>
+<h1 id="gemsfits-documentation"><a class="glightbox" href="../../img/gemsfits.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gemsfits.png"></a> GEMSFITS: Documentation</h1>
 <ul>
 <li>
 <p>Reference to help system</p>
@@ -1667,5 +1671,7 @@
         <script src="../../../js/verifycheckbox.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

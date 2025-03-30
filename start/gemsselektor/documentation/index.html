@@ -14,7 +14,7 @@
         <link rel="prev" href="../download/">
       
       
-        <link rel="next" href="databases/">
+        <link rel="next" href="../databases/">
       
       
       <link rel="icon" href="../../../img/gems1.png">
@@ -59,7 +59,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -486,6 +495,8 @@
       
         
       
+        
+      
     
     
       
@@ -563,8 +574,6 @@
           
         
       
-        
-      
     
     
       
@@ -590,11 +599,6 @@
 
             </a>
             
-              
-              <label class="md-nav__link md-nav__link--active" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
           </div>
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="true">
@@ -606,6 +610,14 @@
             
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
               
                 
   
@@ -613,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="databases/" class="md-nav__link">
+      <a href="../databases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -622,14 +634,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1615,7 +1619,7 @@
   
 
 
-<h1 id="gems-selektor-documentation"><img style="float: center; height: 6%; width: 6%;" src="../../../img/gems2.png"> GEMS-Selektor: Documentation</h1>
+<h1 id="gems-selektor-documentation"><a class="glightbox" href="../../../img/gems2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../../img/gems2.png"></a> GEMS-Selektor: Documentation</h1>
 <p>To start working with GEMS-Selektor and perform exciting geochemical calculations, you'll need to familiarize yourself with the graphical user interface. Frequent tasks include:</p>
 <ol>
 <li>
@@ -1636,7 +1640,7 @@
 <li>
 <p><strong>Making Changes to Thermodynamic Data:</strong></p>
 <ul>
-<li>Modify the thermodynamic database by adding or removing species and phases relevant to your specific project.</li>
+<li>Modify the <a href="../databases">thermodynamic database</a> by adding or removing species and phases relevant to your specific project.</li>
 <li>Ensure that the changes are reflected in your project's calculations by updating the database files in the appropriate folder.</li>
 </ul>
 </li>
@@ -1657,19 +1661,19 @@
 </thead>
 <tbody>
 <tr>
-<td><code>C:\'your user'\GEMS3.9.x\Gems3-app\</code></td>
+<td><code>C:\'your_user'\</code></br><code>GEMS3.9.x\Gems3-app\</code></td>
 <td><strong>Program folder</strong></td>
 </tr>
 <tr>
-<td><code>C:\'your user'\GEMS3.9.x\Gems3-app\Resources\</code></td>
+<td><code>C:\'your user'\</code></br><code>GEMS3.9.x\Gems3-app\Resources\</code></td>
 <td>Resources folder, here you also have the doc folder with documentation files</td>
 </tr>
 <tr>
-<td><code>C:\'your user'\GEMS3.9.x\Gems3-app\Resources\DB.default\</code></td>
+<td><code>C:\'your user'\</code></br><code>GEMS3.9.x\Gems3-app\Resources\DB.default\</code></td>
 <td>default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project</td>
 </tr>
 <tr>
-<td><code>C:\'your user'\Library\Gems3\Projects\</code></td>
+<td><code>C:\'your user'\</code></br><code>Library\Gems3\Projects\</code></td>
 <td><strong>Projects Folder</strong>: This is where the test and user projects are stored. To add a shared project, simply copy the project folder here, and it will appear in the Open/New projects list when you open GEM-Selektor. To share your project, zip the folder and send it to someone else. They will need to unzip and copy the project folder into their GEMS projects folder.</td>
 </tr>
 </tbody>
@@ -1685,37 +1689,62 @@
 </thead>
 <tbody>
 <tr>
-<td><code>/Applications/Gems3.app/Contents/</code></td>
+<td><code>/Applications/</code></br><code>Gems3.app/Contents/</code></td>
 <td><strong>Program folder</strong></td>
 </tr>
 <tr>
-<td><code>/Applications/Gems3.app/Contents/Resources/</code></td>
+<td><code>/Applications/</code></br><code>Gems3.app/Contents/Resources/</code></td>
 <td>Resources folder, here you also have the doc folder with documentation files</td>
 </tr>
 <tr>
-<td><code>/Applications/Gems3.app/Contents/Resources/DB.default/</code></td>
+<td><code>/Applications/</code></br><code>Gems3.app/Contents/Resources/DB.default/</code></td>
 <td>default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project</td>
 </tr>
 <tr>
-<td><code>/Library/gems3/projects/</code></td>
+<td><code>/Library/</code></br><code>gems3/projects/</code></td>
 <td><strong>Projects Folder</strong>: This is where the test and user projects are stored. To add a shared project, simply copy the project folder here, and it will appear in the Open/New projects list when you open GEM-Selektor. To share your project, zip the folder and send it to someone else. They will need to unzip and copy the project folder into their GEMS projects folder.</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="tabbed-block">
-<p>GEM-Selektor </p>
+<table>
+<thead>
+<tr>
+<th>Folder Path</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>~/'your_user'/</code></br><code>GEMS3.9.x/Gems3-app/</code></td>
+<td><strong>Program folder</strong></td>
+</tr>
+<tr>
+<td><code>~/'your user'/</code></br><code>GEMS3.9.x/Gems3-app/Resources/</code></td>
+<td>Resources folder, here you also have the doc folder with documentation files</td>
+</tr>
+<tr>
+<td><code>~/'your user'/</code></br><code>GEMS3.9.x/Gems3-app/Resources/DB.default/</code></td>
+<td>default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project</td>
+</tr>
+<tr>
+<td><code>~/'your user'/</code></br><code>Library/Gems3/Projects/</code></td>
+<td><strong>Projects Folder</strong>: This is where the test and user projects are stored. To add a shared project, simply copy the project folder here, and it will appear in the Open/New projects list when you open GEM-Selektor. To share your project, zip the folder and send it to someone else. They will need to unzip and copy the project folder into their GEMS projects folder.</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 <h2 id="help-contents">Help contents</h2>
 <div class="grid">
-<p>The most direct way to get information about anything in GEMS is to use its content-aware help interface. This can be accessed from anywhere in the code by pressing F1 (on Mac using the keyboard shortcut Command (⌘) + Shift + ?) or the "Help" button <img src="help_.png">. This will open the <strong>help window with context-specific information about the current window</strong>. </p>
-<p><img align="right" alt="Selektor Help" src="selektor_help.png" title="&lt;b&gt; Help Window:&lt;/b&gt; press the help button" width="600" /> </br></p>
+<p>The most direct way to get information about anything in GEMS is to use its content-aware help interface. This can be accessed from anywhere in the code by pressing F1 (on Mac using the keyboard shortcut Command (⌘) + Shift + ?) or the "Help" button <a class="glightbox" href="help_.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="help_.png"></a>. This will open the <strong>help window with context-specific information about the current window</strong>. </p>
+<p><a class="glightbox" href="selektor_help.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="right" alt="Selektor Help" src="selektor_help.png" title="&lt;b&gt; Help Window:&lt;/b&gt; press the help button" width="600" /></a> </br></p>
 </div>
 <h2 id="test-projects">Test projects</h2>
 <div class="grid">
-<p><img align="left" alt="Selektor Test Projects" src="selektor_test_projects.png" title="&lt;b&gt; GEMS Test projects:&lt;/b&gt;see the New/Open projects list window" width="600" /> </p>
+<p><a class="glightbox" href="selektor_test_projects.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="left" alt="Selektor Test Projects" src="selektor_test_projects.png" title="&lt;b&gt; GEMS Test projects:&lt;/b&gt;see the New/Open projects list window" width="600" /></a> </p>
 <p>The GEM-Selektor comes with a <strong>suite of test modeling projects</strong>. These are included in the GEMS3 installer (see <code>Gems3-app/Resources/projects/</code>) and will be automatically copied to the user projects directory (e.g., <code>/Library/Gems3/projects/</code>) upon the first installation. The test projects address specific problems and can help you <strong>learn how they were defined, serving as a starting point for your own modeling applications</strong>. Plan to model something similar, you can clone the project, re-name it, and adapt it to your specific system. Before diving too deep into these projects it is expected that you gained some basic knowledge on using GEMS.</p>
 </div>
 <h2 id="description-of-models">Description of Models</h2>
@@ -1849,5 +1878,7 @@
         <script src="../../../js/verifycheckbox.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

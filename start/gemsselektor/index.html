@@ -59,7 +59,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -486,6 +495,8 @@
       
         
       
+        
+      
     
     
       
@@ -561,8 +572,6 @@
           
         
       
-        
-      
     
     
       
@@ -588,11 +597,6 @@
 
             </a>
             
-              
-              <label class="md-nav__link " for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
           </div>
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
@@ -604,6 +608,14 @@
             
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
               
                 
   
@@ -611,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="documentation/databases/" class="md-nav__link">
+      <a href="databases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -620,14 +632,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1560,8 +1564,8 @@
   
 
 
-<h1 id="gems-selektor"><img style="float: center; height: 6%; width: 6%;" src="../../img/gems2.png"> GEMS-Selektor</h1>
-<p>Interactive Package for Thermodynamic Modelling of Aquatic (Geo)Chemical Systems by Gibbs Energy Minimization GEMS code package offers high chemical plausibility of (partial) equilibrium thermodynamic models</p>
+<h1 id="gems-selektor"><a class="glightbox" href="../../img/gems2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gems2.png"></a> GEMS-Selektor</h1>
+<p>Interactive Package for Thermodynamic Modelling of Aquatic (Geo)Chemical Systems by Gibbs Energy Minimization GEMS code package offers high chemical plausibility of (partial) equilibrium thermodynamic models.</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Stable and metastable phases are checked using rigorous criteria based on phase stability index</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Aqueous equilibria may involve many (non)ideal solid or liquid solutions, gas mixture or non-ideal gaseous fluids</li>
@@ -1574,15 +1578,15 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Qt5- based Graphical User Interface with plotting of results and a context-sensitive run-time help system</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Installers available for all major PC platforms </li>
 </ul>
-<p>The complexity of chemical system setup is limited mainly by the availability of thermodynamic data for species and phases.</p>
-<div class="grid cards" style="width: 100%; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));">
+<p>To use any GEMS codes, start by creating a modeling project (chemical system) in GEM-Selektor. The complexity of chemical system setup is limited mainly by the availability of thermodynamic data for species and phases.</p>
+<div class="grid cards" style="width: 100%; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
 <ul>
 <li><figure markdown="span">
-  <a href=""><img alt="Selektor Single System" src="selektor_syseq.png" title="&lt;b&gt; Single System Calculation:&lt;/b&gt; GEMS-Selektor main window" width="600" /></a></li>
+  <a class="glightbox" href="selektor_syseq.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Selektor Single System" src="selektor_syseq.png" title="&lt;b&gt; Single System Calculation:&lt;/b&gt; GEMS-Selektor main window" width="350" /></a></li>
 <li><figure markdown="span">
-  <a href=""><img alt="Selektor Process" src="selektor_process.png" title="&lt;b&gt; Process Calculation:&lt;/b&gt; GEMS-Selektor main window" width="600" /></a></li>
+  <a class="glightbox" href="selektor_process.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Selektor Process" src="selektor_process.png" title="&lt;b&gt; Process Calculation:&lt;/b&gt; GEMS-Selektor main window" width="350" /></a></li>
 <li><figure markdown="span">
-  <a href=""><img alt="Selektor Database" src="selektor_tdb.png" title="&lt;b&gt; Database mode:&lt;/b&gt; GEMS-Selektor main window" width="600" /></a></li>
+  <a class="glightbox" href="selektor_tdb.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Selektor Database" src="selektor_tdb.png" title="&lt;b&gt; Database mode:&lt;/b&gt; GEMS-Selektor main window" width="350" /></a></li>
 </ul>
 </div>
 
@@ -1670,5 +1674,7 @@
         <script src="../../js/verifycheckbox.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

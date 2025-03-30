@@ -59,7 +59,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -479,6 +488,8 @@
       
         
       
+        
+      
     
     
       
@@ -554,8 +565,6 @@
           
         
       
-        
-      
     
     
       
@@ -581,11 +590,6 @@
 
             </a>
             
-              
-              <label class="md-nav__link " for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
           </div>
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
@@ -597,6 +601,14 @@
             
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
               
                 
   
@@ -604,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../start/gemsselektor/documentation/databases/" class="md-nav__link">
+      <a href="../start/gemsselektor/databases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -613,14 +625,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1274,6 +1278,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#contact-gems-development-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contact GEMS development team
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1655,6 +1668,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#contact-gems-development-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contact GEMS development team
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1673,7 +1695,7 @@
   
 
 
-<h1 id="citing-gems-licenses-and-conditions"><img style="float: center; height: 6%; width: 6%;" src="../img/gems2.png"> Citing GEMS, Licenses, and Conditions</h1>
+<h1 id="citing-gems-licenses-and-conditions"><a class="glightbox" href="../img/gems2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../img/gems2.png"></a> Citing GEMS, Licenses, and Conditions</h1>
 <h2 id="gems-project">GEMS project</h2>
 <p>GEM software is distributed "as is" in its present state of development. Permission to download and use GEM Software is hereby granted free of charge for educational and academic research purposes, subject to acceptance of <a href="">Terms and Conditions of Use</a>. </p>
 <h2 id="citing">Citing</h2>
@@ -1703,6 +1725,8 @@
 <p>GEM Software is developed as a tool for scientific research and is distributed "as is" in its current state of development. Therefore, no warranty or representation that GEMS is error-free, accurate, complete, or useful for any specific application is made. GEMS Development Team and GEMS Support Consortium members shall not be liable for any claims, demands, liabilities, costs, losses, damages, or expenses of any kind caused to or suffered by any person or entity that directly or indirectly arise from the use of the software or in connection therewith.</p>
 <p>Please note that some information accessed through this page may be preliminary and presented before final review, quality assurance, and approval by authorities. This information is provided with the understanding that it is not guaranteed to be correct or complete. Any conclusions drawn from such information are the sole responsibility of the user.</p>
 <p>Any use of trademarks, product names, or company names in GEMS web pages and help pages is solely for descriptive purposes.</p>
+<h2 id="contact-gems-development-team">Contact GEMS development team</h2>
+<p>Write an email at: gems2.support(at)psi.ch</p>
 
 
 
@@ -1788,5 +1812,7 @@
         <script src="../js/verifycheckbox.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

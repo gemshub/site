@@ -59,7 +59,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -479,6 +488,8 @@
       
         
       
+        
+      
     
     
       
@@ -554,8 +565,6 @@
           
         
       
-        
-      
     
     
       
@@ -581,11 +590,6 @@
 
             </a>
             
-              
-              <label class="md-nav__link " for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
           </div>
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
@@ -597,6 +601,14 @@
             
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
               
                 
   
@@ -604,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../start/gemsselektor/documentation/databases/" class="md-nav__link">
+      <a href="../start/gemsselektor/databases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -613,14 +625,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1638,7 +1642,7 @@
 
 
 <h1 id="gems-support-consortium">GEMS Support Consortium</h1>
-<p><img style="float: center; height: 30%; width: 30%;" src="../img/consortium.png"></p>
+<p><a class="glightbox" href="../img/consortium.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="float: center; height: 30%; width: 30%;" src="../img/consortium.png"></a></p>
 <p>GEMS Support consortium was established to ensure the continued basic development, maintenance, and support of GEMS codes and its associated thermodynamic databases. </p>
 <h2 id="members">Members</h2>
 <table>
@@ -1650,27 +1654,27 @@
 </thead>
 <tbody>
 <tr>
-<td><img alt="EMPA" src="../img/empa.png" width="300" /></td>
+<td><a class="glightbox" href="../img/empa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="EMPA" src="../img/empa.png" width="300" /></a></td>
 <td>Prof. Barbara Lothenbach <br> Head Group Cement Chemistry and Thermodynamics <br> Prof. Pietro Lura <br> Head of Laboratory, Concrete and Asphalt</td>
 </tr>
 <tr>
-<td><img alt="EPFL" src="../img/epfl.png" width="300" /></td>
+<td><a class="glightbox" href="../img/epfl.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="EPFL" src="../img/epfl.png" width="300" /></a></td>
 <td>Prof. Karen Scrivener <br> Head of the Laboratory of Construction Materials LMC</td>
 </tr>
 <tr>
-<td><img alt="ETHZ" src="../img/ethz.png" width="300" /></td>
+<td><a class="glightbox" href="../img/ethz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ETHZ" src="../img/ethz.png" width="300" /></a></td>
 <td>Prof. Ueli Angst <br> Department of Civil, Environmental and Geomatic Engineering <br> Prof. Dr. Robert Flatt <br> Department of Civil, Environmental and Geomatic Engineering</td>
 </tr>
 <tr>
-<td><img alt="Nagra" src="../img/nagra.png" width="300" /></td>
+<td><a class="glightbox" href="../img/nagra.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Nagra" src="../img/nagra.png" width="300" /></a></td>
 <td>Dr. Olivier X. Leupin <br> Dr. Raphael Wüst</td>
 </tr>
 <tr>
-<td><img alt="UBern" src="../img/ubern.png" width="250" /></td>
+<td><a class="glightbox" href="../img/ubern.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="UBern" src="../img/ubern.png" width="250" /></a></td>
 <td>Prof. Sergey Churakov <br> Head of Institute of Geological Sciences</td>
 </tr>
 <tr>
-<td><img alt="PSI" src="../img/PSI.svg" width="300" /></td>
+<td><a class="glightbox" href="../img/PSI.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PSI" src="../img/PSI.svg" width="300" /></a></td>
 <td>Dr. George-Dan Miron <br> Scientist in the Laboratory of Waste Management LES <br> Prof. Andreas Pautz <br> Head of Center for Nuclear Engineering and Scineces NES</td>
 </tr>
 </tbody>
@@ -1767,5 +1771,7 @@
         <script src="../js/verifycheckbox.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

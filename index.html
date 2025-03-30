@@ -57,7 +57,16 @@
     
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -487,6 +496,8 @@
       
         
       
+        
+      
     
     
       
@@ -562,8 +573,6 @@
           
         
       
-        
-      
     
     
       
@@ -589,11 +598,6 @@
 
             </a>
             
-              
-              <label class="md-nav__link " for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
           </div>
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
@@ -605,6 +609,14 @@
             
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
               
                 
   
@@ -612,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="start/gemsselektor/documentation/databases/" class="md-nav__link">
+      <a href="start/gemsselektor/databases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,14 +633,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1561,7 +1565,7 @@
   
 
 
-<h1 id="gems-gibbs-energy-minimization-software-for-geochemical-modeling"><img style="height: 6%; width: 6%;" src="img/gems2.png"> GEMS: Gibbs Energy Minimization Software for Geochemical Modeling</h1>
+<h1 id="gems-gibbs-energy-minimization-software-for-geochemical-modeling"><a class="glightbox" href="img/gems2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img style="height: 6%; width: 6%;" src="img/gems2.png"></a> GEMS: Gibbs Energy Minimization Software for Geochemical Modeling</h1>
 <style>
 /* Style for individual cards (e.g., headlines and icons) */
 .grid.cards > * {
@@ -1599,27 +1603,27 @@
 <div class="grid cards" style="width: 100%; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
 <ul>
 <li><figure markdown="span">
-  <a href="start\gemsselektor"><img alt="Kaolinite solubility" src="img/kaol_sol.png" title="&lt;b&gt;Congruent solubility&lt;/b&gt; pH diagram for kaolinite" width="400" /></a>
+  <a class="glightbox" href="img/kaol_sol.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Kaolinite solubility" src="img/kaol_sol.png" title="&lt;b&gt;Congruent solubility&lt;/b&gt; pH diagram for kaolinite" width="400" /></a>
 </figure></li>
 <li><figure markdown="span">
-  <a href="start\gemsselektor"><img alt="Portlandite kinetics" src="img/port_kin.png" title="&lt;b&gt;Kinetics:&lt;/b&gt; Portlandite growth kinetics (exp. Tadros ea, 1976)" width="400" /></a>
+  <a class="glightbox" href="img/port_kin.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Portlandite kinetics" src="img/port_kin.png" title="&lt;b&gt;Kinetics:&lt;/b&gt; Portlandite growth kinetics (exp. Tadros ea, 1976)" width="400" /></a>
 </figure></li>
 <li><figure markdown="span">
-  <a href="start\gemsselektor"><img alt="Eu sorption on Illite" src="img/ill_sor.png" title="&lt;b&gt;Sorption:&lt;/b&gt; pH edge for 1e-9 Eu in 0.1M NaClO4 solution with 1g/L NaIllite" width="400" /></a>
+  <a class="glightbox" href="img/ill_sor.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Eu sorption on Illite" src="img/ill_sor.png" title="&lt;b&gt;Sorption:&lt;/b&gt; pH edge for 1e-9 Eu in 0.1M NaClO4 solution with 1g/L NaIllite" width="400" /></a>
 </figure></li>
 <li><figure markdown="span">
-  <a href="start\gemsselektor"><img alt="Solid solutions" src="img/feldspars_ss.png" title="&lt;b&gt;Solid Solutions:&lt;/b&gt; Calculation of sanidine-albite solvus (two ternary feldspars)" width="400" /></a>
+  <a class="glightbox" href="img/feldspars_ss.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Solid solutions" src="img/feldspars_ss.png" title="&lt;b&gt;Solid Solutions:&lt;/b&gt; Calculation of sanidine-albite solvus (two ternary feldspars)" width="400" /></a>
 </figure></li>
 <li><figure markdown="span">
   <a href="start\gemsstandalone"><img alt="Jupyter" src="img/cem_jupyter.png" title="&lt;b&gt;Jupyter notebook:&lt;/b&gt; Calculation of cement hydration using xGEMS" width="400" /></a>
 </figure></li>
 <li><figure markdown="span">
-  <a href="start\gemsselektor"><img alt="box flux" loading="lazy" src="img/test_vs_live_constituent.gif" title="&lt;b&gt;Sequential box model:&lt;/b&gt; Albitization of granite fluid/rock ratio: 5.00" width="400" /></a>
+  <a class="glightbox" href="img/test_vs_live_constituent.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="box flux" loading="lazy" src="img/test_vs_live_constituent.gif" title="&lt;b&gt;Sequential box model:&lt;/b&gt; Albitization of granite fluid/rock ratio: 5.00" width="400" /></a>
 </figure></li>
 </ul>
 </div>
 <hr />
-<p>GEM Software is always under development (as indicated in the <a href="news">Newsticker</a>). <a href="citingterms#terms-and-conditions-of-use">Terms and Conditions of Use</a></p>
+<p>GEM Software is always under development (as indicated in the <a href="news">Newsticker</a>). <a href="citingterms#terms-and-conditions-of-use">Terms and Conditions of Use</a>. Archived <a href="https://gems.web.psi.ch">GEMS PSI website</a>.</p>
 
 
 
@@ -1705,5 +1709,7 @@
         <script src="js/verifycheckbox.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
