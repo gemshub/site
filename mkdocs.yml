@@ -1,0 +1,146 @@
+site_name: Gibbs Energy Minimisation Software (GEMS)
+copyright: 'Copyright &copy; 2003-2025 GEMS Project'
+site_url: https://gems.web.psi.ch/
+
+# Repository
+repo_name: "gemshub"
+repo_url: "https://github.com/gemshub"
+
+nav:
+  - Home: index.md
+  - Getting Started: 
+    - start/index.md
+    - GEM-Selektor:
+      - start/gemselektor/index.md 
+      - Download: start/gemselektor/download.md
+      - Documentation: 
+        - start/gemselektor/documentation/index.md
+      - Thermodynamic Databases: start/gemselektor/databases.md
+    - GEMS-Standalone:
+      - start/gemstandalone/index.md
+      - Download: start/gemstandalone/download.md
+      - Documentation: 
+        - start/gemstandalone/documentation/index.md
+        - Examples: start/gemstandalone/documentation/examples.md
+      - Solution Models: start/gemstandalone/solutionmodels.md
+    - GEMSFITS:
+      - start/gemsfits/index.md 
+      - Download: start/gemsfits/download.md
+      - Documentation: start/gemsfits/documentation.md
+  - Community: 
+    - community/index.md
+    - Workshops: community/workshops.md
+    - Research using GEMS: community/papers.md
+ #   - Waste disposal: community/disposal.md
+ #   - Cement modeling: community/cement.md
+ #   - Hydrothermal ore deposits: community/hydrothermal.md
+ #   - Reactor Chemistry: community/reactor.md
+    - GeoML: community/geoml.md
+    - CemGEMS: community/cemgems.md
+    - ThermoEcos: community/thermoecos.md
+  - Consortium: consortium.md
+  - Citing & Licenses: citingterms.md
+  - News:
+     - news/index.md
+
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+
+
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: 'Inconsolata'
+    code: 'Inconsolata'
+
+  features:
+    - navigation.indexes
+#    - navigation.sections
+    - navigation.tabs
+    - navigation.path
+#    - navigation.expand
+    - navigation.tracking
+    - navigation.tabs.sticky
+    - navigation.top
+    - content.code.copy
+ #   - content.action.edit
+    - content.tooltips
+  #  - navigation.tracking
+    - toc.follow
+  favicon: 'img/gems1.png'
+  logo: 'img/gems1.png'
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  #- minify:
+  #    minify_html: true
+  - git-revision-date-localized
+  - blog:
+      blog_dir: news
+      authors_file: "{blog}/.authors.yml"
+  - bibtex:
+      bib_file: bibliography/refs.bib #../gemswebsite/bibliography/refs.bib
+      csl_file: "https://raw.githubusercontent.com/citation-style-language/styles/master/ieee.csl"
+      cite_inline: false
+  - glightbox
+
+markdown_extensions: 
+  - attr_list
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md #../gemswebsite/includes/abbreviations.md
+  - abbr
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - css/custom.css
+  - https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap
+
+extra_javascript:
+  - js/verifycheckbox.js  # Path to your JS file
+
+watch:
+  - includes #../gemswebsite/includes
+
+extra:
+  analytics:
+    provider: google
+    property: G-ZFTJM6RYCP
+
+#footer:
+#  text: >
+#      <div style="text-align: center;">
+#        <img src="img/PSI.png" alt="My Logo" style="width: 150px; margin-top: 10px;">
+ #     </div>

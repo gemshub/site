@@ -1,0 +1,15 @@
+name: gemswebsite
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pandoc
+  - pip
+  - pip:
+    - mkdocs
+    - mkdocs-bibtex
+    - mkdocs-get-deps
+    - mkdocs-git-revision-date-localized-plugin
+    - mkdocs-material
+    - mkdocs-material-extensions
+    - mkdocs-glightbox

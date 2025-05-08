@@ -1,0 +1,3 @@
+# <img style="float: center; height: 6%; width: 6%;" src="../../img/geoml.png"> GeoML 
+
+GeoML offers a JupyterHub environment that enables users to run Jupyter notebooks with pre-configured access to GEMS (xGEMS Python interface), facilitating seamless integration of geochemical modeling with statistical, graphical and machine learning libraries to accelerate simulations, develop surrogate models and digital twins for various systems and geochemical phenomena. [:octicons-arrow-right-24: GeoML.eu JupyterLab service](https://geoml.eu/)
