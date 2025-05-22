@@ -6,7 +6,7 @@ Please, use an appropriate direct link below to download the actual revision of 
 <div class="grid cards" markdown>
 
 - :material-microsoft-windows: [__Download:__ GEMS3.9.7hotfix for Windows-x64 (offline installer)](https://gems.web.psi.ch/GEMS3/downloads/reposit/win64/Gems3.9.7hotfix-4795504.6606501-win64-qt6-install.exe "Link to download the latest GEMS3.9.x for Windows")
-- :simple-macos: [__Download:__ GEMS3.9.7 for MacOS-x64 (offline installer)](https://gems.web.psi.ch/GEMS3/downloads/reposit/MacOSX/Gems3.9.7-4d01df3.6606501-qt5-macos-x86-64-Ventura.dmg "Link to download the latest GEMS3.9.x for macOS")
+- :simple-macos: [__Download:__ GEMS3.9.6 for MacOS-x64 (offline installer)](https://gems.web.psi.ch/GEMS3/downloads/reposit/MacOSX/Gems3.9.6-2ed66a4.9a8c970-qt5-macos-x86-64.dmg "Link to download the latest GEMS3.9.x for macOS")
 - :fontawesome-brands-linux: [__Download:__ GEMS3.9.7hotfix for Linux-x64 (offline installer)](https://gems.web.psi.ch/GEMS3/downloads/reposit/linux/Gems3.9.7hotfix-4795504.6606501-qt5-linux-x86_64.AppImage "Link to download the latest GEMS3.9.x for Linux")
 
     [**Download:** GEMS3.9.7hotfix for Linux-x64 (tar.xz of AppImage)](https://gems.web.psi.ch/GEMS3/downloads/reposit/linux/Gems3.9.7hotfix-4795504.6606501-qt5-linux-x86_64.tar.xz "Link to download the latest GEMS3.9.x for Linux")
