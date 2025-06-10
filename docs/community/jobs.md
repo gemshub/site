@@ -9,5 +9,5 @@ Your tasks
 * Investigate cesium transport pathways and mechanisms from spent nuclear fuel, using GEMS coupling with 2D/3D pore-level lattice Boltzmann simulators. Apply machine learning based surrogate models to accelerate geochemical modelling 
 * Publishing the results in peer reviewed research papers, and presentations to showcase the work conducted
 
-Please submit your application online by **8 June 2025** (including list of publications and addresses of referees) for the position as a postdoctoral researcher. [:octicons-arrow-right-24: More Information and Application](https://www.psi.ch/en/hr/job-opportunities/70007-postdoctoral-fellow)
+Please submit your application online by **29 June 2025** (including list of publications and addresses of referees) for the position as a postdoctoral researcher. [:octicons-arrow-right-24: More Information and Application](https://www.psi.ch/en/hr/job-opportunities/70007-postdoctoral-fellow)
 
