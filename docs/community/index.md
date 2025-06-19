@@ -1,10 +1,32 @@
-# <img style="float: center; height: 6%; width: 6%;" src="../img/gems2.png"> 🌍 GEMS: Community  
+# <img style="float: center; height: 6%; width: 6%;" src="../img/gems2.png"> 🌍 GEMS: Community 
+
+<div class="grid cards" markdown>
+
+-   [:octicons-discussion-closed-24:{ .lg .middle } __Ask questions__](https://github.com/orgs/gemshub/discussions)
+
+    ---
+
+    Ask questions on how to use GEMS codes, ask the community for help, share ideas for new features, or share your examples in the discussion forum. 
+
+    [:octicons-arrow-right-24: github discussions](https://github.com/orgs/gemshub/discussions) (github account necessary)
+
+-   [:octicons-issue-opened-24:{ .lg .middle } __Report errors/issues__](https://github.com/gemshub/GEMSGUI/issues)
+
+    ---
+
+    If you encounter issues, errors with GEM-Selektor, GEM-Standalone, GEMSFITS, please use
+
+    [:octicons-arrow-right-24: github issues](https://github.com/gemshub/GEMSGUI/issues) (github account necessary)
+
+</div>
+
 
 The GEMS codes and thermodynamic databases (TDBs) form a open-source ecosystem used worldwide for geochemical modeling, experimental data interpretation, and process simulation. Over the years, GEMS tools have supported numerous PhD and Postdoc research projects at institutions ETH Zurich, EPFL, University of Bern in Switzerland, NTNU in Norway, DTU in Denmark, as well as universities and research labs across Europe, North America, and Asia.
 
 They are also actively used in industry — by companies such as Sika, HeidelbergCement, and Holcim-Lafarge — and in national waste management organizations like Nagra (Switzerland) and SCK-CEN (Belgium).
 
 Originally co-developed at LES PSI, GEMS software has long-standing collaborative roots with the Institute of Geochemistry and Petrology (IGP ETHZ), University of Bern in Switzerland, RWTH Aachen, and research centers like KIT, FZJ, and HZDR in Germany, Colorado School of Mines, and New Mexico Tech in the USA.
+
 
 ## 🤝 Contribute
 
@@ -23,30 +45,6 @@ We welcome contributions from the scientific and user community to help expand a
   Help build bridges between GEMS and other geochemical, transport, or statistical modeling software by developing wrappers, APIs, or plugin modules.
 
 We believe in open scientific collaboration and are happy to support your efforts in contributing back to the GEMS platform. Feel free to reach out via [GitHub](#report-issuesdiscussion), [email](mailto:gems2.support@psi.ch)!
-
-
-## 🐛 Report Issues/discussion 
-
-
-<div class="grid cards" markdown>
-
--   :octicons-issue-opened-24:{ .lg .middle } __github issues__
-
-    ---
-
-    If you encounter issues with GEM-Selektor, GEM-Standalone, GEMSFITS, or other please use
-
-    [:octicons-arrow-right-24: github issues](https://github.com/gemshub/GEMSGUI/issues)
-
--   :octicons-discussion-closed-24:{ .lg .middle } __github discussions__
-
-    ---
-
-    If you would like to share ideas for new features or ask the community for help please use our new 
-
-    [:octicons-arrow-right-24: github discussions](https://github.com/orgs/gemshub/discussions)
-
-</div>
 
 ## ⏳ History of development 
 

@@ -17,8 +17,16 @@
 <div class="grid cards" style="width: 100%; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));"  markdown>
 
 - [:material-download-circle: __Getting Started__ ](start)
+- [:material-comment-account-outline: __Community Support__ ](community)
 - [:material-github: __Source Code__ ](https://github.com/gemshub)
-- [:material-comment-account-outline: __Community Support__ ](community) 
+
+<!--  -   [:material-comment-account-outline: __Community Support__ ](community) 
+
+    Ask questions, learning materials...
+
+    [:octicons-arrow-right-24: Getting started](#) -->
+
+
 <!-- - [:fontawesome-solid-quote-left: __Citing__ licenses and conditions](citing_terms)
 - [:fontawesome-solid-newspaper: __News__ on development](news) -->
 

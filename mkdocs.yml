@@ -29,6 +29,7 @@ nav:
       - Documentation: start/gemsfits/documentation.md
   - Community: 
     - community/index.md
+    - Learning Materials: community/materials.md
     - Workshops: community/workshops.md
     - Job opportunities: community/jobs.md
     - Research using GEMS: community/papers.md
@@ -43,6 +44,7 @@ nav:
   - Citing & Licenses: citingterms.md
   - News:
      - news/index.md
+ # - Question?: https://github.com/orgs/gemshub/discussions/new/choose
 
 
 theme:
@@ -141,6 +143,9 @@ extra:
   analytics:
     provider: google
     property: G-ZFTJM6RYCP
+  social:
+    - icon: fontawesome/solid/comment
+      link: https://github.com/orgs/gemshub/discussions/new/choose
 
 #footer:
 #  text: >
