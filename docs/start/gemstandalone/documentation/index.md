@@ -1,7 +1,5 @@
 # <img style="float: center; height: 6%; width: 6%;" src="../../../img/gems1.png"> GEM-Standalone: Documentation
 
-## New project, export standalone chemical system files
-
 GEM-Standalone Solver of chemical equilibria can be coupled to other simulation codes or used from Python Jupyter notebook through its C++/Python interfaces (GEMS3K node or node array, xGEMS/pyGEMS ChemicalEngine).
 
 !!!info "Export standalone chemical system"
@@ -10,39 +8,33 @@ GEM-Standalone Solver of chemical equilibria can be coupled to other simulation 
 
     The recommended way to prepare Standalone input files consists in creating a modeling project in [GEM-Selektor](../../gemselektor) package, creating and calculating chemical systems (equilibria), and then exporting the GEM tasks to GEMS3K I/O files. Details about this process can be found in GEMS3K and GEM-Selektor [help files](../../gemselektor/documentation/#important-folders).
 
-## Help Files
-
-The documentation of standalone GEMS3K code consists of HTML files located in the "Docs/html/" folder in the [GEMS3K subversion repository](https://github.com/gemshub/GEMS3K/tree/master/Docs/html). 
-
-## C++/Python ChemicalEngine Interface
-
-xGEMS is built on top of GEMS3K and offers a modern C++/Python interface [`ChemicalEngine`](https://bitbucket.org/gems4/xgems/src/master/xGEMS/ChemicalEngine.hpp) with functions to control the input and output of chemical data for each engine instance. Examples both in C++ and Python can be found in the [code repository](https://bitbucket.org/gems4/xgems/src/master/demos/).
-
-!!!info "Jupyter Notebook Integration"  
-
-    xGEMS through its Python interface enables users to perform single and batch equilibrium calculations within Jupyter notebooks, providing a rich environment for geochemical modeling with advanced statistics, machine learning and plotting libraries. 
+## xGEMS Interface
 
 In principle any calculation done in GEM-Selektor process module can be implemented in a Jupyter notebook. 
+
+[:octicons-arrow-right-24: Examples xGEMS](examples#xgems) 
 
 ![Jupyter](../../../img/cem_jupyter.png "<b>Jupyter notebook:</b> Calculation of cement hydration using xGEMS"){ width="400" }
 ![Calcite Jupyter](calcite-jupyter.png "<b>Jupyter notebook:</b> Solubility of calcite in tap water with increasing temperature"){ width="400" }
 
+For more details, consult the xGEMS [code documentation](https://xgems.readthedocs.io/en/latest/) or [code repository](https://bitbucket.org/gems4/xgems/src/master/).
 
-## C++ Coupling Codes with GEMS3K at the TNode Level  
+!!!info "Jupyter Notebook Integration"  
 
-GEMS3K supports coupling with mass transport codes at the **TNode level**, allowing efficient chemical equilibrium calculations for multiple nodes. The implementation examples `node-gem` and `gemcalc` are available in the [**GEMS3K source code repository**](https://github.com/gemshub/GEMS3K/tree/master).  
+    xGEMS through its Python interface enables users to perform single and batch equilibrium calculations within Jupyter notebooks, providing a rich environment for geochemical modeling with advanced statistics, machine learning and plotting libraries. 
+    xGEMS is built on top of GEMS3K and offers a modern C++/Python interface [`ChemicalEngine`](https://xgems.readthedocs.io/en/latest/) with functions to control the input and output of chemical data for each engine instance.
 
-### Code Examples  
+[Examples](examples#xgems)
 
-These refer to GEMS3K I/O Files in 'gemcalc' and 'node-gem' [Examples: Reactive Transport in a Calcite Column](../../../start/gemstandalone/documentation/examples#example-reactive-transport-in-a-calcite-column) 
+## GEMS3K Interface
 
-- **Batch equilibrium calculations**  
-    - See [**`standalone/gemcalc/main.cpp`**](https://github.com/gemshub/GEMS3K/blob/master/gemcalc/main.cpp) for an example using **DCH, IPM, and DBR** input files.  
-    - Results are stored in **DBR files** or optionally in a **text dump file**.  
+The documentation of standalone GEMS3K code consists of HTML files located in the "Docs/html/" folder in the [GEMS3K subversion repository](https://github.com/gemshub/GEMS3K/tree/master/Docs/html).  
 
-- **Coupling with transport codes**  
-    - See [**`standalone/node-gem/main.cpp`**](https://github.com/gemshub/GEMS3K/blob/master/node-gem/main.cpp) for an example of integrating GEMS3K with a **multi-node mass transport solver**.  
-    - Chemical data and parameters are exchanged dynamically in memory.  
+[:octicons-arrow-right-24: Examples GEMS3K](examples#gems3k) 
+
+### C++ Coupling Codes with GEMS3K at the TNode Level  
+
+GEMS3K supports coupling with mass transport codes at the **TNode level**, allowing efficient chemical equilibrium calculations for multiple nodes. The implementation examples `node-gem` and `gemcalc` are available in the [**GEMS3K source code repository**](https://github.com/gemshub/GEMS3K/tree/master). 
 
 ### Performance Optimization  
 
@@ -71,8 +63,6 @@ For detailed implementation guidance, refer to the **GEMS3K source code** and do
 
 When coupling GEMS3K with an existing **reactive mass transport code**, data exchange typically occurs via an **intermediate memory structure**. This allows the transport code to manage chemical information (e.g., **speciation, bulk composition**) while interfacing with GEMS3K through a **data bridge (DATABR structure)**.  
 
-### Example Implementation  
-
 The example is provided in:
 
 - **[`standalone/node-gem/main.h`](https://github.com/gemshub/GEMS3K/blob/master/node-gem/main.h)** – Defines the `TMyTransport` class, which holds chemical data for multiple nodes.  
@@ -80,22 +70,20 @@ The example is provided in:
 
 This example follows the **operator splitting approach**, ensuring modular coupling between mass transport and chemical equilibrium calculations. While it does not include a full transport solver, the `TMyTransport::OneTimeStepRun()` function provides a basic framework that can be extended as needed.  
 
-### Code Snippet: Simplified example of `TMyTransport` Class Definition  
+**Code Snippet: Simplified example of `TMyTransport` Class Definition**
 
 ```cpp
 class TMyTransport {
 public:
     int numNodes;
-    std::vector<double> bIC;  // Bulk composition vector for each node
-    std::vector<double> xDC;  // Speciation vector for each node
+    std::vector<double> bIC;  // Bulk composition vector for each node, store transported elements
+    std::vector<double> xDC;  // Speciation vector for each node, store transported species
     std::vector<double> temperature, pressure;  
 
     void Initialize(int nodes);
     void OneTimeStepRun();
 };
 ```
-## Discussion
-If you have an idea, an example to share [participate in the discussion](../../../community#report-issuesdiscussion).
 
 <!-- Description of examples in node, xgems repository - link to the repository 
 

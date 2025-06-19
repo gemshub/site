@@ -1,15 +1,36 @@
 # <img style="float: center; height: 6%; width: 6%;" src="../../../../img/gems1.png"> GEM-Standalone: Examples
 
+## xGEMS
+
+* Run the demo examples in your browser (no installation required) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gemshub/xgems-jupyter/master)
+
+* Checkout the [xgems-jupyter](https://github.com/gemshub/xgems-jupyter) repository of examples using xgems in jupyter notebooks 
+
+*  Examples both in C++ and Python can be found in the [code repository](https://bitbucket.org/gems4/xgems/src/master/demos/). *  Examples both in C++ and Python can be found in the [code repository](https://bitbucket.org/gems4/xgems/src/master/demos/). 
+
 The **GEMS3K I/O files** used in the `gemcalc` and `node-gem` test examples were **exported using GEM-Selektor v.3** from the **CalcDolo** modeling project (included in the GEM-Selektor installer). This small, simple project demonstrates GEMS3K I/O file structures. 
 
-## Example: calcite–dolomite benchmark (xGEMS in Python)
+#### Reactive Transport in a Calcite Column (xGEMS in Python)
 
 A demo reactive transport modeling of **the calcite–dolomite benchmark**[@Yapparova2017;@SHAO2009] using xGEMS can be found in the [repository](https://bitbucket.org/gems4/xgems/src/master/demos/demo_reactive_transport.py)
 
 ![GEMS-CSMP](../calcite-dolomite.png){ width="400" }
 ![GEMS-OpenGeoSys](../calcite-dolomite2.png){ width="400" }
 
-## Example: Reactive Transport in a Calcite Column (GEMS3K TNode in C++)
+## GEMS3K
+
+#### Batch equilibrium calculations
+
+  - See [**`standalone/gemcalc/main.cpp`**](https://github.com/gemshub/GEMS3K/blob/master/gemcalc/main.cpp) for an example using **DCH, IPM, and DBR** input files.  
+  - Results are stored in **DBR files** or optionally in a **text dump file**.  
+
+
+#### Reactive Transport in a Calcite Column (GEMS3K TNode in C++)
+
+Coupling with transport codes
+
+  - See [**`standalone/node-gem/main.cpp`**](https://github.com/gemshub/GEMS3K/blob/master/node-gem/main.cpp) for an example of integrating GEMS3K with a **multi-node mass transport solver**.  
+  - Chemical data and parameters are exchanged dynamically in memory.  
 
 This example models a **hypothetical porous column** filled with an inert material containing **small amounts of reactive calcite**. A **Ca-poor MgCl₂ solution** enters one end of the column as an infinite source, while the opposite end serves as an infinite sink. As fluid flows through the column (assuming instantaneous mineral-water reactions), two key **reaction fronts** develop:  
 
@@ -71,7 +92,7 @@ At **1 bar** and **25°C**, equilibrium calculations produce:
 
 Here, **calcite and dolomite are both strongly undersaturated**, the solution is **weakly acidic**, and it has a **significant ionic strength (0.024 m)**.  
 
-### File Export and Location  
+**File Export and Location**
 
 - The **initial column composition** was exported as:  
   - `CalcColumn-dch.dat`  

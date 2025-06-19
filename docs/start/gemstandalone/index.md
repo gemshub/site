@@ -21,17 +21,30 @@ GEMS3K is released under the [Lesser GPL](http://www.gnu.org/licenses/lgpl.html)
 
 GEMS3K runs under Windows, Mac OSX and Linux desktop PCs, as well as on various parallel architectures. 
 
-## GEMS3K Interfaces
+## Code Interfaces
 
-### C++ Interface
+### xGEMS Interface (C++/Python)
+
+The `xGEMS`is a modern interface (`ChemicalEngine`) accessible from C/C++ amd Python. Python module enables seamless integration of GEMS3K into Python workflows, allowing researchers to leverage its capabilities in data analysis and machine learning applications.
+
+[:octicons-arrow-right-24: Documentation xGEMS](download#xgems)
+
+[:octicons-arrow-right-24: Download xGEMS](documentation#xgems) 
+
+[:octicons-arrow-right-24: Examples xGEMS](documentation/examples#xgems) 
+
+
+### GEMS3K Interface (C++)
 
 GEMS3K provides a flexible `TNode` C/C++ interface for data exchange in coupled simulations.
 
-### Modern xGEMS C++ and Python Interface
+[:octicons-arrow-right-24: Documentation GEMS3K](documentation#gems3k)
 
-The [`xGEMS`](download#xgems) is a modern interface (`ChemicalEngine`) accessible from C/C++ amd Python. Python module enables seamless integration of GEMS3K into Python workflows, allowing researchers to leverage its capabilities in data analysis and machine learning applications.
+[:octicons-arrow-right-24: Download GEMS3K](download#gems3k) 
 
-## Examples of Coupled Codes
+[:octicons-arrow-right-24: Examples GEMS3K](documentation/examples#gems3k) 
+
+## Coupled Codes
 
 GEMS3K can be integrated into high-performance computing (HPC) frameworks, enabling coupling with reactive mass transport codes such as:
 
