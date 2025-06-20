@@ -1666,28 +1666,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gems3k-interfaces" class="md-nav__link">
+  <a href="#code-interfaces" class="md-nav__link">
     <span class="md-ellipsis">
-      GEMS3K Interfaces
+      Code Interfaces
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="GEMS3K Interfaces">
+    <nav class="md-nav" aria-label="Code Interfaces">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#c-interface" class="md-nav__link">
+  <a href="#xgems-interface-cpython" class="md-nav__link">
     <span class="md-ellipsis">
-      C++ Interface
+      xGEMS Interface (C++/Python)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modern-xgems-c-and-python-interface" class="md-nav__link">
+  <a href="#gems3k-interface-c" class="md-nav__link">
     <span class="md-ellipsis">
-      Modern xGEMS C++ and Python Interface
+      GEMS3K Interface (C++)
     </span>
   </a>
   
@@ -1699,9 +1699,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples-of-coupled-codes" class="md-nav__link">
+  <a href="#coupled-codes" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples of Coupled Codes
+      Coupled Codes
     </span>
   </a>
   
@@ -1779,12 +1779,18 @@
 <p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> (formerly GEMIPM2K) is a standalone C/C++ code implementing the efficient numerical kernel <a href="#gems-standalone-gems3k" title="more information in doc/html/theory_gem.html help file">IPM-3</a> of the <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> v.3 package. It enables geochemical thermodynamic modeling of local/partial equilibria in complex heterogeneous multicomponent-multiphase systems. The code includes the <abbr title="Library of Models of Mixing in Phases-Solutions">TSolMod</abbr> library, which provides built-in phase models of non-ideal mixing for a broad range of geochemical applications (<a href="solutionmodels">more...</a>). <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> employs fast and efficient linear algebra solvers from the <a href="http://math.nist.gov/tnt/download.html">JAMA C++ TNT package</a> (NIST).</p>
 <p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> is released under the <a href="http://www.gnu.org/licenses/lgpl.html">Lesser GPL</a> v.3 license, promoting broad applications in hydro(thermal)- and waste geochemistry research. The code is provided for implementation of various reactive-mass-transport and other coupled codes, where massive, chemically plausible computations of local/partial equilibrium states are necessary, including HPC codes.  </p>
 <p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> runs under Windows, Mac OSX and Linux desktop PCs, as well as on various parallel architectures. </p>
-<h2 id="gems3k-interfaces"><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> Interfaces</h2>
-<h3 id="c-interface">C++ Interface</h3>
+<h2 id="code-interfaces">Code Interfaces</h2>
+<h3 id="xgems-interface-cpython"><abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr> Interface (C++/Python)</h3>
+<p>The <code>xGEMS</code>is a modern interface (<code>ChemicalEngine</code>) accessible from C/C++ amd Python. Python module enables seamless integration of <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> into Python workflows, allowing researchers to leverage its capabilities in data analysis and machine learning applications.</p>
+<p><a href="download#xgems"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Documentation <abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr></a></p>
+<p><a href="documentation#xgems"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Download <abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr></a> </p>
+<p><a href="documentation/examples#xgems"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Examples <abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr></a> </p>
+<h3 id="gems3k-interface-c"><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> Interface (C++)</h3>
 <p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> provides a flexible <code>TNode</code> C/C++ interface for data exchange in coupled simulations.</p>
-<h3 id="modern-xgems-c-and-python-interface">Modern <abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr> C++ and Python Interface</h3>
-<p>The <a href="download#xgems"><code>xGEMS</code></a> is a modern interface (<code>ChemicalEngine</code>) accessible from C/C++ amd Python. Python module enables seamless integration of <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> into Python workflows, allowing researchers to leverage its capabilities in data analysis and machine learning applications.</p>
-<h2 id="examples-of-coupled-codes">Examples of Coupled Codes</h2>
+<p><a href="documentation#gems3k"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Documentation <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr></a></p>
+<p><a href="download#gems3k"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Download <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr></a> </p>
+<p><a href="documentation/examples#gems3k"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Examples <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr></a> </p>
+<h2 id="coupled-codes">Coupled Codes</h2>
 <p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> can be integrated into high-performance computing (HPC) frameworks, enabling coupling with reactive mass transport codes such as:</p>
 <p>Input files (text format) for <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> can be exported from <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> or manually prepared using any text editor. Runtime data exchange within coupled codes can be implemented in computer memory via the <code>TNode</code> class functions.</p>
 <ul>
@@ -1859,7 +1865,7 @@ It is available free of charge for developers affiliated with non-profit educati
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 8, 2025 16:20:30 UTC">May 8, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 19, 2025 15:10:15 UTC">June 19, 2025</span>
   </span>
 
     
