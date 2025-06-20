@@ -2,7 +2,7 @@
 
 ## xGEMS
 
-* Run the demo examples in your browser (no installation required) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gemshub/xgems-jupyter/master)
+* Run the demo examples in your browser (no installation required) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gemshub/xgems-jupyter/main?urlpath=lab/tree/how-to-use-xgems-examples.ipynb)
 
 * Checkout the [xgems-jupyter](https://github.com/gemshub/xgems-jupyter) repository of examples using xgems in jupyter notebooks 
 

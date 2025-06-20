@@ -35,3 +35,10 @@ Hosted by the **Geochemical Society**, December 8–9, 2020. Organizers: Alexand
 - ▶️ [Lecture: Simulation of Fluid–Rock Interaction and Ore-Forming Processes](https://youtu.be/xfhjZcY8cb0)  
 - 📄 [Slides PDF](https://geoinfo.nmt.edu/mines-tdb/tutorials/GEMS_workshop_Dec2020_Gysi.pdf)  
 - ▶️ [Lecture: GEMSFITS and ThermoEcos — Dan Miron](https://youtu.be/acQZ3kyxZRs)
+
+
+## xGEMS
+
+* Run the demo examples in your browser (no installation required) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gemshub/xgems-jupyter/main?urlpath=lab/tree/how-to-use-xgems-examples.ipynb)
+
+* Checkout the [xgems-jupyter](https://github.com/gemshub/xgems-jupyter) repository of examples using xgems in jupyter notebooks 
