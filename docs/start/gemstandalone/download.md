@@ -13,25 +13,25 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         ---
 
-        ## 1. Install Miniforge
+        1. Install Miniforge
 
-        1. Go to the [Miniforge Releases Page](https://github.com/conda-forge/miniforge/releases)
-        2. Download the appropriate installer for Windows.
+        Go to the [Miniforge Releases Page](https://github.com/conda-forge/miniforge/releases)
+        Download the appropriate installer for Windows.
 
         👉 Example:  
         [Miniforge3-Windows-x86_64.exe](https://github.com/conda-forge/miniforge/releases/download/25.3.0-2/Miniforge3-Windows-x86_64.exe)
 
-        3. Run the installer and follow the prompts:
+        Run the installer and follow the prompts:
            - Install for **Just Me**
            - Tick **Create shortcuts** other options leave unticked
 
         If *"Windows protected your PC"* appears, click **More info** → **Run anyway**
 
-        ## 2. Start a Miniforge Terminal
+        2. Start a Miniforge Terminal
 
         After installation, search for `miniforge` in the Start menu and open the **Miniforge Prompt**.
 
-        ## 3. Create the xGEMS Environment
+        3. Create the xGEMS Environment
 
         Navigate to your working directory, you have to create a directory where you will start Jupyter Lab, for example:
 
@@ -59,7 +59,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         conda activate xgems
         ```
 
-        ## Important!
+        Important!
 
         If you have installed xgems previously, you need to have the latest version. To be sure do
 
@@ -77,7 +77,7 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         [![xGEMS](https://img.shields.io/conda/vn/conda-forge/xgems?style=for-the-badge&logo=conda-forge)](https://anaconda.org/conda-forge/xgems)
 
-        ## 4. Launch JupyterLab
+        4. Launch JupyterLab
 
         ```bash
         jupyter lab
@@ -86,7 +86,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         This opens JupyterLab in your default browser.
         To close JupyterLab, use CTRL+C or close the Prompt window.
 
-        ## 5. Import xGEMS in a Notebook
+        5. Import xGEMS in a Notebook
 
         1. Create a new notebook using the `xgems` kernel by clicking File->New->Notebook or by clicking on the Python (ipykernel) icon in the launcher window 
         2. Add the following code to a cell:
@@ -99,7 +99,7 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         To run the cell click the 'play' / 'arrow to the right' button or simply press 'SHIFT+enter'. 
 
-        ## In no error then Success!!
+        If no error then Success!!
 
     === "Linux"
 
@@ -107,11 +107,11 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         ---
 
-        ## 1. Open a Terminal
+        1. Open a Terminal
 
         Open your Linux terminal shell.
 
-        ## 2. Install Miniforge
+        2. Install Miniforge
 
         Download and install Miniforge:
 
@@ -127,7 +127,7 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         ```
 
-        ## 3. Create the xGEMS work environment folder
+        3. Create the xGEMS work environment folder
 
         Navigate to your working directory, you have to create a directory where you will start Jupyter Lab, for example:
 
@@ -156,7 +156,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         conda activate xgems
         ```
 
-        ## Important!
+        Important!
 
         If you have installed xgems previously, you need to have the latest version. To be sure do
 
@@ -175,7 +175,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         [![xGEMS](https://img.shields.io/conda/vn/conda-forge/xgems?style=for-the-badge&logo=conda-forge)](https://anaconda.org/conda-forge/xgems)
 
 
-        ## 4. Launch JupyterLab
+        4. Launch JupyterLab
 
         ```bash
         jupyter lab
@@ -184,8 +184,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         This opens JupyterLab in your default browser.
         To close JupyterLab, use CTRL+C or close the Prompt window.
 
-
-        ## 5. Import xGEMS in a Notebook
+        5. Import xGEMS in a Notebook
 
         1. Create a new notebook using the `xgems` kernel by clicking File->New->Notebook or by clicking on the Python (ipykernel) icon in the launcher window 
         2. Add the following code to a cell:
@@ -198,7 +197,7 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         To run the cell click the 'play' / 'arrow to the right' button or simply press 'SHIFT+enter'. 
 
-        ## In no error then Success!!
+        If no error then Success!!
 
 
     === "macOS"
@@ -207,7 +206,7 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         ---
 
-        ## 1. The easiest way to install such an environment is using Homebrew. 
+        1. The easiest way to install such an environment is using Homebrew. 
         
         Open a terminal app and check if you have it installed: 
 
@@ -234,7 +233,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
         ```
-        ## 2. Install Miniforge or miniconda (from Terminal app)
+        2. Install Miniforge or miniconda (from Terminal app)
 
         ```bash
         brew install miniforge
@@ -254,7 +253,7 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         For owners of Mac M1, M2, M3, M4, using Miniforge is preferable. For that, you can  brew uninstall miniconda  and proceed with installing Miniforge. 
 
-        ## 3. Create the xGEMS Environment
+        3. Create the xGEMS Environment
 
         Navigate to your working directory, you have to create a directory where you will start Jupyter Lab, for example:
 
@@ -283,7 +282,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         conda activate xgems
         ```
 
-        ## Important!
+        Important!
 
         If you have installed xgems previously, you need to have the latest version. To be sure do
 
@@ -301,7 +300,7 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         [![xGEMS](https://img.shields.io/conda/vn/conda-forge/xgems?style=for-the-badge&logo=conda-forge)](https://anaconda.org/conda-forge/xgems)
 
-        ## 4. Launch JupyterLab
+        4. Launch JupyterLab
 
         ```bash
         jupyter lab
@@ -310,7 +309,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         This opens JupyterLab in your default browser.
         To close JupyterLab, use CTRL+C or close the Prompt window.
 
-        ## 5. Import xGEMS in a Notebook
+        5. Import xGEMS in a Notebook
 
         1. Create a new notebook using the `xgems` kernel by clicking File->New->Notebook or by clicking on the Python (ipykernel) icon in the launcher window 
         2. Add the following code to a cell:
@@ -323,7 +322,7 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         To run the cell click the 'play' / 'arrow to the right' button or simply press 'SHIFT+enter'. 
 
-        ## In no error then Success!!
+        If no error then Success!!
 
 
 Installing xGEMS via Conda
