@@ -44,7 +44,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         Create the environment and install required packages:
 
         ```bash
-        conda create -n xgems python=3.10 xgems jupyter numpy pandas matplotlib openpyxl
+        conda create -n xgems python=3.10 xgems jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         Confirm with 'y' and then wait:
@@ -141,7 +141,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         Create the environment and install required packages:
 
         ```bash
-        conda create -n xgems python=3.10 xgems jupyter numpy pandas matplotlib openpyxl
+        conda create -n xgems python=3.10 xgems jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         Confirm with:
@@ -267,7 +267,7 @@ The source code can be downloaded from the official [Git repository](https://bit
         Create the xgems Conda environment and install required packages:
 
         ```bash
-        conda create -n xgems python=3.10 xgems jupyter numpy pandas matplotlib openpyxl
+        conda create -n xgems python=3.10 xgems jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         Confirm with:
