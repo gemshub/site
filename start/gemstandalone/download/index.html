@@ -104,23 +104,6 @@
     </div>
     <div data-md-component="announce">
       
-        <aside class="md-banner">
-          <div class="md-banner__inner md-grid md-typeset">
-            
-              <button class="md-banner__button md-icon" aria-label="Don't show this again">
-                
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-              </button>
-            
-            
-    🚀 Job opportunities using GEMS <a href="https://gemshub.github.io/site/community/jobs">see open positions</a>
-
-          </div>
-          
-            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
-          
-        </aside>
-      
     </div>
     
     
@@ -1110,8 +1093,6 @@
       
         
       
-        
-      
     
     
     
@@ -1191,29 +1172,6 @@
   
   <span class="md-ellipsis">
     Workshops
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../community/jobs/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Job opportunities
     
   </span>
   
@@ -1797,7 +1755,7 @@ Download the appropriate installer for Windows.</p>
 </code></pre></div>
 Once you start Jupyter Lab, you will be able to navigate inside this directory, you can copy here other files and notebooks.</p>
 <p>Create the environment and install required packages:</p>
-<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>xgems<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10<span class="w"> </span>xgems<span class="w"> </span>jupyter<span class="w"> </span>numpy<span class="w"> </span>pandas<span class="w"> </span>matplotlib<span class="w"> </span>openpyxl
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>xgems<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10<span class="w"> </span>xgems<span class="w"> </span>jupyter<span class="w"> </span>numpy<span class="w"> </span>scipy<span class="w"> </span>pandas<span class="w"> </span>matplotlib<span class="w"> </span>openpyxl
 </code></pre></div>
 <p>Confirm with 'y' and then wait:</p>
 <div class="highlight"><pre><span></span><code>Proceed ([y]/n)? y
@@ -1865,7 +1823,7 @@ bash<span class="w"> </span>Miniforge3-Linux-x86_64.sh
 </code></pre></div>
 <p>Once you started Jupyter Lab, you will be able to navigate inside this directory, you can copy here other files and notebooks.</p>
 <p>Create the environment and install required packages:</p>
-<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>xgems<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10<span class="w"> </span>xgems<span class="w"> </span>jupyter<span class="w"> </span>numpy<span class="w"> </span>pandas<span class="w"> </span>matplotlib<span class="w"> </span>openpyxl
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>xgems<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10<span class="w"> </span>xgems<span class="w"> </span>jupyter<span class="w"> </span>numpy<span class="w"> </span>scipy<span class="w"> </span>pandas<span class="w"> </span>matplotlib<span class="w"> </span>openpyxl
 </code></pre></div>
 <p>Confirm with:</p>
 <div class="highlight"><pre><span></span><code>Proceed ([y]/n)? y
@@ -1950,7 +1908,7 @@ zsh:<span class="w"> </span><span class="nb">command</span><span class="w"> </sp
 </code></pre></div>
 <p>Once you start Jupyter Lab you will be able to navigate inside this directory, you can copy here other files and notebooks.</p>
 <p>Create the xgems Conda environment and install required packages:</p>
-<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>xgems<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10<span class="w"> </span>xgems<span class="w"> </span>jupyter<span class="w"> </span>numpy<span class="w"> </span>pandas<span class="w"> </span>matplotlib<span class="w"> </span>openpyxl
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>xgems<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10<span class="w"> </span>xgems<span class="w"> </span>jupyter<span class="w"> </span>numpy<span class="w"> </span>scipy<span class="w"> </span>pandas<span class="w"> </span>matplotlib<span class="w"> </span>openpyxl
 </code></pre></div>
 <p>Confirm with:</p>
 <div class="highlight"><pre><span></span><code>Proceed ([y]/n)? y
@@ -2038,7 +1996,7 @@ If you encountered an error, please [report an issue](../../../../community#repo
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 20, 2025 08:54:04 UTC">June 20, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 28, 2025 15:33:39 UTC">June 28, 2025</span>
   </span>
 
     
