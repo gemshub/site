@@ -251,7 +251,7 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         In this case, simply proceed as described in section 3. below. 
 
-        For owners of Mac M1, M2, M3, M4, using Miniforge is preferable. For that, you can  brew uninstall miniconda  and proceed with installing Miniforge. 
+        For owners of Mac M1, M2, M3, M4, using Miniforge is preferable. For that, you can brew uninstall miniconda and proceed with installing Miniforge. 
 
         3. Create the xGEMS Environment
 
@@ -268,6 +268,12 @@ The source code can be downloaded from the official [Git repository](https://bit
 
         ```bash
         conda create -n xgems python=3.10 xgems jupyter numpy scipy pandas matplotlib openpyxl
+        ```
+
+        If there are issues with arm Mac computers you can indicate that these are x64 apps by:
+        
+        ```bash
+        CONDA_SUBDIR=osx-64 conda create -n xgems python=3.10 xgems jupyter numpy pandas matplotlib openpyxl
         ```
 
         Confirm with:
