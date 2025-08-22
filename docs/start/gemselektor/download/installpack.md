@@ -50,6 +50,8 @@ Please, use an appropriate direct link below to download the actual version of t
     .catch(err => console.error("Error fetching release data:", err));
 </script>
 
+ If you encounter issues, errors with GEM-Selektor, please report them in the [:octicons-arrow-right-24: github issues](https://github.com/gemshub/GEMSGUI/issues) (github account necessary). Known issues are also found there. 
+
 **Older versions**
 
 You can find previous GEM-Selektor releases at the following links:
@@ -233,7 +235,7 @@ If GEMS3 crashes when the user tries to open a modeling project:
 
 If this does not help, or you encountered an error, please [report an issue](../../../../community#report-issuesdiscussion).
 
-[![Hits](https://hits.sh/gemshub.github.io/site/start/gemselektor/download/installpack.svg)](https://hits.sh/gemshub.github.io/site/start/gemselektor/download/installpack/) 
+[![Hits](https://hits.sh/gemshub.github.io/site/start/gemselektor/download/installpack.svg)](https://hits.sh/gemshub.github.io/site/start/gemselektor/download/installpack/)
 
 <!-- 
         Another way to open a blocked app is to locate the app in a Finder window. 
