@@ -2,206 +2,214 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://gems.web.psi.ch/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/citingterms/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/consortium/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/cement/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/cemgems/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/disposal/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/geoml/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/hydrothermal/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/jobs/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/materials/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/papers/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/reactor/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/thermoecos/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/community/workshops/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2008/07/25/2003-to-2008/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2014/04/23/2009-to-2014/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2020/12/07/2015-to-2020/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2021/12/23/changes-2021/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2022/04/14/changes-2022/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2023/05/10/changes-2023/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2025/06/15/gems-discussions/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/news/2025/06/20/gems-v3100-released/</loc>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2025/04/01/launch-of-the-new-website/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2024/10/30/release-of-gems-397/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2024/09/30/start-of-gems-consortium/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/2025/06/20/xgems-jupyter-examples/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemselektor/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemselektor/databases/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemselektor/download/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemselektor/documentation/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemselektor/download/installpack/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
+    </url>
+    <url>
+         <loc>https://gems.web.psi.ch/start/gemselektor/download/installpackold/</loc>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemsfits/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemsfits/documentation/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemsfits/download/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemsfits/download/installpack/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemstandalone/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemstandalone/download/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemstandalone/solutionmodels/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemstandalone/documentation/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/start/gemstandalone/documentation/examples/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2025/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2024/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2023/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2022/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2021/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2020/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2014/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/archive/2008/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://gems.web.psi.ch/news/page/2/</loc>
-         <lastmod>2025-07-14</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
 </urlset>
