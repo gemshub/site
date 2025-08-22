@@ -1,5 +1,5 @@
 # <img style="float: center; height: 6%; width: 6%;" src="../../../../img/gems2.png"> GEM-Selektor: Download
-Please, use an appropriate direct link below to download the actual version of the package, save the zip the file to disk.
+Please, use an appropriate direct link below to download the actual version of the package, save the zip file to disk.
 
 <div class="grid cards" markdown>
 

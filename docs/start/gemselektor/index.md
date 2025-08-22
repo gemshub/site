@@ -31,4 +31,4 @@ To use any GEMS codes, start by creating a modeling project (chemical system) in
 GEM-Selektor graphical user interface and database package: GNU General Public License (GPL) v3
 
 The GEM-Seketor package is open-source, distributed under the [GNU General Public License (GPL) v3](https://www.gnu.org/licenses/gpl-3.0.en.html).
-It is available free of charge for developers affiliated with non-profit educational and research institutions for educational and research purposes only, subject to the [Terms and Conditions of Use](../../../citingterms) of GEM Software.
+It is available free of charge for developers affiliated with non-profit educational and research institutions for educational and research purposes only, subject to the [Terms and Conditions of Use](../../../citingterms) of GEM Software. 
