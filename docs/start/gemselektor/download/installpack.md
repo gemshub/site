@@ -5,6 +5,7 @@ Please, use an appropriate direct link below to download the actual version of t
 
 - :material-microsoft-windows: [Download: GEMS Latest for Windows-x64 ](# "Fetching latest release...")
 - :simple-macos: [Download: GEMS Latest for macOS-x64 ](# "Fetching latest release...")
+- :simple-macos: [Download: GEMS Latest for macOS-x64 dmg ](# "Fetching latest release...")
 - :fontawesome-brands-linux: [Download: GEMS Latest for Linux-x64 ](# "Fetching latest release...")
 
 </div>
@@ -13,7 +14,8 @@ Please, use an appropriate direct link below to download the actual version of t
   const repo = "gemshub/GEMSGUI";
   const assetPatterns = {
     windows: /^windows-.*\.zip$/i,
-    macos: /^macos-.*\.zip$/i,
+    macos_zip: /^macos-.*\.zip$/i,
+    macos_dmg: /^macos-.*\.dmg$/i,
     linux: /^linux-.*\.zip$/i
   };
 
@@ -34,7 +36,7 @@ Please, use an appropriate direct link below to download the actual version of t
 
       const links = document.querySelectorAll('.grid.cards a');
 
-      ["windows", "macos", "linux"].forEach((platform, i) => {
+      ["windows", "macos_zip", "macos_dmg", "linux"].forEach((platform, i) => {
         const pattern = assetPatterns[platform];
         const asset = assets.find(a => pattern.test(a.name));
         if (asset) {
