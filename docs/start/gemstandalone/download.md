@@ -3,7 +3,7 @@
 ## xGEMS
 
 xGEMS is a modern C++/Python interface built on top of GEMS3K.
-The source code can be downloaded from the official [Git repository](https://bitbucket.org/gems4/xgems). Follow the repository instructions to build it from source.
+The source code can be downloaded from the official [Git repository](https://github.com/gemshub/xgems). Follow the repository instructions to build it from source.
 
 ??? example "Expand to show the installation instructions"
 

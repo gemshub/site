@@ -6,13 +6,13 @@
 
 * Checkout the [xgems-jupyter](https://github.com/gemshub/xgems-jupyter) repository of examples using xgems in jupyter notebooks 
 
-*  Examples both in C++ and Python can be found in the [code repository](https://bitbucket.org/gems4/xgems/src/master/demos/). *  Examples both in C++ and Python can be found in the [code repository](https://bitbucket.org/gems4/xgems/src/master/demos/). 
+*  Examples both in C++ and Python can be found in the [code repository](https://github.com/gemshub/xgems/tree/master/demos). *  Examples both in C++ and Python can be found in the [code repository](https://github.com/gemshub/xgems/tree/master/demos). 
 
 The **GEMS3K I/O files** used in the `gemcalc` and `node-gem` test examples were **exported using GEM-Selektor v.3** from the **CalcDolo** modeling project (included in the GEM-Selektor installer). This small, simple project demonstrates GEMS3K I/O file structures. 
 
 #### Reactive Transport in a Calcite Column (xGEMS in Python)
 
-A demo reactive transport modeling of **the calcite–dolomite benchmark**[@Yapparova2017;@SHAO2009] using xGEMS can be found in the [repository](https://bitbucket.org/gems4/xgems/src/master/demos/demo_reactive_transport.py)
+A demo reactive transport modeling of **the calcite–dolomite benchmark**[@Yapparova2017;@SHAO2009] using xGEMS can be found in the [repository](https://github.com/gemshub/xgems/tree/master/demosdemo_reactive_transport.py)
 
 ![GEMS-CSMP](../calcite-dolomite.png){ width="400" }
 ![GEMS-OpenGeoSys](../calcite-dolomite2.png){ width="400" }

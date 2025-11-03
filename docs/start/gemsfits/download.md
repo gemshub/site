@@ -52,7 +52,7 @@ Please verify you're human by checking the box below.
 
 ## Build from source
 
-GEMSFITS code can also be directly built from the source code by following the instructions in the [repository](https://bitbucket.org/gems4/gemsfits/src/master/)
+GEMSFITS code can also be directly built from the source code by following the instructions in the [repository](https://github.com/gemshub/gemsfits)
 
 
 <!-- https://gems.web.psi.ch/GEMSFITS/downloads/reposit/win64/Gemsfits1.3.3-c843e680-fa9469e8-win64.exe -->

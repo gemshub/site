@@ -53,5 +53,5 @@ Please verify you're human by checking the box below.
 
 ## Build from source
 
-GEM-Selektor code can also be directly built from the source code by following the instructions in the [repository](https://bitbucket.org/gems4/gems3gui/src/trunk/)
+GEM-Selektor code can also be directly built from the source code by following the instructions in the [repository](https://github.com/gemshub/GEMSGUI)
 

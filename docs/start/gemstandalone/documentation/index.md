@@ -10,14 +10,16 @@ GEM-Standalone Solver of chemical equilibria can be coupled to other simulation 
 
 ## xGEMS Interface
 
-In principle any calculation done in GEM-Selektor process module can be implemented in a Jupyter notebook. 
+In principle any calculation done in GEM-Selektor process module can be implemented in a Jupyter notebook. The documentation of the main functions that can called with xGEMS can be in the [code documentation](https://xgems.readthedocs.io/en/latest/)
 
 [:octicons-arrow-right-24: Examples xGEMS](examples#xgems) 
+
+[:octicons-arrow-right-24: Functions documentation xGEMS](https://xgems.readthedocs.io/en/latest/) 
 
 ![Jupyter](../../../img/cem_jupyter.png "<b>Jupyter notebook:</b> Calculation of cement hydration using xGEMS"){ width="400" }
 ![Calcite Jupyter](calcite-jupyter.png "<b>Jupyter notebook:</b> Solubility of calcite in tap water with increasing temperature"){ width="400" }
 
-For more details, consult the xGEMS [code documentation](https://xgems.readthedocs.io/en/latest/) or [code repository](https://bitbucket.org/gems4/xgems/src/master/).
+For more details, consult the [code repository](https://github.com/gemshub/xgems).
 
 !!!info "Jupyter Notebook Integration"  
 
