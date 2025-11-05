@@ -1,16 +1,23 @@
 # <img style="float: center; height: 6%; width: 6%;" src="../../img/gems2.png"> GEMS: Citing research
 
-Example of research using and citing GEMS
+<div class="grid cards" markdown>
+
+-   [:material-text-search:{ .lg .middle } __Click here for up-to-date research citing GEMS, and filter by subject area, application keywords, and more__](https://www.scopus.com/results/results.uri?s=REFEID%282-s2.0-84872274540%29&sot=record&sdt=cl&origin=resultslist&src=s&sort=plf-f&limit=10&sessionSearchId=be8b46913c7f21154cfa3dedd17a3b93)
+
+</div>
+
+
+Limited Examples of research using and citing GEMS
 
 - [GEM Convex Programming Approach and IPM Algorithm](#gem-convex-programming-approach-and-ipm-algorithm)
 - [Authors' Applications of GEMS Thermodynamic Modelling](#authors-applications-of-gems-thermodynamic-modelling)
 - [Reactive Transport Modelling using GEMS3K Coupled Codes](#reactive-transport-modelling-using-gems3k-coupled-codes)
 - [Parameter Fitting and the GEMSFITS Code](#parameter-fitting-and-the-gemsfits-code)
-- [Education and Other GEMS Applications in Aq-SS and Sorption Modelling](#education-and-other-gems-applications-in-aq-ss-and-sorption-modelling)
+- [Education and Other GEMS Applications in Aq-SS and Sorption Modelling](#education-and-other-gem-frameworks-and-applications)
 - [Publications of Collaborators and Developers of Specific Databases](#publications-of-collaborators-and-developers-of-specific-databases)
-- [MINES Database and Applications in Lithogeochemistry of Hydrothermal Ore Deposits](#mines-database-and-applications-in-lithogeochemistry-of-hydrothermal-ore-deposits)
-- [CEMDATA Database and Applications in Cement and Concrete Chemistry](#cemdata-database-and-applications-in-cement-and-concrete-chemistry)
-- [HERACLES Database and Applications in Nuclear Engineering](#heracles-database-and-applications-in-nuclear-engineering)
+- [MINES Database and Applications in Lithogeochemistry of Hydrothermal Ore Deposits](#mines-data-base-and-applications-in-lithogeochemistry-of-hydrothermal-ore-deposits)
+- [CEMDATA Database and Applications in Cement and Concrete Chemistry](#cemdata-data-base-and-applications-in-cement-and-concrete-chemistry)
+- [HERACLES Database and Applications in Nuclear Engineering](#heracles-data-base-and-applications-in-nuclear-engineering)
 
 ---
 
