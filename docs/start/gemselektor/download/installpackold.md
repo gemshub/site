@@ -5,21 +5,21 @@ Please, use an appropriate direct link below to download the actual revision of 
 
 <div class="grid cards" markdown>
 
-- :material-microsoft-windows: [__Download:__ GEMS3.9.7hotfix for Windows-x64 (offline installer)](https://gems.web.psi.ch/GEMS3/downloads/reposit/win64/Gems3.9.7hotfix-4795504.6606501-win64-qt6-install.exe "Link to download the latest GEMS3.9.x for Windows")
-- :simple-macos: [__Download:__ GEMS3.9.6 for MacOS-x64 (offline installer)](https://gems.web.psi.ch/GEMS3/downloads/reposit/MacOSX/Gems3.9.6-2ed66a4.9a8c970-qt5-macos-x86-64.dmg "Link to download the latest GEMS3.9.x for macOS")
-- :fontawesome-brands-linux: [__Download:__ GEMS3.9.7hotfix for Linux-x64 (offline installer)](https://gems.web.psi.ch/GEMS3/downloads/reposit/linux/Gems3.9.7hotfix-4795504.6606501-qt5-linux-x86_64.AppImage "Link to download the latest GEMS3.9.x for Linux")
+- :material-microsoft-windows: [__Download:__ GEMS3.9.7hotfix for Windows-x64 (offline installer)](https://drive.switch.ch/index.php/s/CYVdk0Qq9UAZxAB "Link to download the latest GEMS3.9.x for Windows")
+- :simple-macos: [__Download:__ GEMS3.9.6 for MacOS-x64 (offline installer)](https://drive.switch.ch/index.php/s/6MlZthKnOlxqZxb "Link to download the latest GEMS3.9.x for macOS")
+- :fontawesome-brands-linux: [__Download:__ GEMS3.9.7hotfix for Linux-x64 (offline installer)](https://drive.switch.ch/index.php/s/69jSGGOpQBDfrJR "Link to download the latest GEMS3.9.x for Linux")
 
-    [**Download:** GEMS3.9.7hotfix for Linux-x64 (tar.xz of AppImage)](https://gems.web.psi.ch/GEMS3/downloads/reposit/linux/Gems3.9.7hotfix-4795504.6606501-qt5-linux-x86_64.tar.xz "Link to download the latest GEMS3.9.x for Linux")
+    [**Download:** GEMS3.9.7hotfix for Linux-x64 (tar.xz of AppImage)](https://drive.switch.ch/index.php/s/D8fatJhkssQUIfh "Link to download the latest GEMS3.9.x for Linux")
 
 </div>
 
 ## Older versions
 
-[Gems3.9.6](https://gems.web.psi.ch/GEMS3/downloads/reposit/win64/Gems3.9.6-2ed66a4.9a8c970-qt6-win64-install.exe "Link to download v.3.9.6 for Windows") for Windows.         [Gems3.9.6](https://gems.web.psi.ch/GEMS3/downloads/reposit/MacOSX/Gems3.9.6-2ed66a4.9a8c970-qt5-macos-x86-64.dmg "Link to download v.3.9.6 for Mac")  for MacOS.         [Gems3.9.6](https://gems.web.psi.ch/GEMS3/downloads/reposit/linux/Gems3.9.6-2ed66a4.9a8c970-qt5-linux-x86_64.AppImage "Link to download v.3.9.6 for linux (Ubuntu)") for Linux (AppImage).          [Gems3.9.6](https://gems.web.psi.ch/GEMS3/downloads/reposit/linux/Gems3.9.6-2ed66a4.9a8c970-qt5-linux-x86_64.tar.gz "Link to download v.3.9.6 for linux (Ubuntu)") for Linux (tar.gz).
+[Gems3.9.6](https://drive.switch.ch/index.php/s/IxRwx6F2rfzEGdX "Link to download v.3.9.6 for Windows") for Windows.         [Gems3.9.6](https://drive.switch.ch/index.php/s/6MlZthKnOlxqZxb "Link to download v.3.9.6 for Mac")  for MacOS.         [Gems3.9.6](https://drive.switch.ch/index.php/s/hMrx5ws0Ycp4fDV "Link to download v.3.9.6 for linux (Ubuntu)") for Linux (AppImage).          [Gems3.9.6](https://drive.switch.ch/index.php/s/b5wGhCEtJmBNqVo "Link to download v.3.9.6 for linux (Ubuntu)") for Linux (tar.gz).
 
 In the unlikely case of unresolved issues with installation or use of GEM-Selektor v.3.9.6, you still can perform a fallback download and installation of previously released (in June 2022) GEM-Selektor v.3.9.5 packages using the links below.  
 
-[Gems3.9.5](https://gems.web.psi.ch/GEMS3/downloads/reposit/win64/Gems3.9.5-9f3dc56.6dae7a9-win64-qt6install.exe "Link to download v.3.9.2 for Windows") for Windows.         [Gems3.9.5](https://gems.web.psi.ch/GEMS3/downloads/reposit/MacOSX/Gems3.9.5-9f3dc56.6dae7a9-qt6-macos-x86-64.dmg "Link to download v.3.9.2 for Mac")  for MacOS.         [Gems3.9.5](https://gems.web.psi.ch/GEMS3/downloads/reposit/linux/Gems3.9.5-9f3dc56.6dae7a9-linux-x64-qt5.tar.gz "Link to download v.3.9.2 for linux (Ubuntu)") for Linux.
+[Gems3.9.5](https://drive.switch.ch/index.php/s/tIIfeOeaiW1HnM7 "Link to download v.3.9.5 for Windows") for Windows.         [Gems3.9.5](https://drive.switch.ch/index.php/s/pEosKTyqJ7eue6g "Link to download v.3.9.5 for Mac")  for MacOS.         [Gems3.9.5](https://drive.switch.ch/index.php/s/fuEM01hJCnnQ9TC "Link to download v.3.9.5 for linux (Ubuntu)") for Linux.
 
 Please, do not forget to let us know about the issues encountered during the installation of GEM-Selektor v.3.9.6 on your OS by emailing to gems2.support(at)psi.ch
 
