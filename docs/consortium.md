@@ -19,9 +19,13 @@ GEMS Support consortium was established to ensure the continued basic developmen
 
 The Consortium Board composed out of one representative per member meets at least once per year to agree on the development tasks and priorities. 
 
+## Board Meetings 2026
+
+- TBA
+
 ## Board Meetings 2025
 
-- TBA 
+- 2nd of December 2025 
 - 21st of February 2025
 
 For more information contact the consortium Coordinator: Dr. George-Dan Miron (dan.miron@psi.ch)
