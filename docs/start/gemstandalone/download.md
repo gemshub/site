@@ -44,13 +44,19 @@ The source code can be downloaded from the official [Git repository](https://git
         Create the environment and install required packages:
 
         ```bash
-        conda create -n xgems python=3.10 xgems jupyter numpy scipy pandas matplotlib openpyxl
+        conda create -n xgems python=3.14 xgems jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         Confirm with 'y' and then wait:
 
         ```
         Proceed ([y]/n)? y
+        ```
+
+        If you have blocked connection to anaconda repository. First remove the `defaults` channel and used only conda-forge by executing
+
+        ```
+        conda config --remove channels defaults
         ```
 
         Activate the environment:
@@ -141,13 +147,19 @@ The source code can be downloaded from the official [Git repository](https://git
         Create the environment and install required packages:
 
         ```bash
-        conda create -n xgems python=3.10 xgems jupyter numpy scipy pandas matplotlib openpyxl
+        conda create -n xgems python=3.14 xgems jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         Confirm with:
 
         ```
         Proceed ([y]/n)? y
+        ```
+
+        If you have blocked connection to anaconda repository. First remove the `defaults` channel and used only conda-forge by executing
+
+        ```
+        conda config --remove channels defaults
         ```
 
         Activate the xgems working environment:
@@ -273,13 +285,19 @@ The source code can be downloaded from the official [Git repository](https://git
         If there are issues with arm Mac computers you can indicate that these are x64 apps by:
         
         ```bash
-        CONDA_SUBDIR=osx-64 conda create -n xgems python=3.10 xgems jupyter numpy pandas matplotlib openpyxl
+        CONDA_SUBDIR=osx-64 conda create -n xgems python=3.14 xgems jupyter numpy pandas matplotlib openpyxl
         ```
 
         Confirm with:
 
         ```
         Proceed ([y]/n)? y
+        ```
+
+        If you have blocked connection to anaconda repository. First remove the `defaults` channel and used only conda-forge by executing
+
+        ```
+        conda config --remove channels defaults
         ```
 
         Activate the environment:
