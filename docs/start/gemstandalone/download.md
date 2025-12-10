@@ -360,11 +360,11 @@ conda install conda-forge::xgems
 
 >[![Conda-Forge](https://img.shields.io/conda/vn/conda-forge/xgems?style=for-the-badge&logo=conda-forge)](https://anaconda.org/conda-forge/xgems)
 
-!!! tip "Use jupyter lab from base conda environment:"
+!!! tip "Use jupyter lab from base conda environment"
 
-    Install nb_conda_kernels in the same environment as JupyterLab, in your case, you installed it in base
-    Create new conda environments with your desired packages, but also include the ipykernel package (if using Python)
-    Your conda environments should be accessible via JupyterLab
+    * Install ´nb_conda_kernels´ in the same environment as JupyterLab (base)
+    * Create new conda environments with your desired packages, but also include the ´ipykernel´ package 
+    * Your conda environments should now be accessible via JupyterLab
 
 
 <!-- ## pyGEMS
