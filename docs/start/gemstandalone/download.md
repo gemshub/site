@@ -39,12 +39,12 @@ The source code can be downloaded from the official [Git repository](https://git
         mkdir C:\Users\MyUser\gemsworkshop
         cd C:\Users\MyUser\gemsworkshop # or any preferred location
         ```
-        Once you start Jupyter Lab, you will be able to navigate inside this directory, you can copy here other files and notebooks.
+        This is the working directory once you later start Jupyter Lab, you will be able to navigate inside this directory, you can copy here other files and notebooks.
 
         Create the environment and install required packages:
 
         ```bash
-        conda create -n xgems python=3.14 xgems jupyter numpy scipy pandas matplotlib openpyxl
+        conda create -c conda-forge python=3.13 jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         Confirm with 'y' and then wait:
@@ -53,7 +53,7 @@ The source code can be downloaded from the official [Git repository](https://git
         Proceed ([y]/n)? y
         ```
 
-        If you have blocked connection to anaconda repository. First remove the `defaults` channel and used only conda-forge by executing
+        If you have blocked connection to anaconda repository. First remove the `defaults` & other problematic channel and used only conda-forge by executing
 
         ```
         conda config --remove channels defaults
@@ -142,12 +142,12 @@ The source code can be downloaded from the official [Git repository](https://git
         cd ~/gemsworkshop  # or any preferred location
         ```
 
-        Once you started Jupyter Lab, you will be able to navigate inside this directory, you can copy here other files and notebooks.
+        This is the working directory once you later start Jupyter Lab, you will be able to navigate inside this directory, you can copy here other files and notebooks.
 
         Create the environment and install required packages:
 
         ```bash
-        conda create -n xgems python=3.14 xgems jupyter numpy scipy pandas matplotlib openpyxl
+        conda create -c conda-forge python=3.13 jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         Confirm with:
@@ -274,12 +274,12 @@ The source code can be downloaded from the official [Git repository](https://git
         cd ~/gemsworkshop  # or any preferred location
         ```
 
-        Once you start Jupyter Lab you will be able to navigate inside this directory, you can copy here other files and notebooks.
+        This is the working directory once you later start Jupyter Lab, you will be able to navigate inside this directory, you can copy here other files and notebooks.
 
         Create the xgems Conda environment and install required packages:
 
         ```bash
-        conda create -n xgems python=3.10 xgems jupyter numpy scipy pandas matplotlib openpyxl
+        conda create -c conda-forge python=3.13 xgems jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         If there are issues with arm Mac computers you can indicate that these are x64 apps by:
@@ -359,6 +359,13 @@ conda install conda-forge::xgems
 >Latest version
 
 >[![Conda-Forge](https://img.shields.io/conda/vn/conda-forge/xgems?style=for-the-badge&logo=conda-forge)](https://anaconda.org/conda-forge/xgems)
+
+!!! tip "Use jupyter lab from base conda environment:"
+
+    Install nb_conda_kernels in the same environment as JupyterLab, in your case, you installed it in base
+    Create new conda environments with your desired packages, but also include the ipykernel package (if using Python)
+    Your conda environments should be accessible via JupyterLab
+
 
 <!-- ## pyGEMS
 
