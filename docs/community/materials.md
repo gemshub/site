@@ -13,6 +13,7 @@ Start learning GEMS through hands-on tutorials and example projects maintained a
 **Recorded Lectures**:  
 *Thermodynamic Modeling of Cementitious Systems Using GEMS*  
 - ▶️ [English Video Series (2020)](https://www.empa.ch/web/s308/gems-2020-videos)
+- ▶️ [Chinese Video Series (2020)](https://drive.switch.ch/index.php/s/sDkMQb3fJJqrCn5) 
 
 ---
 
