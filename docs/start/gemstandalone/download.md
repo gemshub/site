@@ -44,7 +44,13 @@ The source code can be downloaded from the official [Git repository](https://git
         Create the environment and install required packages:
 
         ```bash
-        conda create -c conda-forge python=3.13 jupyter numpy scipy pandas matplotlib openpyxl
+        mamba create -n xgems -c conda-forge python=3.13 xgems jupyter numpy scipy pandas matplotlib openpyxl
+        ```
+
+        If you are using miniconda, anaconda package manager you can do
+
+        ```bash
+        conda create -n xgems -c conda-forge python=3.13 xgems jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         Confirm with 'y' and then wait:
@@ -147,7 +153,13 @@ The source code can be downloaded from the official [Git repository](https://git
         Create the environment and install required packages:
 
         ```bash
-        conda create -c conda-forge python=3.13 jupyter numpy scipy pandas matplotlib openpyxl
+        mamba create -n xgems -c conda-forge python=3.13 xgems jupyter numpy scipy pandas matplotlib openpyxl
+        ```
+
+        If you are using miniconda, anaconda package manager you can do
+
+        ```bash
+        conda create -n xgems -c conda-forge python=3.13 xgems jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         Confirm with:
@@ -279,7 +291,13 @@ The source code can be downloaded from the official [Git repository](https://git
         Create the xgems Conda environment and install required packages:
 
         ```bash
-        conda create -c conda-forge python=3.13 xgems jupyter numpy scipy pandas matplotlib openpyxl
+        mamba create -n xgems -c conda-forge python=3.13 xgems jupyter numpy scipy pandas matplotlib openpyxl
+        ```
+
+        If you are using miniconda, anaconda package manager you can do
+
+        ```bash
+        conda create -n xgems -c conda-forge python=3.13 xgems jupyter numpy scipy pandas matplotlib openpyxl
         ```
 
         If there are issues with arm Mac computers you can indicate that these are x64 apps by:
