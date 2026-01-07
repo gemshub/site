@@ -27,9 +27,9 @@ GEMS3K runs under Windows, Mac OSX and Linux desktop PCs, as well as on various 
 
 The `xGEMS`is a modern interface (`ChemicalEngine`) accessible from C/C++ amd Python. Python module enables seamless integration of GEMS3K into Python workflows, allowing researchers to leverage its capabilities in data analysis and machine learning applications.
 
-[:octicons-arrow-right-24: Documentation xGEMS](download#xgems)
+[:octicons-arrow-right-24: Documentation xGEMS](documentationdownload#xgems)
 
-[:octicons-arrow-right-24: Download xGEMS](documentation#xgems) 
+[:octicons-arrow-right-24: Download xGEMS](download#xgems) 
 
 [:octicons-arrow-right-24: Examples xGEMS](documentation/examples#xgems) 
 
