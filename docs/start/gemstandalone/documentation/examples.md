@@ -12,7 +12,7 @@ The **GEMS3K I/O files** used in the `gemcalc` and `node-gem` test examples were
 
 #### Reactive Transport in a Calcite Column (xGEMS in Python)
 
-A demo reactive transport modeling of **the calcite–dolomite benchmark**[@Yapparova2017;@SHAO2009] using xGEMS can be found in the [repository](https://github.com/gemshub/xgems/tree/master/demosdemo_reactive_transport.py)
+A demo reactive transport modeling of **the calcite–dolomite benchmark**[@Yapparova2017;@SHAO2009] using xGEMS can be found in the [repository](https://github.com/gemshub/xgems/blob/master/demos/demo_reactive_transport.py)
 
 ![GEMS-CSMP](../calcite-dolomite.png){ width="400" }
 ![GEMS-OpenGeoSys](../calcite-dolomite2.png){ width="400" }
