@@ -90,7 +90,7 @@ theme:
     - content.tooltips
   #  - navigation.tracking
     - toc.follow
-    - announce.dismiss
+   # - announce.dismiss
   favicon: 'img/gems1.png'
   logo: 'img/gems1.png'
 
