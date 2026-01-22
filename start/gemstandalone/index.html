@@ -22,7 +22,7 @@
     
     
       
-        <title>GEM-Standalone (GEMS3K) - Gibbs Energy Minimisation Software (GEMS)</title>
+        <title>GEM-Standalone - Gibbs Energy Minimisation Software (GEMS)</title>
       
     
     
@@ -97,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gem-standalone-gems3k" class="md-skip">
+        <a href="#gem-standalone" class="md-skip">
           Skip to content
         </a>
       
@@ -143,7 +143,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GEM-Standalone (GEMS3K)
+              GEM-Standalone
             
           </span>
         </div>
@@ -2015,9 +2015,9 @@
   
 
 
-<h1 id="gem-standalone-gems3k"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/gems1.png" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gems1.png"></a> <abbr title="standalone code for solving chemical equilibrium problems">GEM-Standalone</abbr> (<abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr>)</h1>
+<h1 id="gem-standalone"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/gems1.png" data-desc-position="bottom"><img style="float: center; height: 6%; width: 6%;" src="../../img/gems1.png"></a> <abbr title="standalone code for solving chemical equilibrium problems">GEM-Standalone</abbr></h1>
 <p><strong>Standalone Solver of Chemical Equilibria for Coupled Simulation Codes</strong></p>
-<p>Codes can be coupled to <abbr title="standalone code for solving chemical equilibrium problems">GEM-Standalone</abbr> through its <a href="#gems3k-interfaces">C/C++</a> and <a href="#modern-xgems-c-and-python-interface">Python</a> interfaces. <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> Standalone is a powerful and flexible tool for geochemical modeling, enabling high-precision equilibrium calculations in diverse applications.</p>
+<p>Codes can be coupled to <abbr title="standalone code for solving chemical equilibrium problems">GEM-Standalone</abbr> through its C/C++ and Python interfaces (<a href="#gems3k-interface-c"><abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr></a>, <a href="#xgems-interface-cpython"><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr></a>). <abbr title="standalone code for solving chemical equilibrium problems">GEM-Standalone</abbr> is a powerful and flexible tool for geochemical modeling, enabling high-precision equilibrium calculations in diverse applications.</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Equilibrium solver capable of modeling complex (geo)chemical systems with many non-ideal solutions.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Supports variable temperature and pressure with substantial improvements in Gibbs Energy Minimization algorithms.</li>
@@ -2029,18 +2029,18 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Used in developing coupled reactive mass transport simulation codes, such as OpenGeoSys-GEM.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Integrated into parameter fitting frameworks like <a href="../gemsfits"><abbr title="GEMS input parameter optimization tool">GEMSFITS</abbr></a>.</li>
 </ul>
-<p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> (formerly GEMIPM2K) is a standalone C/C++ code implementing the efficient numerical kernel <a href="#gems-standalone-gems3k" title="more information in doc/html/theory_gem.html help file">IPM-3</a> of the <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> v.3 package. It enables geochemical thermodynamic modeling of local/partial equilibria in complex heterogeneous multicomponent-multiphase systems. The code includes the <abbr title="Library of Models of Mixing in Phases-Solutions">TSolMod</abbr> library, which provides built-in phase models of non-ideal mixing for a broad range of geochemical applications (<a href="solutionmodels">more...</a>). <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> employs fast and efficient linear algebra solvers from the <a href="http://math.nist.gov/tnt/download.html">JAMA C++ TNT package</a> (NIST).</p>
-<p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> is released under the <a href="http://www.gnu.org/licenses/lgpl.html">Lesser GPL</a> v.3 license, promoting broad applications in hydro(thermal)- and waste geochemistry research. The code is provided for implementation of various reactive-mass-transport and other coupled codes, where massive, chemically plausible computations of local/partial equilibrium states are necessary, including HPC codes.  </p>
-<p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> runs under Windows, Mac OSX and Linux desktop PCs, as well as on various parallel architectures. </p>
 <h2 id="code-interfaces">Code Interfaces</h2>
 <h3 id="xgems-interface-cpython"><abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr> Interface (C++/Python)</h3>
 <p>The <code>xGEMS</code>is a modern interface (<code>ChemicalEngine</code>) accessible from C/C++ amd Python. Python module enables seamless integration of <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> into Python workflows, allowing researchers to leverage its capabilities in data analysis and machine learning applications.</p>
-<p><a href="documentation#xgems"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Documentation <abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr></a></p>
+<p><a href="documentation#xgems-interface"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Documentation <abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr></a></p>
 <p><a href="download#xgems"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Download <abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr></a> </p>
 <p><a href="documentation/examples#xgems"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Examples <abbr title="Modern C++ and python interface to GEM-Standalone code">xGEMS</abbr></a> </p>
 <h3 id="gems3k-interface-c"><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> Interface (C++)</h3>
+<p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> (formerly GEMIPM2K) is a standalone C/C++ code implementing the efficient numerical kernel <a href="#gems-standalone-gems3k" title="more information in doc/html/theory_gem.html help file">IPM-3</a> of the <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> v.3 package. It enables geochemical thermodynamic modeling of local/partial equilibria in complex heterogeneous multicomponent-multiphase systems. The code includes the <abbr title="Library of Models of Mixing in Phases-Solutions">TSolMod</abbr> library, which provides built-in phase models of non-ideal mixing for a broad range of geochemical applications (<a href="solutionmodels">more...</a>). <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> employs fast and efficient linear algebra solvers from the <a href="http://math.nist.gov/tnt/download.html">JAMA C++ TNT package</a> (NIST).</p>
+<p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> is released under the <a href="http://www.gnu.org/licenses/lgpl.html">Lesser GPL</a> v.3 license, promoting broad applications in hydro(thermal)- and waste geochemistry research. The code is provided for implementation of various reactive-mass-transport and other coupled codes, where massive, chemically plausible computations of local/partial equilibrium states are necessary, including HPC codes.  </p>
+<p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> runs under Windows, Mac OSX and Linux desktop PCs, as well as on various parallel architectures. </p>
 <p><abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> provides a flexible <code>TNode</code> C/C++ interface for data exchange in coupled simulations.</p>
-<p><a href="documentation#gems3k"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Documentation <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr></a></p>
+<p><a href="documentation#gems3k-interface"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Documentation <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr></a></p>
 <p><a href="download#gems3k"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Download <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr></a> </p>
 <p><a href="documentation/examples#gems3k"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Examples <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr></a> </p>
 <h2 id="coupled-codes">Coupled Codes</h2>
@@ -2118,7 +2118,7 @@ It is available free of charge for developers affiliated with non-profit educati
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 8, 2026 08:17:44 UTC">January 8, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 22, 2026 15:30:38 UTC">January 22, 2026</span>
   </span>
 
     
