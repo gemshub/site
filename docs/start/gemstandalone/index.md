@@ -2,7 +2,7 @@
 
 **Standalone Solver of Chemical Equilibria for Coupled Simulation Codes**
 
- Codes can be coupled to GEM-Standalone through its C/C++ and Python interfaces ([xGEMS](#gems3k-interface-c), [GEMS3K](#xgems-interface-cpython)). GEM-Standalone is a powerful and flexible tool for geochemical modeling, enabling high-precision equilibrium calculations in diverse applications.
+ Codes can be coupled to GEM-Standalone through its C/C++ and Python interfaces ([xGEMS](#xgems-interface-cpython), [GEMS3K](#gems3k-interface-c)). GEM-Standalone is a powerful and flexible tool for geochemical modeling, enabling high-precision equilibrium calculations in diverse applications.
 
 - [x] Equilibrium solver capable of modeling complex (geo)chemical systems with many non-ideal solutions.
 - [x] Supports variable temperature and pressure with substantial improvements in Gibbs Energy Minimization algorithms.
