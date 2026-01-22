@@ -1,8 +1,8 @@
-# <img style="float: center; height: 6%; width: 6%;" src="../../img/gems1.png"> GEM-Standalone (GEMS3K)
+# <img style="float: center; height: 6%; width: 6%;" src="../../img/gems1.png"> GEM-Standalone
 
 **Standalone Solver of Chemical Equilibria for Coupled Simulation Codes**
 
- Codes can be coupled to GEM-Standalone through its [C/C++](#gems3k-interfaces) and [Python](#modern-xgems-c-and-python-interface) interfaces. GEMS3K Standalone is a powerful and flexible tool for geochemical modeling, enabling high-precision equilibrium calculations in diverse applications.
+ Codes can be coupled to GEM-Standalone through its C/C++ and Python interfaces ([xGEMS](#gems3k-interface-c), [GEMS3K](#xgems-interface-cpython)). GEM-Standalone is a powerful and flexible tool for geochemical modeling, enabling high-precision equilibrium calculations in diverse applications.
 
 - [x] Equilibrium solver capable of modeling complex (geo)chemical systems with many non-ideal solutions.
 - [x] Supports variable temperature and pressure with substantial improvements in Gibbs Energy Minimization algorithms.
@@ -14,6 +14,19 @@
 - [x] Used in developing coupled reactive mass transport simulation codes, such as OpenGeoSys-GEM.
 - [x] Integrated into parameter fitting frameworks like [GEMSFITS](../gemsfits).
 
+## Code Interfaces
+
+### xGEMS Interface (C++/Python)
+
+The `xGEMS`is a modern interface (`ChemicalEngine`) accessible from C/C++ amd Python. Python module enables seamless integration of GEMS3K into Python workflows, allowing researchers to leverage its capabilities in data analysis and machine learning applications.
+
+[:octicons-arrow-right-24: Documentation xGEMS](documentation#xgems-interface)
+
+[:octicons-arrow-right-24: Download xGEMS](download#xgems) 
+
+[:octicons-arrow-right-24: Examples xGEMS](documentation/examples#xgems) 
+
+### GEMS3K Interface (C++)
 
 GEMS3K (formerly GEMIPM2K) is a standalone C/C++ code implementing the efficient numerical kernel [IPM-3](#gems-standalone-gems3k "more information in doc/html/theory_gem.html help file") of the GEM-Selektor v.3 package. It enables geochemical thermodynamic modeling of local/partial equilibria in complex heterogeneous multicomponent-multiphase systems. The code includes the TSolMod library, which provides built-in phase models of non-ideal mixing for a broad range of geochemical applications ([more...](solutionmodels)). GEMS3K employs fast and efficient linear algebra solvers from the [JAMA C++ TNT package](http://math.nist.gov/tnt/download.html) (NIST).
 
@@ -21,24 +34,9 @@ GEMS3K is released under the [Lesser GPL](http://www.gnu.org/licenses/lgpl.html)
 
 GEMS3K runs under Windows, Mac OSX and Linux desktop PCs, as well as on various parallel architectures. 
 
-## Code Interfaces
-
-### xGEMS Interface (C++/Python)
-
-The `xGEMS`is a modern interface (`ChemicalEngine`) accessible from C/C++ amd Python. Python module enables seamless integration of GEMS3K into Python workflows, allowing researchers to leverage its capabilities in data analysis and machine learning applications.
-
-[:octicons-arrow-right-24: Documentation xGEMS](documentation#xgems)
-
-[:octicons-arrow-right-24: Download xGEMS](download#xgems) 
-
-[:octicons-arrow-right-24: Examples xGEMS](documentation/examples#xgems) 
-
-
-### GEMS3K Interface (C++)
-
 GEMS3K provides a flexible `TNode` C/C++ interface for data exchange in coupled simulations.
 
-[:octicons-arrow-right-24: Documentation GEMS3K](documentation#gems3k)
+[:octicons-arrow-right-24: Documentation GEMS3K](documentation#gems3k-interface)
 
 [:octicons-arrow-right-24: Download GEMS3K](download#gems3k) 
 

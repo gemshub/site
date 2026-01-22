@@ -9,7 +9,7 @@
 :octicons-light-bulb-16: Looking to model rich chemical systems, perform single or batch process calculations (speciation, mineral solubility, sorption, model experiments, etc.), and even conduct simple reactive transport simulations? Check out the [GEM-Selektor](gemselektor) Interactive Package for Thermodynamic Modeling with a Graphical User Interface (GUI).
 
 ## [GEM-Standalone](gemstandalone)
-:octicons-light-bulb-16: Want to perform geochemical calculations from Python in a Jupyter notebook or couple a geochemical solver to transport, parameter optimization, or other application code? Check out the [GEM-Standalone](gemstandalone) code and libraries with C++ and Python interfaces. To use GEM-Standalone, the chemical system needs to be first defined in GEM-Selektor and exported to standalone text files.
+:octicons-light-bulb-16: Want to perform geochemical calculations from Python in a Jupyter notebook or couple a geochemical solver to transport, parameter optimization, or other application code? Check out the [GEM-Standalone](gemstandalone) code and libraries with C++ and Python interfaces (xGEMS, GEMS3K). To use GEM-Standalone, the chemical system needs to be first defined in GEM-Selektor and exported to standalone text files.
 
 ## [GEMSFITS](gemsfits)
 :octicons-light-bulb-16: Looking to extract thermodynamic properties from experiments and fit GEMS model input parameters? Check out the [GEMSFITS](gemsfits) multi-parameter and multi-property optimization package with a Graphical User Interface (GUI). To use GEMSFITS, the chemical system needs to be first defined in GEM-Selektor and exported to standalone text files. -->

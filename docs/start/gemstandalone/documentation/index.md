@@ -1,10 +1,10 @@
 # <img style="float: center; height: 6%; width: 6%;" src="../../../img/gems1.png"> GEM-Standalone: Documentation
 
-GEM-Standalone Solver of chemical equilibria can be coupled to other simulation codes or used from Python Jupyter notebook through its C++/Python interfaces (GEMS3K node or node array, xGEMS/pyGEMS ChemicalEngine).
+GEM-Standalone Solver of chemical equilibria can be coupled to other simulation codes or used from Python Jupyter notebook through its C++/Python interfaces.
 
 !!!info "Export standalone chemical system"
 
-    To work with any GEM-Standalone code you must first use [GEM-Selektor](../../gemselektor) to create a modeling project, having a defined chemical system with respective models and database. Once you are satisfied with the system this can be exported into editable text files (standalone chemical system definition, containing models, parameters, thermodynamic data). These files are then used to initialize any number of GEMS instances in the coupled code or python script.
+    To work with any GEM-Standalone code/interface you must first use [GEM-Selektor](../../gemselektor) to create a modeling project, having a defined chemical system with respective models and database. Once you are satisfied with the system this can be exported into editable text files (standalone chemical system definition, containing models, parameters, thermodynamic data). These files are then used to initialize any number of GEMS instances in the coupled code or python script.
 
     The recommended way to prepare Standalone input files consists in creating a modeling project in [GEM-Selektor](../../gemselektor) package, creating and calculating chemical systems (equilibria), and then exporting the GEM tasks to GEMS3K I/O files. Details about this process can be found in GEMS3K and GEM-Selektor [help files](../../gemselektor/documentation/#important-folders).
 
