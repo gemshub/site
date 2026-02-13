@@ -14,8 +14,8 @@ Please, use an appropriate direct link below to download the actual version of t
   const repo = "gemshub/GEMSGUI";
   const assetPatterns = {
     windows: /^windows-.*\.zip$/i,
-    macos_zip: /^macos-.*\.zip$/i,
-    macos_dmg: /^macos-.*\.dmg$/i,
+    macos_dmg: /macos-.*-(intel|arm64|universal)\.dmg$/i,
+    macos_zip: /macos-.*-(intel|arm64|universal)\.zip$/i, 
     linux: /^linux-.*\.zip$/i
   };
 
