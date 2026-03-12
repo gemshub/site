@@ -28,22 +28,22 @@ When working with GEM-Selektor two folder locations are important:
 === "Windows"
     | Folder Path  &nbsp; &nbsp; &nbsp;                                                 | Description                       |
     | ------------------------------------------------------------- | ------------------------------------    |
-    | `C:\'your_user'\`</br>`GEMS<version>\Gems3-app\`                         | **Program folder** |
+    | `C:\'your_user'\`</br>`GEMS<version>\Gems3-app\`                         | **Program folder**: This folder is located in the main application folder and depends where you have it on your PC |
     | `C:\'your user'\`</br>`GEMS<version>\Gems3-app\Resources\`               | Resources folder, here you also have the doc folder with documentation **help files** `\doc\html\` |
     | `C:\'your user'\`</br>`GEMS<version>\Gems3-app\Resources\DB.default\`    | default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project |
     | `C:\'your user'\`</br>`Library\Gems3\Projects\`                      | **Projects Folder**: This is where the test and user projects are stored. To add a shared project, simply copy the project folder here, and it will appear in the Open/New projects list when you open GEM-Selektor. To share your project, zip the folder and send it to someone else. They will need to unzip and copy the project folder into their GEMS projects folder. |
 === "Mac OS X"  
     | Folder Path   &nbsp; &nbsp; &nbsp;                                                | Description                       |
     | ------------------------------------------------------- | ------------------------------------    |
-    | `/Applications/`</br>`Gems3.app/Contents/`                          | **Program folder** |
-    | `/Applications/`</br>`Gems3.app/Contents/Resources/`                         | Resources folder, here you also have the doc folder with documentation **help files** `/doc/html/` |
-    | `/Applications/`</br>`Gems3.app/Contents/Resources/DB.default/`                         | default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project |
+    | `gem-selektor.app/Contents/`                          | **Program folder**: The folder is located inside of the gem-selektor.app. This folder is usually located in the main /Applications folder or in the user's folder ~/GEMS, depending on where the user has put gem-selektor.app during the installation. In Finder, right-click on the gem-selektor.app and choose "Show package contents".  |
+    | `gem-selektor.app/Contents/Resources/`                         | Resources folder, here you also have the doc folder with documentation **help files** `/doc/html/` |
+    | `gem-selektor.app/Contents/Resources/DB.default/`              | default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project |
     | `/Library/`</br>`gems3/projects/`                          | **Projects Folder**: This is where the test and user projects are stored. To add a shared project, simply copy the project folder here, and it will appear in the Open/New projects list when you open GEM-Selektor. To share your project, zip the folder and send it to someone else. They will need to unzip and copy the project folder into their GEMS projects folder. |
 
 === "Linux"
     | Folder Path         &nbsp; &nbsp; &nbsp;                                          | Description                       |
     | ------------------------------------------------------- | ------------------------------------    |
-    | `~/'your_user'/`</br>`GEMS<version>/Gems3-app/`                         | **Program folder** |
+    | `~/'your_user'/`</br>`GEMS<version>/Gems3-app/`                         | **Program folder**: This folder is located in the main application folder and depends where you have it on your PC |
     | `~/'your user'/`</br>`GEMS<version>/Gems3-app/Resources/`               | Resources folder, here you also have the doc folder with documentation **help files** `/doc/html/` |
     | `~/'your user'/`</br>`GEMS<version>/Gems3-app/Resources/DB.default/`    | default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project |
     | `~/'your user'/`</br>`Library/Gems3/Projects/`                      | **Projects Folder**: This is where the test and user projects are stored. To add a shared project, simply copy the project folder here, and it will appear in the Open/New projects list when you open GEM-Selektor. To share your project, zip the folder and send it to someone else. They will need to unzip and copy the project folder into their GEMS projects folder. |

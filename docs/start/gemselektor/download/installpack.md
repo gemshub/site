@@ -4,18 +4,30 @@ Please, use an appropriate direct link below to download the actual version of t
 <div class="grid cards" markdown>
 
 - :material-microsoft-windows: [Download: GEMS Latest for Windows-x64 ](# "Fetching latest release...")
-- :simple-macos: [Download: GEMS Latest for macOS-x64 ](# "Fetching latest release...")
-- :simple-macos: [Download: GEMS Latest for macOS-x64 dmg ](# "Fetching latest release...")
+
+- :simple-macos: [Download: GEMS Latest for macOS-intel zip](# "Fetching latest release...")
+- :simple-macos: [Download: GEMS Latest for macOS-intel dmg](# "Fetching latest release...")
+
+- :simple-macos: [Download: GEMS Latest for macOS-arm64 zip](# "Fetching latest release...")
+- :simple-macos: [Download: GEMS Latest for macOS-arm64 dmg](# "Fetching latest release...")
+
 - :fontawesome-brands-linux: [Download: GEMS Latest for Linux-x64 ](# "Fetching latest release...")
 
 </div>
 
+
 <script>
   const repo = "gemshub/GEMSGUI";
+
   const assetPatterns = {
     windows: /^windows-.*\.zip$/i,
-    macos_dmg: /macos-.*-(intel|arm64|universal)\.dmg$/i,
-    macos_zip: /macos-.*-(intel|arm64|universal)\.zip$/i, 
+
+    macos_intel_zip: /^macos-GEMS.*-intel\.zip$/i,
+    macos_intel_dmg: /^macos-GEMS.*-intel\.dmg$/i,
+
+    macos_arm_zip: /^macos-GEMS.*(?<!intel)\.zip$/i,
+    macos_arm_dmg: /^macos-GEMS.*(?<!intel)\.dmg$/i,
+
     linux: /^linux-.*\.zip$/i
   };
 
@@ -23,34 +35,37 @@ Please, use an appropriate direct link below to download the actual version of t
     .then(res => res.json())
     .then(releases => {
       const latest = releases.find(r => !r.draft);
-      if (!latest) {
-        console.warn("No non-draft releases found.");
-        return;
-      }
+      if (!latest) return;
 
       const version = latest.tag_name;
       const assets = latest.assets;
-      console.log(`Latest release: ${version}`);
-      console.log("Available assets:");
-      assets.forEach(a => console.log(`- ${a.name}: ${a.browser_download_url}`));
 
       const links = document.querySelectorAll('.grid.cards a');
 
-      ["windows", "macos_zip", "macos_dmg", "linux"].forEach((platform, i) => {
+      const order = [
+        "windows",
+        "macos_arm_zip",
+        "macos_arm_dmg",
+        "macos_intel_zip",
+        "macos_intel_dmg",
+        "linux"
+      ];
+
+      order.forEach((platform, i) => {
         const pattern = assetPatterns[platform];
         const asset = assets.find(a => pattern.test(a.name));
+
         if (asset) {
-          console.log(`Matched ${platform}: ${asset.name}`);
           links[i].href = asset.browser_download_url;
-          links[i].title = `Link to download ${version} for ${platform}`;
-          links[i].innerHTML = `Download: GEMS ${version} for ${platform.charAt(0).toUpperCase() + platform.slice(1)}-x64 `;
-        } else {
-          console.warn(`No matching asset found for ${platform}`);
+          links[i].title = `Download ${version} for ${platform}`;
+          links[i].innerHTML = `Download: GEMS ${version} for ${platform.replace(/_/g, " ")}`;
         }
       });
     })
     .catch(err => console.error("Error fetching release data:", err));
 </script>
+
+
 
  If you encounter issues, errors with GEM-Selektor, please report them in the [:octicons-arrow-right-24: github issues](https://github.com/gemshub/GEMSGUI/issues) (github account necessary). Known issues are also found there. 
 
@@ -134,10 +149,17 @@ GEM-Selektor is a cross-platform tool that runs efficiently on various hardware 
     
     * For more details about command line parameters, see into `rungems3.sh`. Edit the file `rungems3.sh` (with any simple text editor) in order to ensure that GEMS3 command line parameters point to correct locations of the program resources and of modeling projects.
 
-    !!! note "Compatibility"  
-        For unsupported platforms (such as macOS M1/M2), it is still possible to compile the program from source [documented :octicons-arrow-right-24: here.](https://github.com/gemshub/GEMSGUI?tab=readme-ov-file#building-using-conda)
+    !!! warning "gem-selektor is damaged"
 
-        We would love to hear **feedback from users running GEM-Selektor on Mac M1/M2**—please let us know your experience!  
+        ![gem-selektor is damaged](mac_gems_damaged.png "Gatekeeper kills gem-selektor on MacOS"){ width="200" align=left }
+
+        This is a feature of the arm MacOS that has a very strict rule and kills applications that are not signed. The provided dmg and zip packages should run but not indefinite due to future changes to the MacOS gatekeeper. If you encounter this issue please open an issue on github, [here](https://github.com/gemshub/GEMSGUI/issues). 
+
+        Potentially executing these commands in the terminal would then allow to start the program:
+        ```sh
+        xattr -dr com.apple.quarantine "/path/to/gem-selektor.app"
+        codesign --force --deep --sign - "/path/to/gem-selektor.app"
+        ```
 
 === "Linux"
 
@@ -182,22 +204,22 @@ When working with GEM-Selektor two folder locations are important:
 === "Windows"
     | Folder Path  &nbsp; &nbsp; &nbsp;                                                 | Description                       |
     | ------------------------------------------------------------- | ------------------------------------    |
-    | `C:\'your_user'\`</br>`GEMS<version>\Gems3-app\`                         | **Program folder** |
+    | `C:\'your_user'\`</br>`GEMS<version>\Gems3-app\`                         | **Program folder**: This folder is located in the main application folder and depends where you have it on your PC |
     | `C:\'your user'\`</br>`GEMS<version>\Gems3-app\Resources\`               | Resources folder, here you also have the doc folder with documentation **help files** `\doc\html\` |
     | `C:\'your user'\`</br>`GEMS<version>\Gems3-app\Resources\DB.default\`    | default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project |
     | `C:\'your user'\`</br>`Library\Gems3\Projects\`                      | **Projects Folder**: This is where the test and user projects are stored. To add a shared project, simply copy the project folder here, and it will appear in the Open/New projects list when you open GEM-Selektor. To share your project, zip the folder and send it to someone else. They will need to unzip and copy the project folder into their GEMS projects folder. |
 === "Mac OS X"  
     | Folder Path   &nbsp; &nbsp; &nbsp;                                                | Description                       |
     | ------------------------------------------------------- | ------------------------------------    |
-    | `/Applications/`</br>`Gems3.app/Contents/`                          | **Program folder** |
-    | `/Applications/`</br>`Gems3.app/Contents/Resources/`                         | Resources folder, here you also have the doc folder with documentation **help files** `/doc/html/` |
-    | `/Applications/`</br>`Gems3.app/Contents/Resources/DB.default/`                         | default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project |
+    | `gem-selektor.app/Contents/`                          | **Program folder**: The folder is located inside of the gem-selektor.app. This folder is usually located in the main /Applications folder or in the user's folder ~/GEMS, depending on where the user has put gem-selektor.app during the installation. In Finder, right-click on the gem-selektor.app and choose "Show package contents".  |
+    | `gem-selektor.app/Contents/Resources/`                         | Resources folder, here you also have the doc folder with documentation **help files** `/doc/html/` |
+    | `gem-selektor.app/Contents/Resources/DB.default/`              | default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project |
     | `/Library/`</br>`gems3/projects/`                          | **Projects Folder**: This is where the test and user projects are stored. To add a shared project, simply copy the project folder here, and it will appear in the Open/New projects list when you open GEM-Selektor. To share your project, zip the folder and send it to someone else. They will need to unzip and copy the project folder into their GEMS projects folder. |
 
 === "Linux"
     | Folder Path         &nbsp; &nbsp; &nbsp;                                          | Description                       |
     | ------------------------------------------------------- | ------------------------------------    |
-    | `~/'your_user'/`</br>`GEMS<version>/Gems3-app/`                         | **Program folder** |
+    | `~/'your_user'/`</br>`GEMS<version>/Gems3-app/`                         | **Program folder**: This folder is located in the main application folder and depends where you have it on your PC |
     | `~/'your user'/`</br>`GEMS<version>/Gems3-app/Resources/`               | Resources folder, here you also have the doc folder with documentation **help files** `/doc/html/` |
     | `~/'your user'/`</br>`GEMS<version>/Gems3-app/Resources/DB.default/`    | default databases, these are available when creating a new project. Copy here any third-party database (e.g., cemdata) and you will be able to use it for creating a new project |
     | `~/'your user'/`</br>`Library/Gems3/Projects/`                      | **Projects Folder**: This is where the test and user projects are stored. To add a shared project, simply copy the project folder here, and it will appear in the Open/New projects list when you open GEM-Selektor. To share your project, zip the folder and send it to someone else. They will need to unzip and copy the project folder into their GEMS projects folder. |
@@ -236,10 +258,10 @@ If GEMS3 crashes when the user tries to open a modeling project:
 
 
 If this does not help, or you encountered an error, please [report an issue](../../../../community#report-issuesdiscussion).
-
+<!-- 
 [![Hits](https://hits.sh/gemshub.github.io/site/start/gemselektor/download/installpack.svg)](https://hits.sh/gemshub.github.io/site/start/gemselektor/download/installpack/)
 
-<!-- 
+
         Another way to open a blocked app is to locate the app in a Finder window. 
     
         1. Open the Finder.
