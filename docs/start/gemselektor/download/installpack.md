@@ -258,9 +258,9 @@ If GEMS3 crashes when the user tries to open a modeling project:
 
 
 If this does not help, or you encountered an error, please [report an issue](../../../../community#report-issuesdiscussion).
-<!-- 
-[![Hits](https://hits.sh/gemshub.github.io/site/start/gemselektor/download/installpack.svg)](https://hits.sh/gemshub.github.io/site/start/gemselektor/download/installpack/)
 
+[![Hits](https://hits.sh/gemshub.github.io/site/start/gemselektor/download/installpack.svg)](https://hits.sh/gemshub.github.io/site/start/gemselektor/download/installpack/)
+<!-- 
 
         Another way to open a blocked app is to locate the app in a Finder window. 
     
