@@ -192,7 +192,7 @@ GEM-Selektor is a cross-platform tool that runs efficiently on various hardware 
         
         The files are typically executable and can be placed in specific directories like  `~/.local/share/applications`. Then copy the `share` folder `./Gems3-app/share` to  `~/.local`. You can also copy the `gem-selektor.desktop` file to `~/Desktop/`.
 
-### Important folders 
+### Important folders and where to find them
 
 When working with GEM-Selektor two folder locations are important: 
 
@@ -241,6 +241,9 @@ Remove any desktop shortcuts or start menu entries.
 ✅ Your modeling projects are safe! They remain stored in Library\Gems3\projects\ and won't be affected by the uninstall process.
 
 ## Troubleshooting
+
+See also [Frequently Asked Questions](../../../../faq)
+
 If GEMS3 program does not start properly:
 
 *   Check that the paths to executable and Resources are correct in the shortcut or in the command-line batch file.

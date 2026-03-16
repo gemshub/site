@@ -45,6 +45,8 @@ nav:
   - News:
      - news/index.md
  # - Question?: https://github.com/orgs/gemshub/discussions/new/choose
+  - FAQ: 
+     - faq/index.md
 
 
 theme:

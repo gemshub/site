@@ -16,7 +16,10 @@ To start working with GEM-Selektor and perform exciting geochemical calculations
     - Ensure that the changes are reflected in your project's calculations by updating the database files in the appropriate folder.
 
 
-## Important folders 
+See also Frequently Asked Questions: [:octicons-arrow-right-24: github discussions](https://github.com/orgs/gemshub/discussions) (github account necessary).
+
+
+## Important folders and where to find them
 
 When working with GEM-Selektor two folder locations are important: 
 
