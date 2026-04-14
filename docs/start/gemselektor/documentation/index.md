@@ -79,7 +79,7 @@ The thermodynamic methods formulations that are available GEMS are described bel
 | File :material-download-circle:                                                   | Description  :material-file-document:                       |
 | --------------------------------------------------------------------------------- | ------------------------------------    |
 | [**Temperature Corrections**](doc/pdf/T-corrections.pdf) </br> [**Pressure Corrections**](doc/pdf/P-corrections.pdf)   | Built-in models for temperature and pressure corrections for thermodynamic properties calculated in the GEM-Selektor code from data in DComp records |
-| [**Temperature Corrections Reactions**](doc/pdf/T-Corrections-Reac.pdf) | Methods for temperature corrections for thermodynamic properties calculated in the GEM-Selektor code from data in ReacDC records |
+| [**Temperature Corrections Reactions**](doc/pdf/T-corrections-Reac.pdf) | Methods for temperature corrections for thermodynamic properties calculated in the GEM-Selektor code from data in ReacDC records |
 | [**Activity models**](doc/pdf/Activity-Coeffs.pdf) | Models for calculation of activity coefficients for aqueous species and solid-solution end-members (with setup codes in Phase records) |
 | [**Multisite Mixing models**](doc/pdf/Multisite-Mixmods.pdf) | Models for calculation of activity coefficients and configurational terms for multi-site (sublattice) solid solution models. |
 | [**Surface complexation models**](doc/pdf/SCM-corrections.pdf) | Description of setups and built-in calculations related to GEM SCMs (surface complexation models) Will be updated soon with ClaySor model for sorption of cations on clay minerals and clay rocks.   |
