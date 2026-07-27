@@ -6,11 +6,11 @@ GEM-Standalone Solver of chemical equilibria can be coupled to other simulation 
 
     To work with any GEM-Standalone code/interface you must first use [GEM-Selektor](../../gemselektor) to create a modeling project, having a defined chemical system with respective models and database. Once you are satisfied with the system this can be exported into editable text files (standalone chemical system definition, containing models, parameters, thermodynamic data). These files are then used to initialize any number of GEMS instances in the coupled code or python script.
 
-    The recommended way to prepare Standalone input files consists in creating a modeling project in [GEM-Selektor](../../gemselektor) package, creating and calculating chemical systems (equilibria), and then exporting the GEM tasks to GEMS3K I/O files. Details about this process can be found in GEMS3K and GEM-Selektor [help files](../../gemselektor/documentation/#important-folders).
+    The recommended way to prepare Standalone input files consists in creating a modeling project in [GEM-Selektor](../../gemselektor) package, creating and calculating chemical systems (equilibria), and then exporting the GEM tasks to GEMS3K I/O files. Any parent single equilibria calculation can be exported into text files to be used to initialize the GEM-Standalone. [How to export a chemical system for GEM-Standalone](../../gemselektor/how-to-export-gems3k-files.md)
 
 ## xGEMS Interface
 
-In principle any calculation done in GEM-Selektor process module can be implemented in a Jupyter notebook. The documentation of the main functions that can called with xGEMS can be in the [code documentation](https://xgems.readthedocs.io/en/latest/)
+In principle any calculation done in GEM-Selektor process module can be implemented in a Jupyter notebook. The documentation of the main functions that can called with xGEMS can be found in the [code documentation](https://xgems.readthedocs.io/en/latest/)
 
 [:octicons-arrow-right-24: Examples xGEMS](examples#xgems) 
 

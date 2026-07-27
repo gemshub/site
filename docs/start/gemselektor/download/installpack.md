@@ -102,7 +102,9 @@ GEM-Selektor is a cross-platform tool that runs efficiently on various hardware 
 
     **How to run GEM-Selektor**
 
-    * To run GEM-Selektor application for the first time double click to execute `rungems3.bat`. After the first run you can always start GEM-Selektor using its shortcut or `gem-selektor.exe` from `Gems3-app\bin`.
+    * To start GEM-Selektor **go in `Gems3-app\bin` folder and run `gem-selektor.exe`**. Once GEMS runs you can right click and pin the program to the taskbar. 
+
+    To run GEM-Selektor application with specific options double click to execute `rungems3.bat`. Open and edit the file. Due to changes in windows .bat files this way of starting GEM-Selektor may produce errors therefore it is recommended to go to `Gems3-app\bin` and run `gem-selektor.exe`.
 
     !!! warning
 
