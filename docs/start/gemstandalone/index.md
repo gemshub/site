@@ -14,6 +14,8 @@
 - [x] Used in developing coupled reactive mass transport simulation codes, such as OpenGeoSys-GEM.
 - [x] Integrated into parameter fitting frameworks like [GEMSFITS](../gemsfits).
 
+Having a modeling project in GEM-Selektor (graphical interface), any parent single equilibria calculation can be exported into text files to be used to initialize the GEM-Standalone. [How to export a chemical system for GEM-Standalone](../gemselektor/how-to-export-gems3k-files.md)
+
 ## Code Interfaces
 
 ### xGEMS Interface (C++/Python)

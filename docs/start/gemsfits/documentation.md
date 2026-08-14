@@ -2,6 +2,8 @@
 
 To start working with GEMSFITS and fit parameters of thermodynamic models, you'll need to familiarize yourself with the [GEM-Selektor](../gemselektor) graphical user interface. A prerequisite is to **create a project with the chemical system, including the models and components for which you wish to fit their properties and parameters.**
 
+Having a modeling project in GEM-Selektor (graphical interface), any parent single equilibria calculation can be exported into text files to be used to initialize the GEM-Standalone. [How to export a chemical system for GEM-Standalone](../gemselektor/how-to-export-gems3k-files.md)
+
 Frequent tasks include:
 
 1. **Creating a GEMSFITS Project:**
