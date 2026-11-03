@@ -1,6 +1,6 @@
 # Model salt systems with GEMS and THEREDA
 
-GEMS with [THEREDA](https://www.thereda.de) database can be used to model saline systems by taking advantage of the Pitzer activity model formalisms and the high quality internally consistent parameter set provided in the THEREDA database[@MOOG2026].
+Since version [3.12.2](../start/gemselektor/download.md) GEMS with [THEREDA](https://www.thereda.de) database can be used to model saline systems by taking advantage of the Pitzer activity model formalisms and the high quality internally consistent parameter set provided in the THEREDA database[@MOOG2026].
 
 Typical applications:
 
