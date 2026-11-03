@@ -51,6 +51,10 @@ For further reference, see:
 > **Download: [TM-44-03-04 (web version)](../TM-44-03-04-web.pdf)**  
 > *Unpublished PSI Technical Report TM-44-03-04 on the GEMS version of the Nagra/PSI database 01/01 (updated to 12/07 in 2017).*
 
+!!! tip "Newer PSI Chemical Thermodynamic Database 2020"
+
+    The newer [PSI Chemical Thermodynamic Database 2020](https://www.psi.ch/en/les/database) (release psinagra2020 v2-1) is also available in GEMS format from the PSI website. Download the GEMS version, copy the `*.pdb` and `*.ndx` files into `gems3-app/Resources/DB.default/`, and restart GEMS (v3.11.0 or newer recommended).
+
 ### (ii) SUPCRT Dataset ("supcrt")
 
 This widely used dataset (Slop98.dat[@SHOCK1997]) enables equilibrium calculations at temperatures up to **1000°C** and pressures up to **5 kbar**. It covers a broad range of species and elements, including those not available in "psi-nagra". 
@@ -64,12 +68,14 @@ The **SUPCRT dataset** is built on:
 
 These optional databases support specialized applications, including:
 
+- **[THEREDA](../../community/thereda.md)** – Saline systems using the Pitzer model (included in the GEMS installer)
 - **[CEMDATA](https://www.empa.ch/web/s308/thermodynamic-data)** – Cement chemistry modeling
 - **[Mines DB](https://geoinfo.nmt.edu/mines-tdb/)** – Hydrothermal ore petrology
+- **[PSI Chemical TDB 2020](https://www.psi.ch/en/les/database)** – Environmental modeling. Geochemical modeling for nuclear waste disposal (GEMS version available)
+- **[ClaySor 2023](https://zenodo.org/records/15095062)** – Sorption on illite and montmorillonite (2SPNE SC/CE, consistent with PSI Chemical TDB 2020; GEMS version available)[@MARINICH2025]
 - **[HERACLES](https://www.psi.ch/en/heracles/gems-specific-heracles-database)** – Nuclear fuel modeling
-<!-- - **[THEREDA](../../../community/saline)** – Saline systems using the Pitzer model -->
 - **[Aq17](https://www.researchgate.net/publication/325402295_TDB_Miron_etal_2017_GEM-Selektor)** – Hydrothermal geochemistry
 - **Others** – users maintain databases for different applications
 
-Users can download these files and place them in `gems3-app/Resources/DB.default/` to make them available for new projects.
+If a database does not come with the GEMS package, download the files and place them in `gems3-app/Resources/DB.default/` to make them available for new projects.
 

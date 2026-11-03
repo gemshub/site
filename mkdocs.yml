@@ -37,6 +37,7 @@ nav:
  #   - Cement modeling: community/cement.md
  #   - Hydrothermal ore deposits: community/hydrothermal.md
  #   - Reactor Chemistry: community/reactor.md
+    - THEREDA: community/thereda.md
     - GeoML: community/geoml.md
     - CemGEMS: community/cemgems.md
     - ThermoEcos: community/thermoecos.md
