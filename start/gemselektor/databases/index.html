@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../img/gems1.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -26,10 +26,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1268,6 +1268,8 @@
       
         
       
+        
+      
     
     
     
@@ -1391,6 +1393,34 @@
     
   
     Research using GEMS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../community/thereda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    THEREDA
   
 
     
@@ -2268,6 +2298,10 @@
 <p><strong>Download: <a href="../TM-44-03-04-web.pdf">TM-44-03-04 (web version)</a></strong><br>
 <em>Unpublished PSI Technical Report TM-44-03-04 on the GEMS version of the Nagra/PSI database 01/01 (updated to 12/07 in 2017).</em></p>
 </blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Newer PSI Chemical Thermodynamic Database 2020</p>
+<p>The newer <a href="https://www.psi.ch/en/les/database">PSI Chemical Thermodynamic Database 2020</a> (release psinagra2020 v2-1) is also available in GEMS format from the PSI website. Download the GEMS version, copy the <code>*.pdb</code> and <code>*.ndx</code> files into <code>gems3-app/Resources/DB.default/</code>, and restart GEMS (v3.11.0 or newer recommended).</p>
+</div>
 <h3 id="ii-supcrt-dataset-supcrt">(ii) SUPCRT Dataset ("supcrt")</h3>
 <p>This widely used dataset (Slop98.dat<sup id="fnref:SHOCK1997"><a class="footnote-ref" href="#fn:SHOCK1997">1</a></sup>) enables equilibrium calculations at temperatures up to <strong>1000°C</strong> and pressures up to <strong>5 kbar</strong>. It covers a broad range of species and elements, including those not available in "psi-nagra". </p>
 <p>The <strong>SUPCRT dataset</strong> is built on:</p>
@@ -2278,16 +2312,16 @@
 <h3 id="iii-third-party-databases-3rd-party">(iii) Third-party Databases ("3rd-party")</h3>
 <p>These optional databases support specialized applications, including:</p>
 <ul>
+<li><strong><a href="../../../community/thereda/">THEREDA</a></strong> – Saline systems using the Pitzer model (included in the GEMS installer)</li>
 <li><strong><a href="https://www.empa.ch/web/s308/thermodynamic-data">CEMDATA</a></strong> – Cement chemistry modeling</li>
 <li><strong><a href="https://geoinfo.nmt.edu/mines-tdb/">Mines DB</a></strong> – Hydrothermal ore petrology</li>
+<li><strong><a href="https://www.psi.ch/en/les/database">PSI Chemical TDB 2020</a></strong> – Environmental modeling. Geochemical modeling for nuclear waste disposal (GEMS version available)</li>
+<li><strong><a href="https://zenodo.org/records/15095062">ClaySor 2023</a></strong> – Sorption on illite and montmorillonite (2SPNE SC/CE, consistent with PSI Chemical TDB 2020; GEMS version available)<sup id="fnref:MARINICH2025"><a class="footnote-ref" href="#fn:MARINICH2025">4</a></sup></li>
 <li><strong><a href="https://www.psi.ch/en/heracles/gems-specific-heracles-database">HERACLES</a></strong> – Nuclear fuel modeling</li>
-</ul>
-<!-- - **[THEREDA](../../../community/saline)** – Saline systems using the Pitzer model -->
-<ul>
 <li><strong><a href="https://www.researchgate.net/publication/325402295_TDB_Miron_etal_2017_GEM-Selektor">Aq17</a></strong> – Hydrothermal geochemistry</li>
 <li><strong>Others</strong> – users maintain databases for different applications</li>
 </ul>
-<p>Users can download these files and place them in <code>gems3-app/Resources/DB.default/</code> to make them available for new projects.</p>
+<p>If a database does not come with the GEMS package, download the files and place them in <code>gems3-app/Resources/DB.default/</code> to make them available for new projects.</p>
 <!-- *[GEMS]: Gibb Energy Minimization Software -->
 <div class="footnote">
 <hr>
@@ -2300,6 +2334,9 @@
 </li>
 <li id="fn:Tanger1988">
 <p>J. C. Tanger and H. C. Helgeson, "Calculation of the thermodynamic and transport properties of aqueous species at high pressures and temperatures; revised equations of state for the standard partial molal properties of ions and electrolytes," <em>American Journal of Science</em>, vol. 288, no. 1, pp. 19--98, 1988, doi: <a href="https://doi.org/10.2475/ajs.288.1.19">10.2475/ajs.288.1.19</a>.&nbsp;<a class="footnote-backref" href="#fnref:Tanger1988" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:MARINICH2025">
+<p>O. Marinich, G. D. Miron, D. Kulik, M. Marques Fernandes, and B. Baeyens, "ClaySor 2023 model package." Zenodo, 2025. doi: <a href="https://doi.org/10.5281/zenodo.15095062">10.5281/zenodo.15095062</a>.&nbsp;<a class="footnote-backref" href="#fnref:MARINICH2025" title="Jump back to footnote 4 in the text">↩</a></p>
 </li>
 </ol>
 </div>
@@ -2323,7 +2360,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 8, 2025 16:20:30 UTC">May 8, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 3, 2026 15:05:31 UTC">November 3, 2026</span>
   </span>
 
     
@@ -2391,10 +2428,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.path", "navigation.tracking", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "content.tooltips", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.path", "navigation.tracking", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "content.tooltips", "toc.follow"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="../../../js/verifycheckbox.js"></script>
       

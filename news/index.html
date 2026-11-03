@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../img/gems1.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -26,10 +26,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1142,6 +1142,8 @@
       
         
       
+        
+      
     
     
     
@@ -1265,6 +1267,34 @@
     
   
     Research using GEMS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community/thereda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    THEREDA
   
 
     
@@ -1965,6 +1995,47 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2026-11-03 00:00:00+00:00">November 3, 2026</time></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="gems-v3122-released"><a class="toclink" href="2026/11/03/gems-v3122-released/">GEMS v3.12.2 released</a></h2>
+<p>A new version of <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> is released, v3.12.2 <a href="../start/gemselektor/download/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> download</a></p>
+<p>This version comes with the <a href="https://www.thereda.de">THEREDA</a> database (release 2026-01-r17) for saline systems with the Pitzer model. THEREDA can be selected directly when a new project is created. The library project TestTHERE has examples: salt concrete leached by brines, seawater evaporation, and solubility of salt systems compared with experimental data. How to start is on the <a href="../community/thereda/">THEREDA page</a>.</p>
+<p>The GEM2MT reactive transport module now has the same code as <a href="https://github.com/gemshub/xgem2mt">xGEM2MT</a>, with better progress reporting and error messages.</p>
+<p><a href="https://github.com/gemshub/GEMSGUI/compare/v3.12.1...v3.12.2">Full list of changes</a></p>
+<!-- *[GEMS]: Gibb Energy Minimization Software -->
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/44091914" alt="G. Dan Miron">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2026-08-14 00:00:00+00:00">August 14, 2026</time></li>
         
         
@@ -2334,51 +2405,6 @@
   </div>
 </article>
       
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://avatars.githubusercontent.com/u/52164624" alt="Dmitrii Kulik">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2022-04-14 00:00:00+00:00">April 14, 2022</time></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="changes-2022"><a class="toclink" href="2022/04/14/changes-2022/">Changes 2022</a></h2>
-<div class="admonition info">
-<p class="admonition-title">20 June 2022":</p>
-<p><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> version 3.9.5 (rev. 9f3dc56.6dae7a9) code package, built using Qt6.2 LTS, is now available for downloading from the <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> web page. This is a bugfix release, with several reported bugs corrected such as: deviations of Pitzer activity coefficients of aqueous species (tested against the salt solubility data and PHREEQC calculations in the same system); crash when opening a project with some <abbr title="record defined by standard thermodynamic properties of reaction (e.g., reaction constant)">ReacDC</abbr> records containing "empty" (not recalculated inconsistent) data, e.g. in ClaySorMo and ClaySorIll projects (hint: replace these test projects in your Library/GEMS3/projects copying them from gems3-app Resources/projects); default number of displayed digits 8 sometimes caused ugly rendering such as 1.2600001, and was changed to 7 in "Preferences" to avoid such artifacts. This bugfix update is recommended for all users, especially those working with brines and applying the Pitzer activity model.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">14 April 2022</p>
-<p><abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> version 3.9.4 (rev. 58a7959.1e0be4a) code package, built using Qt6.2 LTS, is now available for downloading from the <abbr title="Interactive Package for Thermodynamic Modelling">GEM-Selektor</abbr> web page. This is a bugfix release, with several reported bugs corrected such as wrong calculations of standard enthalpies of aqueous species from <abbr title="record defined by standard thermodynamic properties of substance (e.g., Gibbs energy of formation)">DComp</abbr> data in MTParm and RTParm (this also affected export of enthalpies into <abbr title="GEM-Standalone code for solving chemical equilibrium problems">GEMS3K</abbr> <abbr title="Input/Output">I/O</abbr> files). This recommended update is a "must do" for all users working with enthalpies and heat effects e.g. in process or reactive transport simulations.</p>
-</div>
-<!-- *[GEMS]: Gibb Energy Minimization Software -->
-    
-    
-  </div>
-</article>
-      
       
         
           
@@ -2442,10 +2468,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "navigation.tabs", "navigation.path", "navigation.tracking", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "content.tooltips", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "navigation.tabs", "navigation.path", "navigation.tracking", "navigation.tabs.sticky", "navigation.top", "content.code.copy", "content.tooltips", "toc.follow"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="../js/verifycheckbox.js"></script>
       
